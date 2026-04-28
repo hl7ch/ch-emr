@@ -1,15 +1,16 @@
 ValueSet: ChEmrCognitiveDisabilityTypesVS
 Id: ch-emr-cognitive-disability-types-vs
 Title: "Cognitive disability types"
-Description: "Value sets for the types of disabilities"
+Description: "Value set for the types of cognitive disabilities based on SNOMED CT."
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
 * ^date = "2025-01-15"
 
-* $sct#443265004 "Cognitive disorder"
-* $sct#52448006 "Dementia"
-* $sct#35919005 "Autism spectrum disorder"
-* $sct#58214004 "Schizophrenia"
-* $sct#197480006 "Anxiety disorder"
-* $sct#74732009 "Mental disorder"
+* include codes from system $sct where concept is-a #386806002 "Impaired cognition (finding)"
+* include codes from system $sct where concept is-a #228156007 "Intellectual functioning disability (finding)"
+* include codes from system $sct where concept is-a #110351007 "Psychiatric behavioral disability (finding)"
+* include codes from system $sct where concept is-a #280965007 "Behavioral disability (finding)"
+* include codes from system $sct where concept is-a #47437004 "Mental handicap (finding)"
+* include codes from system $sct where concept is-a #443656000 "Developmentally disabled (finding)"
+* include codes from system $sct where concept is-a #52448006 "Dementia (disorder)"
