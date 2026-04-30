@@ -1,0 +1,40 @@
+name: FHIR IG Validation
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validate:
+    name: Build & Validate FHIR IG
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run FHIR IG CI
+        run: |
+          mkdir -p out logs
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/workspace" \
+            -v "$GITHUB_WORKSPACE/out:/output" \
+            -v "$GITHUB_WORKSPACE/logs:/logs" \
+            ghcr.io/trifork/fhir-ig-ci:latest
+
+      - name: Upload build logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fhir-ig-logs
+          path: logs/
+          retention-days: 7
+
+      - name: Upload QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fhir-ig-qa
+          path: out/qa.html
+          retention-days: 7
