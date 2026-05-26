@@ -1,0 +1,11 @@
+Profile: ChEmrBodyStructure
+Parent: BodyStructure
+Id: ch-emr-bodystructure
+Title: "CH Emergency Record Body Structure"
+Description: "Structured anatomical location of an implant in the Emergency Record. Carries an unlateralised body site in `location` and the laterality (or other directional qualifier) in `locationQualifier`."
+
+* patient only Reference(ChEmrPatient)
+* patient MS
+* location 1..1 MS
+* locationQualifier 1..* MS
+* locationQualifier from http://hl7.org/fhir/ValueSet/bodystructure-location-qualifier (extensible)

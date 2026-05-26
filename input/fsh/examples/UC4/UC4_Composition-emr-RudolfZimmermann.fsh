@@ -101,6 +101,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li></ul></div>"
 * section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
+* section[sectionMedicalDevices].entry[bodyStructure][0] = Reference(UC4-BodyStructure-LeftHip)
 
 // Pregnancy section
 * section[sectionPregnancyHx].title = "Schwangerschaft"
