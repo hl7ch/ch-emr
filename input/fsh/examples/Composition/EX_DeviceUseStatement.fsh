@@ -1,5 +1,5 @@
 Instance: EX-DeviceUseStatement
-InstanceOf: DeviceUseStatement
+InstanceOf: ChEmrDeviceUseStatement
 Usage: #example
 Title: "EX-DeviceUseStatement"
 Description: "General example for a device"
@@ -9,3 +9,5 @@ Description: "General example for a device"
 * device = Reference(EX-MedicalDevice)
 * timingDateTime = "2023-01-15"
 * recordedOn = "2023-01-15"
+
+* bodySite = $sct#80891009 "Heart structure"

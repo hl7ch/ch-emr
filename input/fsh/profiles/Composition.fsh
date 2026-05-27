@@ -13,17 +13,12 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionCognitiveDisability 0..1 and
     sectionPhysicalDisability 0..1
 
-// Medication
-* section[sectionMedications] 1..1
-
 // Device
-* section[sectionMedicalDevices] 0..1
 * section[sectionMedicalDevices].entry ^slicing.discriminator.type = #profile
 * section[sectionMedicalDevices].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionMedicalDevices].entry ^slicing.rules = #open
-* section[sectionMedicalDevices].entry contains
-    bodyStructure 0..*
-* section[sectionMedicalDevices].entry[bodyStructure] only Reference(ChEmrBodyStructure)
+* section[sectionMedicalDevices].entry contains deviceUseStatement 0..*
+* section[sectionMedicalDevices].entry[deviceUseStatement] only Reference(ChEmrDeviceUseStatement)
 
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
