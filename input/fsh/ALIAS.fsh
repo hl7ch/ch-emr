@@ -26,6 +26,17 @@ Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
 Alias: $oid-gln = urn:oid:2.51.1.3
 //Alias: $oid-zsr = urn:oid:2.16.756.5.30.1.123.100.2.1.1
 
+// International Patient Summary (IPS) Profiles
+Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
+Alias: $IpsDevice = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
+
+// FHIR Extensions
+Alias: $bodySiteExt = http://hl7.org/fhir/StructureDefinition/bodySite
+
+// FHIR R4 ValueSets
+Alias: $bodySiteVS = http://hl7.org/fhir/ValueSet/body-site
+Alias: $bodyStructureRelativeLocationVS = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
+
 // CH IPS Profiles
 Alias: $CHIPSPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
 Alias: $CHIPSPractitioner = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitioner
