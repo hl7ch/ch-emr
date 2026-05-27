@@ -6,4 +6,6 @@ Description: "Structured anatomical location of an implant in the Emergency Reco
 
 * patient only Reference(ChEmrPatient)
 * location MS
+* location from $bodySiteVS (preferred)
 * locationQualifier MS
+* locationQualifier from $bodyStructureRelativeLocationVS (preferred)

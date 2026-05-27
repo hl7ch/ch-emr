@@ -74,6 +74,7 @@ The Implementation Guide defines the following main profiles:
 | [ChEmrDocumentReferenceAdvanceDirective](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical | CH Core DocumentReference |
 | [ChEmrDocumentReference](StructureDefinition-ch-emr-documentreference.html) | Reference to documents | CH Core DocumentReference |
 | [ChEmrDevice](StructureDefinition-ch-emr-device.html) | Implants | Device |
+| [ChEmrDeviceUseStatement](StructureDefinition-ch-emr-deviceusestatement.html) | Use of an implanted device, optionally linked to a structured BodyStructure | CH IPS DeviceUseStatement |
 | [ChEmrBodyStructure](StructureDefinition-ch-emr-bodystructure.html) | Anatomical location of an implant, with laterality | BodyStructure |
 | [ChEmrObservationPregnancyStatus](StructureDefinition-ch-emr-observation-pregnancy-status.html) | Profile for documenting pregnancy status in the emergency record | IPS Observation Pregnancy - Status |
  

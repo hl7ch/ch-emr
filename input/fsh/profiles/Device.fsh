@@ -1,5 +1,5 @@
 Profile: ChEmrDevice
-Parent: Device
+Parent: $IpsDevice
 Id: ch-emr-device
 Title: "CH Emergency Record Device"
 Description: "Device profile for implants in the Emergency Record."

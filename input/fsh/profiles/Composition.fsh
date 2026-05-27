@@ -11,9 +11,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionRiskFactors 0..1 and
     sectionOtherDocuments 0..1 and          
     sectionCognitiveDisability 0..1 and
-    sectionPhysicalDisability 0..1 and
-    sectionMedicalDevices 0..1 and
-    sectionMedications 1..1
+    sectionPhysicalDisability 0..1
 
 // Device
 * section[sectionMedicalDevices].entry ^slicing.discriminator.type = #profile
