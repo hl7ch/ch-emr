@@ -1,5 +1,5 @@
 Instance: EX-Patient
-InstanceOf: ChEmrPatient
+InstanceOf: $CHIPSPatient
 Usage: #example
 Title: "EX-Patient"
 Description: "General example of a Patient"
