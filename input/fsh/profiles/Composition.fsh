@@ -18,6 +18,12 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 
 // Device
 * section[sectionMedicalDevices] 0..1
+* section[sectionMedicalDevices].entry ^slicing.discriminator.type = #profile
+* section[sectionMedicalDevices].entry ^slicing.discriminator.path = "resolve()"
+* section[sectionMedicalDevices].entry ^slicing.rules = #open
+* section[sectionMedicalDevices].entry contains
+    bodyStructure 0..*
+* section[sectionMedicalDevices].entry[bodyStructure] only Reference(ChEmrBodyStructure)
 
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"

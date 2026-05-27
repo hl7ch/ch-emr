@@ -82,6 +82,9 @@ Description: "Complete emergency record bundle for Rudolf Zimmermann"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/DeviceUseStatement/UC4-DeviceUseStatement"
 * entry[=].resource = UC4-DeviceUseStatement
 
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/BodyStructure/UC4-BodyStructure-LeftHip"
+* entry[=].resource = UC4-BodyStructure-LeftHip
+
 // Pregnancy
 
 // Disability
