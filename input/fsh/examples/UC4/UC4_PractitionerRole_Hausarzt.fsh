@@ -1,5 +1,5 @@
 Instance: UC4-PractitionerRole-Hausarzt
-InstanceOf: ChEmrPractitionerRole
+InstanceOf: $CHIPSPractitionerRole
 Usage: #example
 Title: "UC4-PractitionerRole-Hausarzt"
 Description: "Dr. Weber's role as family doctor for Rudolf Zimmermann"

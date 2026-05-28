@@ -1,5 +1,5 @@
 Instance: UC3-Practitioner-DrSemmelbruch
-InstanceOf: ChEmrPractitioner
+InstanceOf: $CHIPSPractitioner
 Usage: #example
 Title: "UC3-Practitioner-DrSemmelbruch"
 Description: "Gynecologist and obstetrician of Laura Weber"
