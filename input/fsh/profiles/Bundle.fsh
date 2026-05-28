@@ -1,5 +1,5 @@
-Profile: ChEmrBundle
-Parent: $ChCoreDocument
+Profile: ChEmrDocument
+Parent: $CHIPSDocument
 Id: ch-emr-bundle
 Title: "CH Emergency Record Bundle"
 Description: "Bundle profile for Emergency Record."

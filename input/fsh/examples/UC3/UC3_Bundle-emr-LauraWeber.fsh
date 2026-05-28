@@ -1,5 +1,5 @@
 Instance: UC3-Bundle-emr-LauraWeber
-InstanceOf: ChEmrBundle
+InstanceOf: ChEmrDocument
 Usage: #example
 Title: "UC3-Bundle-emr-LauraWeber"
 Description: "Complete Emergency Record bundle for Laura Weber"
