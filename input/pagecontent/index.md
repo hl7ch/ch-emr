@@ -60,7 +60,7 @@ The Implementation Guide defines the following main profiles:
 | [ChEmrComposition](StructureDefinition-ch-emr-composition.html) | Document composition | CH IPS Composition |
 | [ChEmrDocument](StructureDefinition-ch-emr-bundle.html) | Document bundle| CH Core Document |
 | [ChEmrRelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | Family and trusted persons | CH Core RelatedPerson |
-| [ChEmrPractitioner](StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH IPS Practitioner |
+| [$CHIPSPractitioner](StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH IPS Practitioner |
 | [ChEmrObservationResuscitationStatus](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation status | Observation |
 | [ChEmrObservationCognitiveDisability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability | Observation |
 | [ChEmrObservationPhysicalDisability](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record| Observation |
