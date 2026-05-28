@@ -34,6 +34,3 @@ Description: "Hans Meier's wife as emergency contact"
 * address.city = "Bern"
 * address.postalCode = "3012"
 * address.country = "CH"
-
-* communication.language = urn:ietf:bcp:47#de
-* communication.preferred = true
