@@ -1,5 +1,5 @@
 Instance: UC4-Bundle-emr-RudolfZimmermann
-InstanceOf: ChEmrBundle
+InstanceOf: ChEmrDocument
 Usage: #example
 Title: "UC4-Bundle-emr-RudolfZimmermann"
 Description: "Complete emergency record bundle for Rudolf Zimmermann"
