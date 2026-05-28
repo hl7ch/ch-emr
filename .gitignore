@@ -3,6 +3,7 @@
 /temp
 /output
 /out
+/logs
 /template
 /.claude
 .DS_Store

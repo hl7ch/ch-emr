@@ -1,5 +1,5 @@
 Instance: UC1-Patient-MariaSchmidt
-InstanceOf: ChEmrPatient
+InstanceOf: $CHIPSPatient
 Usage: #example
 Title: "UC1-Patient-MariaSchmidt"
 Description: "Example of a patient for the UC1"

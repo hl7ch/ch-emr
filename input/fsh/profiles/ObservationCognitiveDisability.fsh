@@ -6,6 +6,6 @@ Description: "Observation profile for cognitive disability in the Emergency Reco
 
 * status MS
 * subject 1..1 MS
-* subject only Reference(ChEmrPatient)
+* subject only Reference($CHIPSPatient)
 * code 1..1 MS
 * code from ChEmrCognitiveDisabilityTypesVS (extensible)

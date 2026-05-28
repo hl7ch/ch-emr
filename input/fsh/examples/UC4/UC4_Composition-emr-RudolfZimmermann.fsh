@@ -100,7 +100,7 @@ Description: "Composition for Rudolf Zimmermann's emergency record"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
 * section[sectionMedicalDevices].text.status = #generated
 * section[sectionMedicalDevices].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Hüftgelenk-Totalendoprothese links (2018)</li></ul></div>"
-* section[sectionMedicalDevices].entry[deviceUseStatement][0] = Reference(UC4-DeviceUseStatement)
+* section[sectionMedicalDevices].entry[deviceStatement][0] = Reference(UC4-DeviceUseStatement)
 
 // Pregnancy section
 * section[sectionPregnancyHx].title = "Schwangerschaft"
