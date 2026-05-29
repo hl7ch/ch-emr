@@ -24,6 +24,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionEmergencyContacts].entry ^slicing.rules = #open
 * section[sectionEmergencyContacts].entry contains relatedPerson 0..*
 * section[sectionEmergencyContacts].entry[relatedPerson] only Reference(ChEmrRelatedPerson)
+* section[sectionEmergencyContacts].entry[relatedPerson] ^type.aggregation = #bundled
 
 // Care Team
 * section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"

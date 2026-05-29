@@ -2,7 +2,7 @@ Instance: UC4-RelatedPerson-ElisabethZimmermann
 InstanceOf: ChEmrRelatedPerson
 Usage: #example
 Title: "UC4-RelatedPerson-ElisabethZimmermann"
-Description: "Tochter von Rudolf Zimmermann als Betreuerin"
+Description: "Tochter von Rudolf Zimmermann als Notfallkontakt und Betreuerin"
 
 * active = true
 * patient = Reference(UC4-Patient-RudolfZimmermann)
@@ -28,12 +28,6 @@ Description: "Tochter von Rudolf Zimmermann als Betreuerin"
 
 * gender = #female
 * birthDate = "1962-08-30"
-
-* address.use = #home
-* address.line = "Baselstrasse 45"
-* address.city = "Basel"
-* address.postalCode = "4053"
-* address.country = "CH"
 
 * communication.language = urn:ietf:bcp:47#de
 * communication.preferred = true

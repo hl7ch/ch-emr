@@ -6,10 +6,9 @@ Description: "RelatedPerson profile for emergency contacts and family members in
 
 * name 1..* MS 
 * relationship MS 
+* relationship from http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType (preferred)
 * telecom[phone] MS
 * telecom[email] MS
-* telecom[internet] MS
 * address MS 
-* communication.language MS 
-
-* relationship from http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType (extensible)
+* communication.language MS
+* communication.language from http://hl7.org/fhir/ValueSet/languages (preferred)
