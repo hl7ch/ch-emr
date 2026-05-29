@@ -74,7 +74,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Immunization](StructureDefinition-ch-emr-immunization.html) | Immunization profile for vaccinations in the Emergency Record. | [CH IPS Immunization](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-immunization.html) |
 | [CH Emergency Record Medication](StructureDefinition-ch-emr-medication.html) | Medication profile for medication in the Emergency Record. | [CH IPS Medication](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medication.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
-| [CH Emergency Record Observation Pregnancy Status](StructureDefinition-ch-emr-observation-pregnancy-status.html) | Profile for documenting pregnancy status in the Emergency Record. | [IPS Observation Pregnancy Status](http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) |
  
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).

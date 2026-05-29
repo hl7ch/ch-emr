@@ -1,5 +1,5 @@
 Instance: UC3-Observation-Pregnancy
-InstanceOf: ChEmrObservationPregnancyStatus
+InstanceOf: $IpsObservationPregnancyStatus
 Usage: #example
 Title: "UC3-Observation-Pregnancy"
 Description: "Laura Weber's current pregnancy"

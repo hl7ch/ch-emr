@@ -84,3 +84,12 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionPhysicalDisability].entry contains observation 0..*
 * section[sectionPhysicalDisability].entry[observation] only Reference(ChEmrObservationPhysicalDisability)
 
+// Pregnancy
+* section[sectionPregnancyHx].entry[pregnancyStatus] MS
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^type.aggregation = #bundled
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionPregnancyHx].entry[pregnancyStatus] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
