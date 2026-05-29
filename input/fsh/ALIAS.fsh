@@ -38,6 +38,7 @@ Alias: $bodySiteVS = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodyStructureRelativeLocationVS = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
 
 // CH IPS Profiles
+Alias: $CHIPSDocument = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document
 Alias: $CHIPSPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
 Alias: $CHIPSPractitioner = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitioner
 Alias: $CHIPSPractitionerRole = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitionerrole
@@ -47,7 +48,7 @@ Alias: $CHIPSMedication = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-me
 Alias: $CHIPSMedicationStatement = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medicationstatement
 Alias: $CHIPSAllergyIntolerance = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-allergyintolerance
 Alias: $CHIPSImmunization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-immunization
-Alias: $ChIpsCompositionEPR  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-composition
+Alias: $ChIpsComposition  = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-composition
 Alias: $ObservationPregnancyStatusUvIps = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips|2.0.0
 Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-reason
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical

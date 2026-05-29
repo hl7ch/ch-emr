@@ -1,5 +1,5 @@
 Profile: ChEmrComposition
-Parent: $ChIpsCompositionEPR
+Parent: $ChIpsComposition
 Id: ch-emr-composition
 Title: "CH Emergency Record Composition"
 Description: "Swiss Emergency Record based on International Patient Summary"
@@ -15,6 +15,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 
 // Device
 * section[sectionMedicalDevices].entry[deviceStatement] only Reference(ChEmrDeviceUseStatement)
+* section[sectionMedicalDevices].entry[deviceStatement] ^type.aggregation = #bundled
 
 //Related person
 * section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
@@ -32,8 +33,8 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCareTeam].entry contains
     practitioner 0..* and
     practitionerRole 0..*
-* section[sectionCareTeam].entry[practitioner] only Reference(ChEmrPractitioner)
-* section[sectionCareTeam].entry[practitionerRole] only Reference(ChEmrPractitionerRole)
+* section[sectionCareTeam].entry[practitioner] ^type.aggregation = #bundled
+* section[sectionCareTeam].entry[practitionerRole] ^type.aggregation = #bundled
 
 //Resuscitation
 * section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"

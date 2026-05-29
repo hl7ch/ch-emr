@@ -1,5 +1,5 @@
 Instance: EX-Organization-GynPraxis
-InstanceOf: ChEmrOrganization
+InstanceOf: $CHIPSOrganization
 Usage: #example
 Title: "EX-Organization-GynPraxis"
 Description: "Gynecology practice in Basel"
