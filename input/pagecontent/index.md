@@ -56,26 +56,25 @@ The emergency report is designed to give medical professionals quick and structu
 The Implementation Guide defines the following main profiles:
 
 | Profile | Description | Parent |
-|--------|--------------|---------|
-| [ChEmrComposition](StructureDefinition-ch-emr-composition.html) | Document composition | CH IPS Composition |
-| [ChEmrDocument](StructureDefinition-ch-emr-bundle.html) | Document bundle| CH Core Document |
-| [ChEmrRelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | Family and trusted persons | CH Core RelatedPerson |
-| [$CHIPSPractitioner](StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH IPS Practitioner |
-| [ChEmrObservationResuscitationStatus](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation status | Observation |
-| [ChEmrObservationCognitiveDisability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability | Observation |
-| [ChEmrObservationPhysicalDisability](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record| Observation |
-| [ChEmrConditionHealthcareProfessionalsRiskFactors](StructureDefinition-ch-emr-condition-riskFactors.html) | Riskfactors for healthcare professionals| CH IPS Condition |
-| [ChEmrMedication](StructureDefinition-ch-emr-medication.html) | Medication details | CH IPS Medication |
-| [ChEmrMedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | Current medication | CH IPS MedicationStatement |
-| [ChEmrImmunization](StructureDefinition-ch-emr-immunization.html) | Immunization records | CH IPS Immunization |
-| [ChEmrAllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | Allergies and intolerances | CH IPS AllergyIntolerance |
-| [ChEmrCondition](StructureDefinition-ch-emr-condition.html) | Problems and diagnoses | CH IPS Condition |
-| [ChEmrDocumentReferenceAdvanceDirective](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical | CH Core DocumentReference |
-| [ChEmrDocumentReference](StructureDefinition-ch-emr-documentreference.html) | Reference to documents | CH Core DocumentReference |
-| [ChEmrDevice](StructureDefinition-ch-emr-device.html) | Implants | Device |
-| [ChEmrDeviceUseStatement](StructureDefinition-ch-emr-deviceusestatement.html) | Use of an implanted device, optionally linked to a structured BodyStructure | CH IPS DeviceUseStatement |
-| [ChEmrBodyStructure](StructureDefinition-ch-emr-bodystructure.html) | Anatomical location of an implant, with laterality | BodyStructure |
-| [ChEmrObservationPregnancyStatus](StructureDefinition-ch-emr-observation-pregnancy-status.html) | Profile for documenting pregnancy status in the emergency record | IPS Observation Pregnancy - Status |
+|---------|-------------|--------|
+| [CH Emergency Record Bundle](StructureDefinition-ch-emr-bundle.html) | Bundle profile for Emergency Record. | [CH IPS Document](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-document.html) |
+| [CH Emergency Record Composition](StructureDefinition-ch-emr-composition.html) | Swiss Emergency Record based on International Patient Summary. | [CH IPS Composition](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-composition.html) |
+| [CH Emergency Record Device Use Statement](StructureDefinition-ch-emr-deviceusestatement.html) | Use of an implanted device in the Emergency Record. | [IPS DeviceUseStatement](http://hl7.org/fhir/uv/ips/StructureDefinition-DeviceUseStatement-uv-ips.html) |
+| [CH Emergency Record Device](StructureDefinition-ch-emr-device.html) | Device profile for implants in the Emergency Record. | [IPS Device](http://hl7.org/fhir/uv/ips/StructureDefinition-Device-uv-ips.html) |
+| [CH Emergency Record Body Structure](StructureDefinition-ch-emr-bodystructure.html) | Structured anatomical location of an implant, carrying an unlateralised body site and the laterality qualifier. | [BodyStructure (FHIR R4)](http://hl7.org/fhir/R4/bodystructure.html) |
+| [CH Emergency Record RelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | RelatedPerson profile for emergency contacts and family members in the Emergency Record. | [CH Core RelatedPerson](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-relatedperson.html) |
+| [CH Emergency Record Observation Resuscitation Status](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation (code) status. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
+| [CH Emergency Record Advance Directive DocumentReference](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical orders. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
+| [CH Emergency Record Healthcare Professionals Risk Factors](StructureDefinition-ch-emr-condition-riskFactors.html) | Risk factors relevant for healthcare professionals. | [CH IPS Condition](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-condition.html) |
+| [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
+| [CH Emergency Record Observation Cognitive Disability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
+| [CH Emergency Record Physical Disability Observation](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
+| [CH Emergency Record AllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | AllergyIntolerance profile for allergies and intolerances in the Emergency Record. | [CH IPS AllergyIntolerance](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-allergyintolerance.html) |
+| [CH Emergency Record Condition](StructureDefinition-ch-emr-condition.html) | Condition profile for problems and diagnoses in the Emergency Record. | [CH IPS Condition](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-condition.html) |
+| [CH Emergency Record Immunization](StructureDefinition-ch-emr-immunization.html) | Immunization profile for vaccinations in the Emergency Record. | [CH IPS Immunization](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-immunization.html) |
+| [CH Emergency Record Medication](StructureDefinition-ch-emr-medication.html) | Medication profile for medication in the Emergency Record. | [CH IPS Medication](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medication.html) |
+| [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
+| [CH Emergency Record Observation Pregnancy Status](StructureDefinition-ch-emr-observation-pregnancy-status.html) | Profile for documenting pregnancy status in the Emergency Record. | [IPS Observation Pregnancy Status](http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) |
  
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
