@@ -55,27 +55,7 @@ The emergency report is designed to give medical professionals quick and structu
 
 The Implementation Guide defines the following main profiles:
 
-| Profile | Description | Parent |
-|--------|--------------|---------|
-| [ChEmrComposition](StructureDefinition-ch-emr-composition.html) | Document composition | CH IPS Composition |
-| [ChEmrDocument](StructureDefinition-ch-emr-bundle.html) | Document bundle| CH Core Document |
-| [ChEmrRelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | Family and trusted persons | CH Core RelatedPerson |
-| [$CHIPSPractitioner](StructureDefinition-ch-emr-practitioner.html) | Healthcare practitioner information | CH IPS Practitioner |
-| [ChEmrObservationResuscitationStatus](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation status | Observation |
-| [ChEmrObservationCognitiveDisability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability | Observation |
-| [ChEmrObservationPhysicalDisability](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record| Observation |
-| [ChEmrConditionHealthcareProfessionalsRiskFactors](StructureDefinition-ch-emr-condition-riskFactors.html) | Riskfactors for healthcare professionals| CH IPS Condition |
-| [ChEmrMedication](StructureDefinition-ch-emr-medication.html) | Medication details | CH IPS Medication |
-| [ChEmrMedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | Current medication | CH IPS MedicationStatement |
-| [ChEmrImmunization](StructureDefinition-ch-emr-immunization.html) | Immunization records | CH IPS Immunization |
-| [ChEmrAllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | Allergies and intolerances | CH IPS AllergyIntolerance |
-| [ChEmrCondition](StructureDefinition-ch-emr-condition.html) | Problems and diagnoses | CH IPS Condition |
-| [ChEmrDocumentReferenceAdvanceDirective](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical | CH Core DocumentReference |
-| [ChEmrDocumentReference](StructureDefinition-ch-emr-documentreference.html) | Reference to documents | CH Core DocumentReference |
-| [ChEmrDevice](StructureDefinition-ch-emr-device.html) | Implants | Device |
-| [ChEmrDeviceUseStatement](StructureDefinition-ch-emr-deviceusestatement.html) | Use of an implanted device, optionally linked to a structured BodyStructure | CH IPS DeviceUseStatement |
-| [ChEmrBodyStructure](StructureDefinition-ch-emr-bodystructure.html) | Anatomical location of an implant, with laterality | BodyStructure |
-| [ChEmrObservationPregnancyStatus](StructureDefinition-ch-emr-observation-pregnancy-status.html) | Profile for documenting pregnancy status in the emergency record | IPS Observation Pregnancy - Status |
+{% include list-profiles-table.xhtml %}
  
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
