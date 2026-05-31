@@ -1,5 +1,5 @@
 Instance: UC4-Condition-ChronicKidneyDisease
-InstanceOf: ChEmrCondition
+InstanceOf: $CHIPSCondition
 Usage: #example
 Title: "UC4-Condition-ChronicKidneyDisease"
 Description: "Chronic kidney disease"

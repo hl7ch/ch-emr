@@ -1,5 +1,5 @@
 Instance: EX-Condition
-InstanceOf: ChEmrCondition
+InstanceOf: $CHIPSCondition
 Usage: #example
 Title: "EX-Condition (Type 2 diabetes mellitus)"
 Description: "General example of a condition"
