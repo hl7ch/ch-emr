@@ -16,7 +16,7 @@ Description: "Künstliches Hüftgelenk links"
 
 * udiCarrier.deviceIdentifier = "00886982344128"
 * udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/eu-udi"
+* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/eu-ec-udi"
 * udiCarrier.carrierHRF = "(01)00886982344128(17)280415(10)L20180415A(21)HP20180415001"
 * udiCarrier.entryType = #barcode
 
