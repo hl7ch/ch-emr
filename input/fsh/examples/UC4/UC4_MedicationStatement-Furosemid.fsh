@@ -1,5 +1,5 @@
 Instance: UC4-MedicationStatement-Furosemid
-InstanceOf: ChEmrMedicationStatement
+InstanceOf: $CHIPSMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-Furosemid"
 Description: "Diuretikum Therapie"
@@ -20,7 +20,7 @@ Description: "Diuretikum Therapie"
 * dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Furosemid
-InstanceOf: ChEmrMedication
+InstanceOf: $CHIPSMedication
 Description: "Example of Furosemid 40 mg tablet medication"
 Usage: #example
 * code = urn:oid:2.51.1.1#7680306290195 "LASIX Tabl 40 mg"
