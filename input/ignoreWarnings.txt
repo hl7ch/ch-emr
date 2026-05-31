@@ -15,6 +15,6 @@ The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValue
 %is the default display; the code system%
 Wrong Display Name%
 
-# Information about pinned versions 
+# Information about pinned versions
 Pinned the version of%
 

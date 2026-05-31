@@ -72,7 +72,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record AllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | AllergyIntolerance profile for allergies and intolerances in the Emergency Record. | [CH IPS AllergyIntolerance](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-allergyintolerance.html) |
 | [CH Emergency Record Condition](StructureDefinition-ch-emr-condition.html) | Condition profile for problems and diagnoses in the Emergency Record. | [CH IPS Condition](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-condition.html) |
 | [CH Emergency Record Immunization](StructureDefinition-ch-emr-immunization.html) | Immunization profile for vaccinations in the Emergency Record. | [CH IPS Immunization](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-immunization.html) |
-| [CH Emergency Record Medication](StructureDefinition-ch-emr-medication.html) | Medication profile for medication in the Emergency Record. | [CH IPS Medication](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medication.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
  
 ### IP Statements
