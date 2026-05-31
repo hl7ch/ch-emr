@@ -27,11 +27,7 @@ Alias: $bodySiteExt = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
 Alias: $bodySiteVS = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodyStructureRelativeLocationVS = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
-
-// CH Core
-Alias: $ChCoreDocumentReference = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference
-Alias: $ChCoreDocument = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document
-Alias: $ChCoreRelatedPerson = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-relatedperson
+Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
 
 // International Patient Summary (IPS) Profiles
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
@@ -39,6 +35,15 @@ Alias: $IpsDevice = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
 Alias: $IpsObservationPregnancyStatus = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips
 Alias: $IpsActorCreator = http://hl7.org/fhir/uv/ips/ActorDefinition/Creator
 Alias: $IpsActorConsumer = http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer
+
+// CH Core Profiles
+Alias: $ChCoreDocumentReference = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference
+Alias: $ChCoreDocument = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document
+Alias: $ChCoreRelatedPerson = http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-relatedperson
+
+// CH Emed Profiles
+Alias: $ChEmedDosage = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage
+Alias: $ChEmedDosageSplit = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split
 
 // CH IPS Profiles
 Alias: $CHIPSDocument = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document

@@ -8,4 +8,3 @@ Description: "Bundle profile for Emergency Record."
 * entry[Patient].resource only $CHIPSPatient
 * entry[Patient].resource.communication.language MS
 * entry[RelatedPerson].resource only ChEmrRelatedPerson
-
