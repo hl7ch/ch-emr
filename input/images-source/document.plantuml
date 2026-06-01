@@ -30,9 +30,9 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
   }
 
   together {
-    rectangle "[[StructureDefinition-ch-emr-patient.html Entry: Patient]]" as E1 #salmon
+    rectangle "[[http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-patient.html Entry: Patient]]" as E1 #salmon
     rectangle "[[StructureDefinition-ch-emr-relatedperson.html Entry: RelatedPerson]]" as E2 #salmon
-    rectangle "[[StructureDefinition-ch-emr-practitioner.html Entry: Practitioner]]" as E3 #salmon
+    rectangle "[[http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-practitioner.html Entry: Practitioner]]" as E3 #salmon
     rectangle "[[StructureDefinition-ch-emr-observation-resuscitation-status.html Entry: Observation]]" as E4 #salmon
     rectangle "[[StructureDefinition-ch-emr-observation-cognitive-disability.html Entry: MedicationStatement]]" as E5 #salmon
     rectangle "[[StructureDefinition-ch-emr-observation-physical-disability.html Entry: Immunization]]" as E6 #salmon
@@ -42,7 +42,7 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
     rectangle "[[StructureDefinition-ch-emr-documentreference-advance-directive.html Entry: DocumentReference (AdvanceDirective)]]" as E10 #salmon
     rectangle "[[StructureDefinition-ch-emr-documentreference.html Entry: DocumentReference (Other)]]" as E11 #salmon
     rectangle "[[StructureDefinition-ch-emr-device.html Entry: Device]]" as E12 #salmon
-    rectangle "[[StructureDefinition-ch-emr-observation-pregnancy-status.html Entry: Observation (PregnancyStatus)]]" as E13 #salmon
+    rectangle "[[http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html Entry: Observation (PregnancyStatus)]]" as E13 #salmon
     rectangle "[[StructureDefinition-ch-emr-observation-cognitive-disability.html Entry: Observation (Cog)]]" as E14 #salmon
     rectangle "[[StructureDefinition-ch-emr-observation-physical-disability.html Entry: Observation (Phys)]]" as E15 #salmon
   }
