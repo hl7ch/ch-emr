@@ -8,6 +8,9 @@ Description: "Risk to healthcare personnel emanating from the patient — typica
 * code from ChEmrRiskToHealthcarePersonnelVS (extensible)
 * code obeys ch-emr-flag-code-content
 
+* subject only Reference($CHIPSPatient)
+* subject ^type.aggregation = #bundled
+
 Invariant: ch-emr-flag-code-content
 Description: "Flag.code must carry at least text or one coding."
 Expression: "text.exists() or coding.exists()"
