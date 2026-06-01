@@ -1,5 +1,5 @@
 Instance: UC3-AllergyIntolerance-Contrast
-InstanceOf: ChEmrAllergyIntolerance
+InstanceOf: $CHIPSAllergyIntolerance
 Usage: #example
 Title: "UC3-AllergyIntolerance-Contrast"
 Description: "Allergy to contrast mediums from Laura Weber"

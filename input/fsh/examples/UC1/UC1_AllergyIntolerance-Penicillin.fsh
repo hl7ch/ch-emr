@@ -1,5 +1,5 @@
 Instance: UC1-AllergyIntolerance-Penicillin
-InstanceOf: ChEmrAllergyIntolerance
+InstanceOf: $CHIPSAllergyIntolerance
 Usage: #example
 Title: "UC1-AllergyIntolerance-Penicillin"
 Description: "Example of penicillin allergy for Maria Schmidt"
