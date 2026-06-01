@@ -7,7 +7,8 @@ skinparam rectangle {
 skinparam nodesep 40
 skinparam ranksep 60
 
-skinparam minClassWidth 200
+' Force every box to the same minimum width so column alignment is stable
+skinparam minClassWidth 240
 
 ' Row labels (left column, left aligned)
 rectangle "<color:Gray><size:16>Core IGs   \l" as L1 #White;line:White
@@ -15,9 +16,9 @@ rectangle "<color:Gray><size:16>Domain IGs\l" as L2 #White;line:White
 rectangle "<color:Gray><size:16>EMR IG     \l" as L3 #White;line:White
 
 ' Invisible spacers that lock the grid columns
-rectangle "  " as SP_R1C2 #White;line:White
-rectangle "  " as SP_R3C2 #White;line:White
-rectangle "  " as SP_R3C4 #White;line:White
+rectangle "                    " as SP_R1C2 #White;line:White
+rectangle "                    " as SP_R3C2 #White;line:White
+rectangle "                    " as SP_R3C4 #White;line:White
 
 ' Column 2 (IPS in Domain row only)
 rectangle "**[[http://hl7.org/fhir/uv/ips/index.html IPS]]**\nInternational\nPatient Summary" as ips #White;line:DodgerBlue;line.bold;text:Black
@@ -31,7 +32,27 @@ rectangle "**[[http://fhir.ch/ig/ch-emr/index.html CH EMR]]**\nEmergency Record"
 rectangle "**[[http://fhir.ch/ig/ch-term/index.html CH Term]]**\nterminology" as chterm #White;line:Red;line.bold;text:Black
 rectangle "**[[http://fhir.ch/ig/ch-emed/index.html CH EMED]]**\neMedikation profiles" as chemed #White;line:Purple;line.bold;text:Black
 
-' Horizontal layout per row (every row has the same four columns)
+' together blocks ask Graphviz to put each set of rectangles at the same rank
+together {
+  L1
+  SP_R1C2
+  chcore
+  chterm
+}
+together {
+  L2
+  ips
+  chips
+  chemed
+}
+together {
+  L3
+  SP_R3C2
+  chemr
+  SP_R3C4
+}
+
+' Horizontal layout per row
 L1 -[hidden]right- SP_R1C2
 SP_R1C2 -[hidden]right- chcore
 chcore -[hidden]right- chterm
@@ -55,7 +76,7 @@ chterm -[hidden]down- chemed
 chemed -[hidden]down- SP_R3C4
 
 ' Dependency arrows
-chcore -right-> chterm #Silver : <color:Gray>derived
+chcore -right-> chterm #Silver : <color:Gray>uses
 chips -up-> chcore #Silver : <color:Gray>derived
 chips -left-> ips #Silver : <color:Gray>imposeProfile\n<color:Gray>Extension
 chemed -up-> chcore #Silver : <color:Gray>derived
