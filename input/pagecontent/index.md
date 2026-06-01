@@ -71,7 +71,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
 | [CH Emergency Record Observation Cognitive Disability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
 | [CH Emergency Record Physical Disability Observation](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
-| [CH Emergency Record AllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | AllergyIntolerance profile for allergies and intolerances in the Emergency Record. | [CH IPS AllergyIntolerance](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-allergyintolerance.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
  
 ### IP Statements
