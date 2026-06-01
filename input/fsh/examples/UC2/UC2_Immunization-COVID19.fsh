@@ -1,5 +1,5 @@
 Instance: UC2-Immunization-COVID19
-InstanceOf: ChEmrImmunization
+InstanceOf: $CHIPSImmunization
 Usage: #example
 Title: "UC2-Immunization-COVID19"
 Description: "Current COVID-19 XBB.1.5 booster with Spikevax"

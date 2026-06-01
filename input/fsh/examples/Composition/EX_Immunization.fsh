@@ -1,5 +1,5 @@
 Instance: EX-Immunization
-InstanceOf: ChEmrImmunization
+InstanceOf: $CHIPSImmunization
 Usage: #example
 Title: "EX-Immunization"
 Description: "General example of a vaccination"

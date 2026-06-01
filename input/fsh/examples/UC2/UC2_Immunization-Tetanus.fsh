@@ -1,5 +1,5 @@
 Instance: UC2-Immunization-Tetanus
-InstanceOf: ChEmrImmunization
+InstanceOf: $CHIPSImmunization
 Usage: #example
 Title: "UC2-Immunization-Tetanus"
 Description: "Tetanus-diphtheria-pertussis booster shot for fall prevention for Hans Meier"
