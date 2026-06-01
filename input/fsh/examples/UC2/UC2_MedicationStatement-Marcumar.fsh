@@ -1,5 +1,5 @@
 Instance: UC2-MedicationStatement-Marcumar
-InstanceOf: ChEmrMedicationStatement
+InstanceOf: $CHIPSMedicationStatement
 Usage: #example
 Title: "UC2-MedicationStatement-Marcumar"
 Description: "Example of Marcumar therapy for Hans Meier"
@@ -19,7 +19,7 @@ Description: "Example of Marcumar therapy for Hans Meier"
 * dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Marcumar
-InstanceOf: ChEmrMedication
+InstanceOf: $CHIPSMedication
 Description: "Example of Marcoumar 3 mg tablet medication"
 Usage: #example
 * code = urn:oid:2.51.1.1#7680193950011 "MARCOUMAR Tabl 3 mg"

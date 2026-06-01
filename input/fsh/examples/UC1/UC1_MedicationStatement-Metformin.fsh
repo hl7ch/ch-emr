@@ -1,5 +1,5 @@
 Instance: UC1-MedicationStatement-Metformin
-InstanceOf: ChEmrMedicationStatement
+InstanceOf: $CHIPSMedicationStatement
 Usage: #example
 Title: "UC1-MedicationStatement-Metformin"
 Description: "Example of metformin therapy for Maria Schmid"
