@@ -13,6 +13,9 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionCognitiveDisability 0..1 and
     sectionPhysicalDisability 0..1
 
+// Immunization
+* section[sectionImmunizations].entry[immunization] ^type.aggregation = #bundled
+
 // Device
 * section[sectionMedicalDevices].entry[deviceStatement] only Reference(ChEmrDeviceUseStatement)
 * section[sectionMedicalDevices].entry[deviceStatement] ^type.aggregation = #bundled

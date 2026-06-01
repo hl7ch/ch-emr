@@ -15,6 +15,8 @@ The **CH EMR** is primarily derived from the [CH IPS (International Patient Summ
 
 Both CH EMR and CH IPS depend on [CH Core](https://fhir.ch/ig/ch-core/index.html), which defines the Swiss-specific base profiles (e.g. patient, practitioner, organization) including Swiss identifiers such as AHV, GLN and EPR-SPID. [CH Term](https://fhir.ch/ig/ch-term/index.html) provides the shared Swiss terminologies, value sets and code systems used across all Swiss FHIR implementation guides.
 
+For the medication content, CH EMR additionally depends on [CH EMED](https://fhir.ch/ig/ch-emed/index.html), the Swiss eMedikation specification. CH EMR's Medication Statement reuses the CH EMED dosage profiles (`ch-emed-dosage` and `ch-emed-dosage-split`) so that dosing schedules in the Emergency Record follow the same structure as the rest of the Swiss eMedikation ecosystem.
+
 Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risk factors and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
 
 <div markdown="1" class="stu-note">
@@ -70,8 +72,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Observation Cognitive Disability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
 | [CH Emergency Record Physical Disability Observation](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
 | [CH Emergency Record AllergyIntolerance](StructureDefinition-ch-emr-allergyintolerance.html) | AllergyIntolerance profile for allergies and intolerances in the Emergency Record. | [CH IPS AllergyIntolerance](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-allergyintolerance.html) |
-| [CH Emergency Record Condition](StructureDefinition-ch-emr-condition.html) | Condition profile for problems and diagnoses in the Emergency Record. | [CH IPS Condition](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-condition.html) |
-| [CH Emergency Record Immunization](StructureDefinition-ch-emr-immunization.html) | Immunization profile for vaccinations in the Emergency Record. | [CH IPS Immunization](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-immunization.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
  
 ### IP Statements
