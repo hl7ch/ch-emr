@@ -1,10 +1,10 @@
 Instance: EX-RiskFactor
-InstanceOf: ChEmrConditionHealthcareProfessionalsRiskFactors
+InstanceOf: ChEmrFlagRiskToHealthcarePersonnel
 Usage: #example
 Title: "EX-RiskFactor"
-Description: "General example of a risk factors"
+Description: "Risk to healthcare personnel emanating from the patient — viral hepatitis type B."
 
-* clinicalStatus = $condition-clinical#active "Active"
-* code = $sct#66071002 "Viral hepatitis type B"
+* status = #active
+* category = http://terminology.hl7.org/CodeSystem/flag-category#safety "Safety"
+* code = $sct-ch#66071002
 * subject = Reference(EX-Patient)
-* recorder = Reference(EX-Practitioner)

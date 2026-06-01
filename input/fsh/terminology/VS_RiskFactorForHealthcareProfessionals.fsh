@@ -1,14 +1,12 @@
-ValueSet: ChEmrRiskFactorForHealthcareProfessionalsVS
-Id: ch-emr-risk-factor-healthcare-professionals-vs
-Title: "Infectious Disease Risk Factors"
-Description: "ValueSet containing codes for infectious disease risk factors"
+ValueSet: ChEmrRiskToHealthcarePersonnelVS
+Id: ch-emr-risk-to-healthcare-personnel-vs
+Title: "Risk to Healthcare Personnel"
+Description: "SNOMED CT concepts that may indicate a risk to healthcare personnel emanating from the patient. Includes the full Infectious disease and Parasitic disease hierarchies (active infections such as Hep B/C, HIV, TB, COVID-19, scabies, lice) plus the Hostility observable."
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
-* ^date = "2025-01-15"
+* ^date = "2026-06-01"
 
-* $sct#66071002 "Viral hepatitis type B"
-* $sct#50711007 "Viral hepatitis C"
-* $sct#86406008 "Human immunodeficiency virus infection"
-* $sct#713351000 "Multidrug-resistant bacteria"
-
+* include codes from system $sct-ch where concept is-a #40733004
+* include codes from system $sct-ch where concept is-a #442452003
+* $sct-ch#247472004
