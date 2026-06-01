@@ -1,5 +1,5 @@
 Instance: UC2-Condition-AtrialFibrillation
-InstanceOf: ChEmrCondition
+InstanceOf: $CHIPSCondition
 Usage: #example
 Title: "UC2-Condition-AtrialFibrillation"
 Description: "Beispiel einer Vorhofflimmern-Diagnose"

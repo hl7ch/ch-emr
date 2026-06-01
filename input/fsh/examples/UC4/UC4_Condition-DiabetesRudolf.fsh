@@ -1,5 +1,5 @@
 Instance: UC4-Condition-DiabetesRudolf
-InstanceOf: ChEmrCondition
+InstanceOf: $CHIPSCondition
 Usage: #example
 Title: "UC4-Condition-DiabetesRudolf"
 Description: "Type 2 diabetes mellitus"
