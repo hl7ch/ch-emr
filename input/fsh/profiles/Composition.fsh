@@ -59,8 +59,15 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionRiskFactors].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionRiskFactors].entry ^slicing.rules = #open
 * section[sectionRiskFactors].entry contains riskFactor 0..*
-* section[sectionRiskFactors].entry[riskFactor] only Reference(ChEmrConditionHealthcareProfessionalsRiskFactors)
+* section[sectionRiskFactors].entry[riskFactor] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
+* section[sectionRiskFactors].entry[riskFactor] MS
 * section[sectionRiskFactors].entry[riskFactor] ^type.aggregation = #bundled
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 // Advance directive
 * section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance directives"
