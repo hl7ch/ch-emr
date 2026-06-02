@@ -7,108 +7,108 @@ Description: "Codes for implant types"
 * ^version = "1.0.0"
 * ^date = "2025-01-15"
 
-* $sct#14789005 "Prosthetic implant"
-* $sct#84683006 "Aortic valve prosthesis (physical object)"
-* $sct#360046005 "Arterial stent (physical object)"
-* $sct#303608005 "Ophthalmological implant (physical object)"
-* $sct#421168009 "Eye sphere implant (physical object)"
-* $sct#2282003 "Prosthetic breast implant (physical object)"
-* $sct#63289001 "Surgical metal nail, device (physical object)"
-* $sct#43252007 "Cochlear prosthesis, device (physical object)"
-* $sct#360329004 "Polyethylene terephthalate graft (physical object)"
-* $sct#257327003 "Dynamic hip screw plate (physical object)"
-* $sct#303277008 "Fallopian tube prosthesis (physical object)"
-* $sct#102314001 "Embolization coil, device (physical object)"
-* $sct#272307009 "Endosseous oral implant (physical object)"
-* $sct#360104003 "Extracochlear prosthesis (physical object)"
-* $sct#74444006 "Limb prosthesis, device (physical object)"
-* $sct#304121006 "Femoral head prosthesis (physical object)"
-* $sct#304185004 "Foot joint implant (physical object)"
-* $sct#360123005 "Biliary stent (physical object)"
-* $sct#303617005 "Vascular implant (physical object)"
-* $sct#102303004 "Vascular prosthesis, device (physical object)"
-* $sct#314523008 "Joint implant (physical object)"
-* $sct#304186003 "Hand joint implant (physical object)"
-* $sct#34759008 "Urethral catheter, device (physical object)"
-* $sct#286576009 "Urethral stent (physical object)"
-* $sct#303619008 "Cardiac implant (physical object)"
-* $sct#25510005 "Cardiac valve prosthesis (physical object)"
-* $sct#303490004 "Cardiovascular implant (physical object)"
-* $sct#264824009 "Cardiac conduit (physical object)"
-* $sct#118375008 "Cardiac septum prosthesis, device (physical object)"
-* $sct#14106009 "Cardiac pacemaker, device (physical object)"
-* $sct#360129009 "Cardiac pacemaker lead (physical object)"
-* $sct#6012004 "Hearing aid, device (physical object)"
-* $sct#303500007 "Auditory implant (physical object)"
-* $sct#303533002 "Hip joint implant (physical object)"
-* $sct#67270000 "Hip prosthesis, device (physical object)"
-* $sct#417136005 "Ileostomy bag (physical object)"
-* $sct#342706005 "Ileostomy set (physical object)"
-* $sct#303618000 "Nervous system implant (physical object)"
-* $sct#72506001 "Implantable defibrillator, device (physical object)"
-* $sct#398013009 "Implantable venous access port (physical object)"
-* $sct#360041000 "Implanted drug delivery system (physical object)"
-* $sct#272287005 "Inlay dental restoration (physical object)"
-* $sct#360103009 "Intracochlear prosthesis (physical object)"
-* $sct#268460000 "Intrauterine contraceptive device (physical object)"
-* $sct#360058005 "Intraventricular pump (physical object)"
-* $sct#257366006 "JJ stent (physical object)"
-* $sct#413766009 "Carotid artery stent (physical object)"
-* $sct#19923001 "Catheter, device (physical object)"
-* $sct#360070009 "Laryngeal implant (physical object)"
-* $sct#414580007 "Laryngeal keel (physical object)"
-* $sct#272245008 "Maxillofacial prosthesis/appliance (physical object)"
-* $sct#63112008 "Bone wire, device (physical object)"
-* $sct#77777004 "Bone staple, device (physical object)"
-* $sct#271003 "Bone plate, device (physical object)"
-* $sct#360145006 "Bone prosthesis (physical object)"
-* $sct#68183006 "Bone screw, device (physical object)"
-* $sct#77444004 "Bone pin, device (physical object)"
-* $sct#339648008 "Colostomy bag (physical object)"
-* $sct#341036005 "Colostomy set (physical object)"
-* $sct#304070008 "Body wall implant (physical object)"
-* $sct#429798007 "Artificial vertebral disc (physical object)"
-* $sct#24073000 "Artificial cardiac valve prosthesis, device (physical object)"
-* $sct#257362008 "Plastic stent (physical object)"
-* $sct#257282009 "Non-valved conduit (physical object)"
-* $sct#360117000 "Gastric bubble (physical object)"
-* $sct#303499003 "Gastrointestinal implant (physical object)"
-* $sct#90134004 "Metal periosteal implant, device (physical object)"
-* $sct#257363003 "Metal stent (physical object)"
-* $sct#17107009 "Mitral valve prosthesis (physical object)"
-* $sct#303503009 "Musculoskeletal implant (physical object)"
-* $sct#25937001 "Neurostimulator, device (physical object)"
-* $sct#303515008 "Orbital implant (physical object)"
-* $sct#16349000 "Orthopedic device (physical object)"
-* $sct#31031000 "Orthopedic internal fixation system, device (physical object)"
-* $sct#45633005 "Peritoneal dialyzer, device (physical object)"
-* $sct#102319006 "Percutaneous transluminal angioplasty balloon, device (physical object)"
-* $sct#424921004 "Permanent cardiac pacemaker, device (physical object)"
-* $sct#360063009 "Prosthetic cardiac annuloplasty ring (physical object)"
-* $sct#423449009 "Pulmonary valve prosthesis (physical object)"
-* $sct#118378005 "Pacemaker pulse generator, device (physical object)"
-* $sct#304124003 "Shoulder joint implant (physical object)"
-* $sct#303726000 "Shoulder joint prosthesis (physical object)"
-* $sct#465380004 "Silicone gel-filled breast implant (physical object)"
-* $sct#118374007 "Silicone implant, device (physical object)"
-* $sct#304184000 "Ankle joint implant (physical object)"
-* $sct#303947005 "Rod fixation system (physical object)"
-* $sct#65818007 "Stent (physical object)"
-* $sct#304120007 "Total hip replacement prosthesis (physical object)"
-* $sct#360100007 "Tracheal stent (physical object)"
-* $sct#386124003 "Transseptal catheter (physical object)"
-* $sct#286558002 "Ureteric stent (physical object)"
-* $sct#303497001 "Urogenital implant (physical object)"
-* $sct#344088002 "Urostomy bag (physical object)"
-* $sct#344575009 "Urostomy set (physical object)"
-* $sct#257283004 "Valved cardiac conduit (physical object)"
-* $sct#258593008 "Ventricular shunt (physical object)"
-* $sct#118425005 "Cerebral ventricular reservoir device (physical object)"
-* $sct#257275005 "Spinal cage (physical object)"
-* $sct#257343005 "Xenograft cardiac valve (physical object)"
-* $sct#27606000 "Dental prosthesis, device (physical object)"
-* $sct#52124006 "Central venous catheter, device (physical object)"
-* $sct#69805005 "Insulin pump, device (physical object)"
+* $sct-ch#14789005
+* $sct-ch#84683006
+* $sct-ch#360046005
+* $sct-ch#303608005
+* $sct-ch#421168009
+* $sct-ch#2282003
+* $sct-ch#63289001
+* $sct-ch#43252007
+* $sct-ch#360329004
+* $sct-ch#257327003
+* $sct-ch#303277008
+* $sct-ch#102314001
+* $sct-ch#272307009
+* $sct-ch#360104003
+* $sct-ch#74444006
+* $sct-ch#304121006
+* $sct-ch#304185004
+* $sct-ch#360123005
+* $sct-ch#303617005
+* $sct-ch#102303004
+* $sct-ch#314523008
+* $sct-ch#304186003
+* $sct-ch#34759008
+* $sct-ch#286576009
+* $sct-ch#303619008
+* $sct-ch#25510005
+* $sct-ch#303490004
+* $sct-ch#264824009
+* $sct-ch#118375008
+* $sct-ch#14106009
+* $sct-ch#360129009
+* $sct-ch#6012004
+* $sct-ch#303500007
+* $sct-ch#303533002
+* $sct-ch#67270000
+* $sct-ch#417136005
+* $sct-ch#342706005
+* $sct-ch#303618000
+* $sct-ch#72506001
+* $sct-ch#398013009
+* $sct-ch#360041000
+* $sct-ch#272287005
+* $sct-ch#360103009
+* $sct-ch#268460000
+* $sct-ch#360058005
+* $sct-ch#257366006
+* $sct-ch#413766009
+* $sct-ch#19923001
+* $sct-ch#360070009
+* $sct-ch#414580007
+* $sct-ch#272245008
+* $sct-ch#63112008
+* $sct-ch#77777004
+* $sct-ch#271003
+* $sct-ch#360145006
+* $sct-ch#68183006
+* $sct-ch#77444004
+* $sct-ch#339648008
+* $sct-ch#341036005
+* $sct-ch#304070008
+* $sct-ch#429798007
+* $sct-ch#24073000
+* $sct-ch#257362008
+* $sct-ch#257282009
+* $sct-ch#360117000
+* $sct-ch#303499003
+* $sct-ch#90134004
+* $sct-ch#257363003
+* $sct-ch#17107009
+* $sct-ch#303503009
+* $sct-ch#25937001
+* $sct-ch#303515008
+* $sct-ch#16349000
+* $sct-ch#31031000
+* $sct-ch#45633005
+* $sct-ch#102319006
+* $sct-ch#424921004
+* $sct-ch#360063009
+* $sct-ch#423449009
+* $sct-ch#118378005
+* $sct-ch#304124003
+* $sct-ch#303726000
+* $sct-ch#465380004
+* $sct-ch#118374007
+* $sct-ch#304184000
+* $sct-ch#303947005
+* $sct-ch#65818007
+* $sct-ch#304120007
+* $sct-ch#360100007
+* $sct-ch#386124003
+* $sct-ch#286558002
+* $sct-ch#303497001
+* $sct-ch#344088002
+* $sct-ch#344575009
+* $sct-ch#257283004
+* $sct-ch#258593008
+* $sct-ch#118425005
+* $sct-ch#257275005
+* $sct-ch#257343005
+* $sct-ch#27606000
+* $sct-ch#52124006
+* $sct-ch#69805005
 
 
 

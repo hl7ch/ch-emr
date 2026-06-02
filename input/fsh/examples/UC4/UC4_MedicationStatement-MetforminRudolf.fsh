@@ -1,5 +1,5 @@
 Instance: UC4-MedicationStatement-MetforminRudolf
-InstanceOf: $CHIPSMedicationStatement
+InstanceOf: $ChIpsMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-MetforminRudolf"
 Description: "Metformin therapy for diabetes"

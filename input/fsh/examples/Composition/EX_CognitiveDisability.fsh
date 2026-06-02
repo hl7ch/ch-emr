@@ -5,7 +5,7 @@ Title: "EX-CognitiveDisability"
 Description: "Example: Dementia"
 
 * status = #final
-* code = $sct#52448006 "Dementia (disorder)"
+* code = $sct-ch#52448006
 * subject = Reference(EX-Patient)
 * effectiveDateTime = "2025-10-08"
 * performer = Reference(EX-Practitioner)

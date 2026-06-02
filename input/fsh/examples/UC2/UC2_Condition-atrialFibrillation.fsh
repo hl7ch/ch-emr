@@ -1,14 +1,14 @@
 Instance: UC2-Condition-AtrialFibrillation
-InstanceOf: $CHIPSCondition
+InstanceOf: $ChIpsCondition
 Usage: #example
 Title: "UC2-Condition-AtrialFibrillation"
 Description: "Beispiel einer Vorhofflimmern-Diagnose"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* severity = $sct#24484000 "Severe"
-* code = $sct#49436004 "Atrial fibrillation"
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* category = $condition-category#problem-list-item
+* severity = $sct-ch#24484000
+* code = $sct-ch#49436004
 * subject = Reference(UC2-Patient-HansMeier)
 * onsetDateTime = "2020-01-15"
 * recordedDate = "2020-01-15"

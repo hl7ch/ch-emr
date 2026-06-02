@@ -1,5 +1,5 @@
 Instance: UC2-Practitioner-DrSchmidt
-InstanceOf: $CHIPSPractitioner
+InstanceOf: $ChIpsPractitioner
 Usage: #example
 Title: "UC2-Practitioner-DrSchmidt"
 Description: "Cardiologist for Hans Meier"
@@ -31,6 +31,6 @@ Description: "Cardiologist for Hans Meier"
 * address.country = "CH"
 
 // Qualification
-* qualification.code = $sct#17561000 "Cardiologist"
+* qualification.code = $sct-ch#17561000
 * qualification.period.start = "2005-06-01"
 * qualification.issuer.display = "Medizinische Fakultät Universität Zürich"

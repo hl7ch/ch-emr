@@ -5,9 +5,9 @@ Title: "CH Emergency Record Observation Resuscitation Status"
 Description: "Observation profile for documenting the patient's resuscitation (code) status."
 
 * subject 1..1 MS
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
-* performer only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* performer only Reference($ChIpsPractitioner or $ChIpsPractitionerRole or $ChIpsOrganization or $ChIpsPatient or ChEmrRelatedPerson)
 * performer ^type.aggregation = #bundled
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * subject ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
@@ -24,7 +24,7 @@ Description: "Observation profile for documenting the patient's resuscitation (c
 * effective[x] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * effective[x] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
-* code = $sct#304251008 "Resuscitation status"
+* code = $sct-ch#304251008
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from ChEmrResuscitationStatusVS (extensible)

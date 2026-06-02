@@ -9,7 +9,7 @@ Description: "General example of a Document References"
 * subject = Reference(Patient/EX-Patient)
 * date = "2025-07-15T14:30:00+02:00"
 * author = Reference(Patient/EX-Patient)
-* type = $sct#772790007 "Organ donor card"
+* type = $sct-ch#772790007
 * description = "Organspendeausweis ist im Protmonnaie"
 
 * content.attachment.contentType = #application/pdf

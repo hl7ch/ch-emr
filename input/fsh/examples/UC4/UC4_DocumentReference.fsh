@@ -9,7 +9,7 @@ Description: "Patientenverfügung von Rudolf Zimmermann"
 * subject = Reference(Patient/UC4-Patient-RudolfZimmermann)
 * date = "2025-07-15T14:30:00+02:00"
 * author = Reference(Patient/UC4-Patient-RudolfZimmermann)
-* type = $loinc#93037-0 "Portable medical order form"
+* type = $loinc#93037-0
 * category = $sct-ch#1264561001
 * description = "Patientenverfügung von Rudolf Zimmermann"
 

@@ -1,5 +1,5 @@
 Instance: UC1-Organization-Hausarztpraxis
-InstanceOf: $CHIPSOrganization
+InstanceOf: $ChIpsOrganization
 Usage: #example
 Title: "UC1-Organization-Hausarztpraxis"
 Description: "Dr. Müller's family practice"
@@ -29,6 +29,6 @@ Description: "Dr. Müller's family practice"
 * address.postalCode = "8001"
 * address.country = "CH"
 
-* type = $sct#394802001 "General medicine"
+* type = $sct-ch#394802001
 * type.text = "Allgemeine Innere Medizin"
 

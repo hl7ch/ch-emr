@@ -1,5 +1,5 @@
 Instance: UC3-Practitioner-Hausarzt
-InstanceOf: $CHIPSPractitioner
+InstanceOf: $ChIpsPractitioner
 Usage: #example
 Title: "UC3-Practitioner-Hausarzt"
 Description: "Laura Weber's family doctor"

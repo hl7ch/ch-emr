@@ -11,7 +11,7 @@ Description: "Künstliches Hüftgelenk links"
 * identifier[1].value = "Zimmer Biomet Taperloc"
 
 * status = #active
-* type = $sct#304120007 "Total hip replacement prosthesis"
+* type = $sct-ch#304120007
 * patient = Reference(UC4-Patient-RudolfZimmermann)
 
 * udiCarrier.deviceIdentifier = "00886982344128"

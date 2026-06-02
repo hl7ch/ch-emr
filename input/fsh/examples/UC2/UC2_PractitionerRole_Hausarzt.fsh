@@ -1,5 +1,5 @@
 Instance: UC2-PractitionerRole-Hausarzt
-InstanceOf: $CHIPSPractitionerRole
+InstanceOf: $ChIpsPractitionerRole
 Usage: #example
 Title: "UC2-PractitionerRole-Hausarzt"
 Description: "Dr. Hans Müller working as family doctor at his practice in Bern"
@@ -12,10 +12,10 @@ Description: "Dr. Hans Müller working as family doctor at his practice in Bern"
 * organization = Reference(Organization/UC2-Organization-Hausarzt)
 * organization.display = "Hausarztpraxis Dr. Müller, Zürich"
 
-* code = $sct#309343006 "Physician"
+* code = $sct-ch#309343006
 * code.text = "Arzt"
 
-* specialty = $sct#419772000 "Family practice"
+* specialty = $sct-ch#419772000
 * specialty.text = "Allgemeine Innere Medizin"
 
 * telecom[0].system = #phone

@@ -1,15 +1,15 @@
 Instance: UC1-AllergyIntolerance-Penicillin
-InstanceOf: $CHIPSAllergyIntolerance
+InstanceOf: $ChIpsAllergyIntolerance
 Usage: #example
 Title: "UC1-AllergyIntolerance-Penicillin"
 Description: "Example of penicillin allergy for Maria Schmidt"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* clinicalStatus = $allergyintolerance-clinical#active
+* verificationStatus = $allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct#764146007 "Penicillin"
+* code = $sct-ch#764146007
 * patient = Reference(UC1-Patient-MariaSchmidt)
 * onsetDateTime = "1985-08-20"
 * recordedDate = "2015-06-15"

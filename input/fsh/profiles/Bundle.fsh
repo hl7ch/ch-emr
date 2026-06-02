@@ -1,11 +1,11 @@
 Profile: ChEmrDocument
-Parent: $CHIPSDocument
+Parent: $ChIpsDocument
 Id: ch-emr-bundle
 Title: "CH Emergency Record Bundle"
 Description: "Bundle profile for Emergency Record."
 
 * entry[Composition].resource only ChEmrComposition
-* entry[Patient].resource only $CHIPSPatient
+* entry[Patient].resource only $ChIpsPatient
 * entry[Patient].resource.communication.language MS
 * entry[Patient].resource.communication.language ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * entry[Patient].resource.communication.language ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator

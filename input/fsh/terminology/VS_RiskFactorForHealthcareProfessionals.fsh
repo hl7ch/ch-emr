@@ -12,7 +12,6 @@ Branches that do not pose a meaningful staff-transmission risk (anatomical-locat
 
 * include codes from system $sct-ch where concept is-a #34014006
 * include codes from system $sct-ch where concept is-a #87628006
-* include codes from system $sct-ch where concept is-a #8098009
 * include codes from system $sct-ch where concept is-a #275498002
 * include codes from system $sct-ch where concept is-a #408678008
 * include codes from system $sct-ch where concept is-a #402139000

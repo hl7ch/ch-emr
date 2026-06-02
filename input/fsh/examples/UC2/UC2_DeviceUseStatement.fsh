@@ -10,4 +10,4 @@ Description: "Hans Meier trägt einen Herzschrittmacher"
 * timingDateTime = "2023-05-15"
 * recordedOn = "2023-05-15"
 
-* bodySite = $sct#80891009 "Heart structure"
+* bodySite = $sct-ch#80891009
