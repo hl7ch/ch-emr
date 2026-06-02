@@ -8,10 +8,28 @@ Description: "Use of an implanted device in the Emergency Record. The `bodySite`
 * device only Reference(ChEmrDevice)
 * bodySite 0..1 MS
 * bodySite from $bodySiteVS (preferred)
-* bodySite.coding 1..1 MS
 * bodySite obeys ch-emr-dus-bodysite-matches-bodystructure
+* bodySite ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* bodySite ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* bodySite ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* bodySite ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* bodySite ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* bodySite ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* bodySite.coding 1..1 MS
+* bodySite.coding ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* bodySite.coding ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* bodySite.coding ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* bodySite.coding ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* bodySite.coding ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* bodySite.coding ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * bodySite.extension contains ChEmrBodyStructureReference named bodyStructure 0..1 MS
 * bodySite.extension[bodyStructure].valueReference only Reference(ChEmrBodyStructure)
+* bodySite.extension[bodyStructure] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* bodySite.extension[bodyStructure] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* bodySite.extension[bodyStructure] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* bodySite.extension[bodyStructure] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* bodySite.extension[bodyStructure] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* bodySite.extension[bodyStructure] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 Invariant: ch-emr-dus-bodysite-matches-bodystructure
 Severity: #error
