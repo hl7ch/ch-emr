@@ -13,5 +13,5 @@ Description: "Current COVID-19 XBB.1.5 booster with Spikevax"
 
 * lotNumber = "SPX24XBB002"
 
-* protocolApplied.targetDisease = $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2"
+* protocolApplied.targetDisease = $sct-ch#840539006
 * protocolApplied.doseNumberPositiveInt = 6

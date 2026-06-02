@@ -10,6 +10,6 @@ Description: "Rudolf Zimmermann trägt eine Hüftgelenk-Prothese links"
 * recordedOn = "2018-04-15"
 * timingDateTime = "2018-04-15"
 
-* bodySite = $sct#29836001 "Hip region structure"
+* bodySite = $sct-ch#29836001
 * bodySite.text = "Left hip region structure"
 * bodySite.extension[bodyStructure].valueReference = Reference(UC4-BodyStructure-LeftHip)

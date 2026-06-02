@@ -7,7 +7,7 @@ Description: "Dr. Weber's role as family doctor for Rudolf Zimmermann"
 * practitioner = Reference(UC4-Practitioner-DrWeber)
 * organization = Reference(UC4-Organization-Hausarzt)
 
-* code = $sct#59058001 "General physician"
+* code = $sct-ch#59058001
 
 * telecom[0].system = #phone
 * telecom[=].value = "+41 61 271 88 88"

@@ -31,6 +31,6 @@ Description: "Family doctor of Maria Schmidt"
 * address.country = "CH"
 
 // Qualification
-* qualification.code = $sct#408443003 "General medical practice"
+* qualification.code = $sct-ch#408443003
 * qualification.period.start = "1995-06-01"
 * qualification.issuer.display = "Medizinische Fakultät Universität Zürich"

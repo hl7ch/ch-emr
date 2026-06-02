@@ -24,7 +24,7 @@ Description: "Observation profile for documenting the patient's resuscitation (c
 * effective[x] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * effective[x] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
-* code = $sct#304251008 "Resuscitation status"
+* code = $sct-ch#304251008
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from ChEmrResuscitationStatusVS (extensible)

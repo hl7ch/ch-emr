@@ -7,9 +7,9 @@ Description: "Value sets for the types of disabilities"
 * ^version = "1.0.0"
 * ^date = "2025-01-15"
 
-* $sct#397540003 "visual impairment"
-* $sct#15188001 "hearing impairment"
-* $sct#128188000 "Cerebral palsy"
-* $sct#257277002 "Neuromuscular disorder"
-* $sct#228158008 "Walking disability (finding)"
+* $sct-ch#397540003
+* $sct-ch#15188001
+* $sct-ch#128188000
+* $sct-ch#257277002
+* $sct-ch#228158008
 

@@ -6,7 +6,7 @@ Description: "General example of a Pregnancy"
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#social-history
-* code = $loinc#82810-3 "Pregnancy status"
+* code = $loinc#82810-3
 * subject = Reference(EX-Patient)
 * effectiveDateTime = "2025-09-10T10:00:00+02:00"
 * performer = Reference(EX-Practitioner)

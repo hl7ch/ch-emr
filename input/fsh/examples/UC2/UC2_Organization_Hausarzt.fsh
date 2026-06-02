@@ -27,5 +27,5 @@ Description: "Family practice Dr. Müller"
 * address.postalCode = "3025"
 * address.country = "CH"
 
-* type = $sct#394802001 "General medicine"
+* type = $sct-ch#394802001
 * type.text = "Allgemeine Innere Medizin"

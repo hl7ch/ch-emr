@@ -5,7 +5,7 @@ Title: "UC2-Device-Pacemaker"
 Description: "Beispiel eines MRT-sicheren Herzschrittmachers"
 
 * status = #active
-* type = $sct#14106009 "Cardiac pacemaker"
+* type = $sct-ch#14106009
 
 * patient = Reference(UC2-Patient-HansMeier)
 

@@ -9,7 +9,7 @@ Description: "Example of penicillin allergy for Maria Schmidt"
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct#764146007 "Penicillin"
+* code = $sct-ch#764146007
 * patient = Reference(UC1-Patient-MariaSchmidt)
 * onsetDateTime = "1985-08-20"
 * recordedDate = "2015-06-15"

@@ -14,7 +14,7 @@ Description: "Tetanus-diphtheria-pertussis booster shot for fall prevention for 
 
 * lotNumber = "ADC22CH005"
 
-* protocolApplied.targetDisease[0] = $sct#76902006 "Tetanus"
-* protocolApplied.targetDisease[1] = $sct#397430003 "Diphtheria"  
-* protocolApplied.targetDisease[2] = $sct#27836007 "Pertussis"
+* protocolApplied.targetDisease[0] = $sct-ch#76902006
+* protocolApplied.targetDisease[1] = $sct-ch#397430003  
+* protocolApplied.targetDisease[2] = $sct-ch#27836007
 * protocolApplied.doseNumberPositiveInt = 1

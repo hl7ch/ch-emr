@@ -9,7 +9,7 @@ Description: "Allergy to contrast mediums from Laura Weber"
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct#293637006 "Allergy to contrast media (finding)"
+* code = $sct-ch#293637006
 * patient = Reference(UC3-Patient-LauraWeber)
 * onsetDateTime = "2018-05-20"
 * recordedDate = "2025-01-15"

@@ -30,7 +30,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionMedications].entry[medicationStatementOrRequest] ^type.aggregation = #bundled
 
 //Related person
-* section[sectionEmergencyContacts].code = $loinc#56864-2 "Emergency contact"
+* section[sectionEmergencyContacts].code = $loinc#56864-2
 * section[sectionEmergencyContacts].entry ^slicing.discriminator.type = #profile
 * section[sectionEmergencyContacts].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionEmergencyContacts].entry ^slicing.rules = #open
@@ -39,7 +39,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionEmergencyContacts].entry[relatedPerson] ^type.aggregation = #bundled
 
 // Care Team
-* section[sectionCareTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[sectionCareTeam].code = $loinc#85847-2
 * section[sectionCareTeam].entry ^slicing.discriminator.type = #profile
 * section[sectionCareTeam].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionCareTeam].entry ^slicing.rules = #open
@@ -50,7 +50,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCareTeam].entry[practitionerRole] ^type.aggregation = #bundled
 
 //Resuscitation
-* section[sectionResuscitation].code = $loinc#100822-6 "Cardiopulmonary resuscitation orders"
+* section[sectionResuscitation].code = $loinc#100822-6
 * section[sectionResuscitation].entry ^slicing.discriminator.type = #profile
 * section[sectionResuscitation].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionResuscitation].entry ^slicing.rules = #open
@@ -59,7 +59,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionResuscitation].entry[observation] ^type.aggregation = #bundled
 
 // Risk Factors
-* section[sectionRiskFactors].code = $loinc#46467-7 "Risk factors"
+* section[sectionRiskFactors].code = $loinc#46467-7
 * section[sectionRiskFactors].entry ^slicing.discriminator.type = #profile
 * section[sectionRiskFactors].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionRiskFactors].entry ^slicing.rules = #open
@@ -75,7 +75,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 // Advance directive
-* section[sectionAdvanceDirectives].code = $loinc#42348-3 "Advance directives"
+* section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #profile
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionAdvanceDirectives].entry ^slicing.rules = #open
@@ -84,7 +84,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAdvanceDirectives].entry[advanceDirective] ^type.aggregation = #bundled
 
 //OtherDocuments
-* section[sectionOtherDocuments].code = $loinc#55108-5 "Clinical presentation Document"
+* section[sectionOtherDocuments].code = $loinc#55108-5
 * section[sectionOtherDocuments].entry ^slicing.discriminator.type = #profile
 * section[sectionOtherDocuments].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionOtherDocuments].entry ^slicing.rules = #open
@@ -93,7 +93,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionOtherDocuments].entry[document] ^type.aggregation = #bundled
 
 //Disability
-* section[sectionCognitiveDisability].code = $loinc#66610-7 "Cognitive impairment"
+* section[sectionCognitiveDisability].code = $loinc#66610-7
 * section[sectionCognitiveDisability].entry ^slicing.discriminator.type = #profile
 * section[sectionCognitiveDisability].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionCognitiveDisability].entry ^slicing.rules = #open
@@ -101,7 +101,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCognitiveDisability].entry[observation] only Reference(ChEmrObservationCognitiveDisability)
 * section[sectionCognitiveDisability].entry[observation] ^type.aggregation = #bundled
 
-* section[sectionPhysicalDisability].code = $loinc#96386-8 "Physical impairment information"
+* section[sectionPhysicalDisability].code = $loinc#96386-8
 * section[sectionPhysicalDisability].entry ^slicing.discriminator.type = #profile
 * section[sectionPhysicalDisability].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionPhysicalDisability].entry ^slicing.rules = #open

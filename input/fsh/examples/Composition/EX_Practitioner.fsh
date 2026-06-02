@@ -29,7 +29,7 @@ Description: "General example of a practitioner"
 
 * gender = #female
 
-* qualification[0].code = $sct#394586005 "Gynecology"
+* qualification[0].code = $sct-ch#394586005
 * qualification[0].code.text = "Gynäkologie und Geburtshilfe"
 * qualification[0].period.start = "2005-01-01"
 * qualification[0].issuer.display = "Schweizerische Gesellschaft für Gynäkologie und Geburtshilfe (SGGG)"

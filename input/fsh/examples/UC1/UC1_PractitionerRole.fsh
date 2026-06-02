@@ -15,11 +15,11 @@ Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Züric
 * organization.display = "Hausarztpraxis Zürich"
 
 // Rolle
-* code = $sct#309343006 "Physician"
+* code = $sct-ch#309343006
 * code.text = "Arzt"
 
 // Fachrichtung
-* specialty = $sct#419772000 "Family practice"
+* specialty = $sct-ch#419772000
 * specialty.text = "Allgemeine Innere Medizin"
 
 // Kontaktdaten (der Praxis)
