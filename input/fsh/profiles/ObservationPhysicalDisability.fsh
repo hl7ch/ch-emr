@@ -6,5 +6,7 @@ Description: "Observation profile for physical disability in the Emergency Recor
 * status MS
 * subject 1..1 MS
 * subject only Reference($CHIPSPatient)
+* subject ^type.aggregation = #bundled
+* effective[x] MS
 * code 1..1 MS
 * code from ChEmrPhysicalDisabilityTypesVS (extensible)
