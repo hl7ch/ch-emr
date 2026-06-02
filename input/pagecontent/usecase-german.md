@@ -1,59 +1,184 @@
-Diese Seite beschreibt realistische medizinische Szenarien für die Verwendung des eNotfallpass. Alle Beispiele sind vollständig im Implementation Guide implementiert und referenzierbar.
+Im Folgenden wird das Austauschformat eNotfallpass detailliert beschrieben, um die Anwendungsfälle und Vorteile für die Implementierung in der Praxis näher zu erläutern.
 
-### Use Case 1: Diabetikerin mit Penicillin-Allergie
+> Hinweis: In den nachfolgenden Anwendungsfällen werden zur Vereinfachung der Übersicht jeweils nur die Felder des eNotfallpasses aufgeführt, welche für den Anwendungsfall relevant sind.
 
-[Maria Schmidt](Patient-UC1-Patient-MariaSchmidt.html), 47 Jahre alt, wird bewusstlos in ihrer Wohnung an der Musterstrasse 123 in 8001 Zürich aufgefunden. Ihr Ehemann [Peter Schmidt](RelatedPerson-UC1-RelatedPerson-PeterSchmidt.html) alarmiert den Rettungsdienst um 14:30 Uhr.
+### Anwendungsfall 1: Bewusstlose Person im Spitalnotfall
 
-Bei Ankunft des Notarztes ist die Patientin ansprechbar, aber verwirrt. Die klinische Untersuchung zeigt Symptome einer schweren Hypoglykämie mit kaltem Schweiss, Zittern und Verwirrtheit. Aus dem eNotfallpass ist ersichtlich, dass Maria an [Diabetes mellitus Typ 2](Condition-UC1-Condition-Diabetes.html) leidet, der seit 2015 mit [Metformin](MedicationStatement-UC1-MedicationStatement-Metformin.html) behandelt wird.
+Herr [Muster Max](Patient-UC1-Patient-MusterMax.html) geb. 01.01.64 wird von Passanten bewusstlos am Bahnhof vorgefunden. Der Rettungsdienst wird alarmiert. Durch Identifikation via Ausweis wird die Identität von Herr Muster festgestellt und es erfolgt ein Zugriff auf das EPD/eNotfallpass durch den Rettungsdienst.
 
-Kritisch ist die dokumentierte [Penicillin-Allergie](AllergyIntolerance-UC1-AllergyIntolerance-Penicillin.html) mit anaphylaktischer Reaktion in der Kindheit. Diese Information verhindert die versehentliche Gabe von Beta-Lactam-Antibiotika bei einer möglichen Sekundärinfektion.
+Sie können so bereits die folgenden Daten abrufen:
 
-Der Notarzt kann sofort eine Glukose-Infusion verabreichen. Als Notfallkontakt wird der [Ehemann](RelatedPerson-UC1-RelatedPerson-PeterSchmidt.html) unter der Nummer +41 44 321 65 87 kontaktiert. Als weitere Angehörige ist [Anna Müller](RelatedPerson-UC1-RelatedPerson-AnnaMueller.html) unter +41 31 456 78 90 hinterlegt.
+**Problemliste/Diagnoseliste**
 
-Die Patientin erholt sich schnell und kann nach Stabilisierung zu Hause bleiben. Die Hypoglykämie war vermutlich durch eine vergessene Mahlzeit bei normaler Metformin-Dosis entstanden. Der behandelnde [Hausarzt Dr. med. Müller](Practitioner-UC1-Practitioner-DrMueller.html) wird über den Vorfall informiert.
+| Jahr | Diagnose |
+|------|----------|
+| 2015 | [Koronare Herzkrankheit](Condition-UC1-Condition-KoronareHerzkrankheit.html) |
+| 2016 | [Hypertonie](Condition-UC1-Condition-Hypertonie.html) |
 
-Den vollständigen [eNotfallpass für Maria Schmidt](Bundle-UC1-Bundle-emr-MariaSchmidt.html) zeigt alle relevanten medizinischen Informationen strukturiert und referenzierbar.
+**Medikation**
 
-### Use Case 2: Herzschrittmacher-Patient mit MRT-Indikation
+| Präparatename | Wirkstoffname | Dosis pro Einheit | Dosierung | Behandlungsgrund |
+|---------------|---------------|-------------------|-----------|------------------|
+| [Beloc Zok®](MedicationStatement-UC1-MedicationStatement-BelocZok.html) | Metoprolol | 50 mg / Tbl | 1-0-0.5-0 | Bluthochdruck |
+| [Plavix®](MedicationStatement-UC1-MedicationStatement-Plavix.html) | Clopidogrel | 75 mg / Tbl | 1-0-0-0 | Prophylaxe Schlaganfall |
 
-[Hans Meier](Patient-UC2-Patient-HansMeier.html), 72 Jahre alt, stürzt beim Wandern und wird mit Verdacht auf eine Schenkelhalsfraktur ins Spital eingeliefert. Eine MRT-Untersuchung zur genauen Diagnosestellung ist indiziert.
+**Allergien**
 
-Aus dem eNotfallpass geht hervor, dass dem Patienten 2020 ein [Herzschrittmacher](Device-UC2-Device-Pacemaker.html) implantiert wurde.
+Keine
 
-Diese Information ermöglicht es dem Radiologen, die MRT-Untersuchung nach entsprechenden Sicherheitsprotokollen durchzuführen, ohne den Schrittmacher zuvor deaktivieren zu müssen.
+**Notfallkontakte**
 
-Zusätzlich ist dokumentiert, dass der Patient [Marcumar zur Antikoagulation](MedicationStatement-UC2-MedicationStatement-Marcumar.html) einnimmt, was bei einer möglichen Operation berücksichtigt werden muss. Die Medikation wurde von seinem behandelnden Kardiologen Dr. med. Thomas Weber verordnet.
+| Name | Beziehung | Mobil | Kommunikationssprache |
+|------|-----------|-------|------------------------|
+| [Muster Vreni](RelatedPerson-UC1-RelatedPerson-VreniMuster.html) | Ehefrau | +41 78 876 54 32 | Deutsch |
 
-Da Herr Meier als Herzpatient zu den Risikopersonen gehört, zeigt der eNotfallpass seinen aktuellen Immunisierungsstatus: [Grippeimpfung](Immunization-UC2-Immunization-Influenza.html) vom 15.10.2024 und [COVID-19](Immunization-UC2-Immunization-COVID19.html)Auffrischung vom 12.09.2024. Bei dem Sturz relevant ist auch die [Tetanus-Auffrischung](Immunization-UC2-Immunization-Tetanus.html) vom 18.03.2022, die noch 8 Jahre gültig ist - wichtige Information für die Wundversorgung.
+**Hinterlegte Dokumente**
 
-Der behandelnde Unfallchirurg kann die MRT-Untersuchung sicher durchführen und bei Bedarf die Kardiologin [Dr. med. Schmidt](Practitioner-UC2-Practitioner-DrSchmidt.html) für die perioperative Antikoagulations-Planung konsultieren. Als Notfallkontakt wird Ehefrau [Elisabeth Meier](RelatedPerson-UC2-RelatedPerson-ElisabethMeier.html) unter +41 31 456 78 90 informiert, sowie sein Hausarzt [Dr. med. Müller](Practitioner-UC2-Practitioner-DrMueller.html).
+| Dokument | Jahr | Ablageort |
+|----------|------|-----------|
+| [Ärztliche Notanordnung](DocumentReference-UC1-DocumentReference-Notanordnung.html) | 2024 | EPD |
+| [Patientenverfügung](DocumentReference-UC1-DocumentReference-Patientenverfuegung.html) | 2022 | Hausarzt |
 
-Den vollständigen [eNotfallpass für Hans Meier](Bundle-UC2-Bundle-emr-HansMeier.html) enthält alle relevanten Informationen für die sichere Behandlung.
+**Andere Dokumente**
 
-### Use Case 3: Schwangere mit Reanimationsverfügung
+| Dokument | Jahr | Ablageort |
+|----------|------|-----------|
+| [Schrittmacherausweis](DocumentReference-UC1-DocumentReference-Schrittmacherausweis.html) | 2015 | EPD |
 
-[Laura Weber](Patient-UC3-Patient-LauraWeber.html), 28 Jahre alt, wird in der 32. Schwangerschaftswoche nach einem Verkehrsunfall bewusstlos in die Notaufnahme eingeliefert. Der eNotfallpass zeigt eine [aktuelle Schwangerschaft](Observation-UC3-Observation-Pregnancy.html) mit einem erwarteten Geburtstermin am 15. November 2025.
+**Implantate**
 
-Besonders relevant ist die dokumentierte [Patientenverfügung](DocumentReference-UC3-AdvanceDirective.html), in der die Patientin für den Fall schwerer Komplikationen eine Reanimation nur dann wünscht, wenn das ungeborene Kind gerettet werden kann. Diese Information ist entscheidend für die Behandlungsstrategie des Notfallteams.
+| Implantat | Jahr |
+|-----------|------|
+| [Herzschrittmacher](DeviceUseStatement-UC1-DeviceUseStatement-Pacemaker.html) | 2015 |
 
-Die Patientin hat eine bekannte [Allergie gegen Kontrastmittel](AllergyIntolerance-UC3-AllergyIntolerance-Contrast.html) mit Hautreaktionen dokumentiert. Als Notfallkontakt ist ihr Partner [Michael Weber](RelatedPerson-UC3-RelatedPerson-MichaelWeber.html) unter +41 79 555 12 34 hinterlegt. Im eNotfallpass sind zudem ihre behandelnde Gynäkologin [Dr. med. Sarah Semmelbruch](Practitioner-UC3-Practitioner-DrSemmelbruch.html) sowie ihr Hausarzt [Dr. med. Hans Müller](Practitioner-UC3-Practitioner-Hausarzt.html) dokumentiert.
+Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat und einen Schrittmacher trägt sowie eine Therapie mit Plavix und Beloc Zoc einnimmt. Basierend auf diesen Informationen und weiterer Diagnostik kann die Situation beurteilt, und das Zielspital explizit definiert werden. Der Rettungsdienst bringt den Patienten weiterhin bewusstlos ins entsprechende Spital.
 
-Der behandelnde Notarzt koordiniert die Versorgung unter Berücksichtigung der besonderen Umstände. Die Patientin stabilisiert sich, und sowohl Mutter als auch Kind sind nach der Behandlung wohlauf. Der Notarzt kontaktiert den Hausarzt der Patientin.
+In einem zweiten Schritt konnten über die hinterlegte Telefonnummer der Notfallkontakte die Angehörigen informiert werden sowie der Ablageort einer ärztlichen Notanordnung und einer Patientenverfügung festgestellt werden. Somit kann eine Behandlung entsprechend der medizinischen Vorgeschichte und in Übereinstimmung des Patientenwunsches trotz Bewusstlosigkeit eingeleitet werden.
 
-Den vollständigen [eNotfallpass für Laura Weber](Bundle-UC3-Bundle-emr-LauraWeber.html) enthält alle schwangerschaftsspezifischen Informationen für die optimale Notfallversorgung.
+Den vollständigen [eNotfallpass für Muster Max](Bundle-UC1-Bundle-emr-MusterMax.html) zeigt alle relevanten medizinischen Informationen strukturiert und referenzierbar.
 
-### Use Case 4: Multimorbider Patient mit komplexer Medikation
+### Anwendungsfall 2: Patient im allgemeinen Notfalldienst (Wochenende)
 
-[Rudolf Zimmermann](Patient-UC4-Patient-RudolfZimmermann.html), 85 Jahre alt, wird von Angehörigen wegen zunehmender Verwirrtheit und Sturz zu Hause ins Spital gebracht. Der eNotfallpass zeigt eine komplexe medizinische Historie:
+Ein [Patient](Patient-UC2-Patient-WalterSchmid.html), 78 Jahre alt, wohnt allein, bekommt 2×/Tag Hausbesuch durch Spitex wegen Hemisyndrom nach vaskulär bedingtem Schlaganfall. Er hat Erkältungssymptome seit 3 Tagen und Fieber seit einem Tag. Die [Spitex](RelatedPerson-UC2-RelatedPerson-Spitex.html) ruft den ärztlichen Notfalldienst an, da sich das Fieber mit dem vom Hausarzt verordneten Medikament nicht senken lässt.
 
-Aktive Diagnosen umfassen [chronische Herzinsuffizienz](Condition-UC4-Condition-HeartFailure.html), [Vorhofflimmern](Condition-UC4-Condition-AtrialFibrillation.html), [chronische Niereninsuffizienz Stadium 3](Condition-UC4-Condition-ChronicKidneyDisease.html) und [Diabetes mellitus Typ 2](Condition-UC4-Condition-DiabetesRudolf.html).
+Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html) eingeschränkt. Der Allgemeinzustand ist geschwächt, Puls ist erhöht und der Blutdruck eher tief, Fieber von 38.9 °C, leichtem Husten und basalen Rasselgeräuschen. Der Wachheitszustand ist wechselhaft. Es besteht der Verdacht auf eine beginnende Pneumonie.
 
-Die aktuelle Medikation beinhaltet [Ramipril 5mg](MedicationStatement-UC4-MedicationStatement-Ramipril.html) morgens, [Metoprolol 50mg](MedicationStatement-UC4-MedicationStatement-Metoprolol.html) zweimal täglich, [Furosemid 40mg](MedicationStatement-UC4-MedicationStatement-Furosemid.html) morgens und [Metformin 1000mg](MedicationStatement-UC4-MedicationStatement-MetforminRudolf.html) zweimal täglich.
+**Problemliste/Diagnoseliste**
 
-Der Patient trägt zudem ein [Implantat eines künstlichen Hüftgelenks](Device-UC4-Device-HipProsthesis.html) von 2018, was bei bildgebenden Verfahren zu berücksichtigen ist.
+| Jahr | Diagnose |
+|------|----------|
+| 2023 | [Schlaganfall](Condition-UC2-Condition-Schlaganfall.html) |
+| 1969 | [Status nach Splenektomie](Condition-UC2-Condition-Splenektomie.html) |
 
-Als Betreuerin ist seine Tochter [Elisabeth Zimmermann](RelatedPerson-UC4-RelatedPerson-ElisabethZimmermann.html) unter +41 61 789 45 23 eingetragen. Der behandelnde [Hausarzt Dr. med. Weber](Practitioner-UC4-Practitioner-DrWeber.html) wird über die komplexe Situation informiert.
+**Medikation**
 
-Den vollständigen [eNotfallpass für Rudolf Zimmermann](Bundle-UC4-Bundle-emr-RudolfZimmermann.html) zeigt alle medizinischen Zusammenhänge strukturiert auf.
+| Präparatename | Wirkstoffname | Dosis pro Einheit | Dosierung | Behandlungsgrund |
+|---------------|---------------|-------------------|-----------|------------------|
+| [Aspirin cardio®](MedicationStatement-UC2-MedicationStatement-AspirinCardio.html) | Acetylsalicylsäure | 100 mg | 1-0-0-0 | St.n. Schlaganfall |
+| [Atorvastatin® 40 mg](MedicationStatement-UC2-MedicationStatement-Atorvastatin.html) | Atorvastatin | 40 mg | 0-0-1-0 | St.n. Schlaganfall (vaskulär bedingt) |
+| [Xigduo XR®](MedicationStatement-UC2-MedicationStatement-XigduoXR.html) | Metformin und Dapagliflozin | 1000 mg (Metformin), 5 mg Dapagliflozin | 0-0-2-0 | Diabetes |
+| [Epril®](MedicationStatement-UC2-MedicationStatement-Epril.html) | Enalapril | 20 mg | 1-0-0-0 | Bluthochdruck |
 
+**Allergien**
 
+| Substanz | Reaktion |
+|----------|----------|
+| [Penicillin](AllergyIntolerance-UC2-AllergyIntolerance-Penicillin.html) | Atemnot |
+
+**Physische Beeinträchtigungen**
+
+[Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html)
+
+**Hinterlegte Dokumente**
+
+| Dokument | Jahr | Ablageort |
+|----------|------|-----------|
+| [Patientenverfügung](DocumentReference-UC2-DocumentReference-Patientenverfuegung.html) | 2022 | Hausarzt |
+
+Beim Zugriff auf das EPD erkennt der diensthabende Notfallarzt, dass der Patient eine Penicillin-Allergie hat und mit 23 Jahren einen Motorradunfall mit Milzverletzung, weswegen ihm die Milz operativ entfernt werden musste. Ein anhaltender fieberhafter Zustand bei Patienten mit eingeschränkter Kommunikationsmöglichkeit und somit schwer zu beurteilbarem Wachheitszustand sowie eingeschränkter Funktionsfähigkeit des Immunsystems (St.n. Splenektomie) ist dies ein lebensbedrohlicher Zustand. Es folgt ein Transport durch den Rettungsdienst.
+
+Den vollständigen [eNotfallpass für Walter Schmid](Bundle-UC2-Bundle-emr-WalterSchmid.html) enthält alle relevanten Informationen.
+
+### Anwendungsfall 3: Patientin in Arztpraxis
+
+[32-jährige Patientin](Patient-UC3-Patient-LaraKeller.html). Ist bei der Dermatologin zur operativen Entfernung eines kleinen Hämangioms im Gesicht. Obwohl es bei Hämangiomen (Gefässtumor) immer wieder mal etwas stärker bluten kann, ist die Blutung ausserordentlich stark und lässt sich kaum stoppen. Die Patientin wird immer blasser und tachykard, sie sagt aber, dass es wohl damit zusammenhänge, dass sie Blut nicht sehen könne und selbst bei Blutentnahmen kurz «wegtrete».
+
+**Problemliste/Diagnoseliste**
+
+| Jahr | Diagnose |
+|------|----------|
+| 2024 | [Eisenmangelanämie](Condition-UC3-Condition-Eisenmangelanaemie.html) |
+| 2008 | [Angeborener Herzfehler](Condition-UC3-Condition-AngeborenerHerzfehler.html) |
+
+**Medikation**
+
+| Präparatename | Wirkstoffname | Dosis pro Einheit | Dosierung | Behandlungsgrund |
+|---------------|---------------|-------------------|-----------|------------------|
+| [Marcoumar®](MedicationStatement-UC3-MedicationStatement-Marcoumar.html) | Phenprocoumon | 3 mg | Nach sep. Verordnung | Thromboembolieprophylaxe nach mechan. Klappenersatz |
+
+**Allergien**
+
+Keine
+
+**Implantate**
+
+| Implantat | Jahr |
+|-----------|------|
+| [Aortenklappe](DeviceUseStatement-UC3-DeviceUseStatement-AorticValve.html) | 2010 |
+
+Die Dermatologin entschliesst sich den eNotfallpass zu konsultieren, sieht dort, dass die Patientin orale Antikoagulation einnehmen muss wegen eines angeborenen Herzfehlers und bei welchem im Laufe der Zeit eine Klappenprothese eingesetzt wurde. Ebenso sieht sie, dass sie wegen einer Eisenmangelanämie vor einer Woche bei der Hausärztin eine Eiseninfusion erhalten hat bei einem Hämoglobinwert von 9 g/L. Sie alarmiert den Rettungsdienst, welcher die Patientin hospitalisiert.
+
+Den vollständigen [eNotfallpass für Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) zeigt das Zusammenspiel von oraler Antikoagulation und Implantat.
+
+### Anwendungsfall 4: Patient in Physiotherapie
+
+[Behandlung](Patient-UC4-Patient-BeatFrei.html) wegen rez. Lumbalgien, während der Kräftigungsübungen perakute Rückenschmerzen mit Ausstrahlung in d. Bauch. Der Physiotherapeut macht neurologische und muskuloskelettale Tests, welche keine Auffälligkeiten zeigen auf ein muskuloskelettales Problem. Da die Schmerzen immer stärker werden versucht er den Hausarzt anzurufen, dieser ist gerade an einem Kongress.
+
+**Problemliste/Diagnoseliste**
+
+| Jahr | Diagnose |
+|------|----------|
+| 2024 | [Aortenaneurysma](Condition-UC4-Condition-Aortenaneurysma.html) |
+
+**Medikation**
+
+| Präparatename | Wirkstoffname | Dosis pro Einheit | Dosierung | Behandlungsgrund |
+|---------------|---------------|-------------------|-----------|------------------|
+| [Bilol®](MedicationStatement-UC4-MedicationStatement-Bilol.html) | Bisoprolol | 5 mg | 1-0-0-0 | Blutdrucksenkung bei Aortenaneurysma |
+
+**Allergien**
+
+Keine
+
+Er entscheidet sich den eNotfallpass aufzurufen, darin sieht er, dass der Patient ein Aortenaneurysma hat. Der Physiotherapeut empfiehlt dem Patienten, dass er sich hospitalisieren lässt und alarmiert den Rettungsdienst.
+
+Den vollständigen [eNotfallpass für Beat Frei](Bundle-UC4-Bundle-emr-BeatFrei.html) zeigt, wie auch eine sehr kurze Eintragslage entscheidungsrelevant sein kann.
+
+### Anwendungsfall 5: Präklinik (Rettungsdienst) vor Ankunft in Spital
+
+Frau [Meier Anna](Patient-UC5-Patient-AnnaMeier.html), geb. 15.3.1972, klagt über starke Schmerzen in der Brust und Atemnot, während sie in einem öffentlichen Park spaziert. Ein Passant ruft den Rettungsdienst, der kurz darauf eintrifft.
+
+Die Patientin ist bei Bewusstsein, gibt jedoch an, dass sie sich sehr schwach fühlt und nicht mehr eigenständig laufen kann. Der Rettungsdienst führt erste Untersuchungen vor Ort durch und stellt mithilfe des eNotfallpasses fest, dass sie an Vorerkrankungen leidet.
+
+**Problemliste/Diagnoseliste**
+
+| Jahr | Diagnose |
+|------|----------|
+| 2018 | [Chronische koronare Herzkrankheit](Condition-UC5-Condition-KoronareHerzkrankheit.html) |
+
+**Medikation**
+
+| Präparatename | Wirkstoffname | Dosis pro Einheit | Dosierung | Behandlungsgrund |
+|---------------|---------------|-------------------|-----------|------------------|
+| [Aspirin cardio®](MedicationStatement-UC5-MedicationStatement-AspirinCardio.html) | Acetylsalicylsäure | 100 mg | 1-0-0-0 | Koronare Herzkrankheit |
+| [Bilol®](MedicationStatement-UC5-MedicationStatement-Bilol.html) | Bisoprolol | 5 mg | 1-0-0-0 | Koronare Herzkrankheit |
+| [Atorvastatin®](MedicationStatement-UC5-MedicationStatement-Atorvastatin.html) | Atorvastatin | 40 mg | 1-0-0-0 | Koronare Herzkrankheit |
+| [Pemzek®](MedicationStatement-UC5-MedicationStatement-Pemzek.html) | Candesartan | 16 mg | 1-0-0-0 | Koronare Herzkrankheit |
+
+**Allergien**
+
+Keine
+
+Frau Meier berichtet, dass die Schmerzen in der Brust seit ca. 30 Minuten bestehen und sich zunehmend verschlimmern. Sie gibt an, dass sie in der Vergangenheit ähnliche Episoden hatte, jedoch weniger intensiv. Durch den Zugriff auf die im eNotfallpass hinterlegte Problemliste erkennt das Rettungsteam sofort die bekannte koronare Herzkrankheit und kann die aktuelle Symptomatik daraufhin beurteilen. Das Rettungsteam verabreicht Sauerstoff und bringt die Patientin unter Monitoring in das für ihre Erkrankung bestgeeignete Spital.
+
+Den vollständigen [eNotfallpass für Anna Meier](Bundle-UC5-Bundle-emr-AnnaMeier.html) zeigt, wie die im EPD/eNotfallpass dokumentierte chronische Vorerkrankung dem Rettungsteam die richtige Triage-Entscheidung erlaubt.
