@@ -1,5 +1,5 @@
 Instance: UC1-Condition-Diabetes
-InstanceOf: $CHIPSCondition
+InstanceOf: $ChIpsCondition
 Usage: #example
 Title: "UC1-Condition-Diabetes"
 Description: "Example of a diabetes diagnosis for Maria Schmidt"

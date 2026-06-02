@@ -1,5 +1,5 @@
 Instance: UC1-Practitioner-DrMueller
-InstanceOf: $CHIPSPractitioner
+InstanceOf: $ChIpsPractitioner
 Usage: #example
 Title: "UC1-Practitioner-DrMueller"
 Description: "Family doctor of Maria Schmidt"

@@ -1,5 +1,5 @@
 Instance: UC3-Patient-LauraWeber
-InstanceOf: $CHIPSPatient
+InstanceOf: $ChIpsPatient
 Usage: #example
 Title: "UC3-Patient-LauraWeber"
 Description: "Patient Laura Weber"

@@ -6,7 +6,7 @@ Description: "Device profile for implants in the Emergency Record."
 
 * type from ch-emr-implant-type-vs (extensible)
 
-* patient only Reference($CHIPSPatient)
+* patient only Reference($ChIpsPatient)
 * patient ^type.aggregation = #bundled
 
 * udiCarrier MS

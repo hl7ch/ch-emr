@@ -1,5 +1,5 @@
 Instance: UC4-MedicationStatement-Ramipril
-InstanceOf: $CHIPSMedicationStatement
+InstanceOf: $ChIpsMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-Ramipril"
 Description: "ACE inhibitor therapy"
@@ -20,7 +20,7 @@ Description: "ACE inhibitor therapy"
 * dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Ramipril
-InstanceOf: $CHIPSMedication
+InstanceOf: $ChIpsMedication
 Description: "Example of Ramipril 5 mg tablet medication"
 Usage: #example
 * code = urn:oid:2.51.1.1#7680658950051 "RAMIPRIL Mepha Tabl 5 mg"

@@ -1,5 +1,5 @@
 Instance: UC4-Condition-AtrialFibrillation
-InstanceOf: $CHIPSCondition
+InstanceOf: $ChIpsCondition
 Usage: #example
 Title: "UC4-Condition-AtrialFibrillation"
 Description: "Atrial fibrillation"

@@ -4,7 +4,7 @@ Id: ch-emr-relatedperson
 Title: "CH Emergency Record RelatedPerson"
 Description: "RelatedPerson profile for emergency contacts and family members in the Emergency Record."
 
-* patient only Reference($CHIPSPatient)
+* patient only Reference($ChIpsPatient)
 * patient ^type.aggregation = #bundled
 
 * name 1..* MS

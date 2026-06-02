@@ -1,5 +1,5 @@
 Instance: UC1-PractitionerRole
-InstanceOf: $CHIPSPractitionerRole
+InstanceOf: $ChIpsPractitionerRole
 Usage: #example
 Title: "UC1-PractitionerRole"
 Description: "Dr. Hans Müller working as family doctor at Hausarztpraxis Zürich"

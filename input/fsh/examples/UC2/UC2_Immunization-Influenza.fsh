@@ -1,5 +1,5 @@
 Instance: UC2-Immunization-Influenza
-InstanceOf: $CHIPSImmunization
+InstanceOf: $ChIpsImmunization
 Usage: #example
 Title: "UC2-Immunization-Influenza"
 Description: "Annual influenza vaccination for Hans Meier"

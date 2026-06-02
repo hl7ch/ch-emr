@@ -12,9 +12,9 @@ Description: "Observation profile for cognitive disability in the Emergency Reco
 * status ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * status ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * subject 1..1 MS
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
-* performer only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* performer only Reference($ChIpsPractitioner or $ChIpsPractitionerRole or $ChIpsOrganization or $ChIpsPatient or ChEmrRelatedPerson)
 * performer ^type.aggregation = #bundled
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * subject ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator

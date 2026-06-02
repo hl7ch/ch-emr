@@ -1,5 +1,5 @@
 Instance: EX-AllergyIntolerance
-InstanceOf: $CHIPSAllergyIntolerance
+InstanceOf: $ChIpsAllergyIntolerance
 Usage: #example
 Title: "EX-AllergyIntolerance (Allergy to contrast media)"
 Description: "General example of an allergy"

@@ -1,5 +1,5 @@
 Instance: UC4-Condition-HeartFailure
-InstanceOf: $CHIPSCondition
+InstanceOf: $ChIpsCondition
 Usage: #example
 Title: "UC4-Condition-HeartFailure"
 Description: "Heart failure"

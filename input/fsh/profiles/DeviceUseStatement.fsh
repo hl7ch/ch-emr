@@ -4,7 +4,7 @@ Id: ch-emr-deviceusestatement
 Title: "CH Emergency Record Device Use Statement"
 Description: "Use of an implanted device in the Emergency Record. The `bodySite` CodeableConcept may carry the ChEmrBodyStructureReference extension to link to a `ChEmrBodyStructure` for structured anatomy + laterality."
 
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
 * device only Reference(ChEmrDevice)
 * device ^type.aggregation = #bundled

@@ -56,14 +56,14 @@ Alias: $ChEmedDosage = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dos
 Alias: $ChEmedDosageSplit = http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-split
 
 // CH IPS Profiles
-Alias: $CHIPSDocument = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document
-Alias: $CHIPSPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
-Alias: $CHIPSPractitioner = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitioner
-Alias: $CHIPSPractitionerRole = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitionerrole
-Alias: $CHIPSOrganization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-organization
-Alias: $CHIPSCondition = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-condition
-Alias: $CHIPSMedication = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medication
-Alias: $CHIPSMedicationStatement = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medicationstatement
-Alias: $CHIPSAllergyIntolerance = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-allergyintolerance
-Alias: $CHIPSImmunization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-immunization
+Alias: $ChIpsDocument = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-document
+Alias: $ChIpsPatient = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-patient
+Alias: $ChIpsPractitioner = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitioner
+Alias: $ChIpsPractitionerRole = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-practitionerrole
+Alias: $ChIpsOrganization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-organization
+Alias: $ChIpsCondition = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-condition
+Alias: $ChIpsMedication = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medication
+Alias: $ChIpsMedicationStatement = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-medicationstatement
+Alias: $ChIpsAllergyIntolerance = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-allergyintolerance
+Alias: $ChIpsImmunization = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-immunization
 Alias: $ChIpsComposition = http://fhir.ch/ig/ch-ips/StructureDefinition/ch-ips-composition

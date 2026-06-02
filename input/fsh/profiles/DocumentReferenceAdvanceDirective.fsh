@@ -42,7 +42,7 @@ Description: "Reference to advance directives and emergency medical"
 * content.attachment.url ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * content.attachment.data 0..0
 
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
-* author only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* author only Reference($ChIpsPractitioner or $ChIpsPractitionerRole or $ChIpsOrganization or $ChIpsPatient or ChEmrRelatedPerson)
 * author ^type.aggregation = #bundled

@@ -1,5 +1,5 @@
 Instance: UC4-Patient-RudolfZimmermann
-InstanceOf: $CHIPSPatient
+InstanceOf: $ChIpsPatient
 Usage: #example
 Title: "UC4-Patient-RudolfZimmermann"
 Description: "Multimorbider 85-jähriger Patient für den eNotfallpass"

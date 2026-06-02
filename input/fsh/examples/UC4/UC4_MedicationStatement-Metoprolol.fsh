@@ -1,5 +1,5 @@
 Instance: UC4-MedicationStatement-Metoprolol
-InstanceOf: $CHIPSMedicationStatement
+InstanceOf: $ChIpsMedicationStatement
 Usage: #example
 Title: "UC4-MedicationStatement-Metoprolol"
 Description: "Beta-blocker therapy"
@@ -21,7 +21,7 @@ Description: "Beta-blocker therapy"
 * dosage.doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Metoprolol
-InstanceOf: $CHIPSMedication
+InstanceOf: $ChIpsMedication
 Description: "Example of Metoprolol 50 mg medication"
 Usage: #example
 * code = urn:oid:2.51.1.1#7680659580042 "METOPROLOL Axapharm Ret Tabl 50 mg"
