@@ -21,13 +21,22 @@ Alias: $list-empty-reason = http://terminology.hl7.org/CodeSystem/list-empty-rea
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $flag-category = http://terminology.hl7.org/CodeSystem/flag-category
+Alias: $v3-PersonalRelationshipRoleTypeVS = http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType
 
 // FHIR
 Alias: $bodySiteExt = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
 Alias: $bodySiteVS = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodyStructureRelativeLocationVS = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
+Alias: $languagesVS = http://hl7.org/fhir/ValueSet/languages
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
+
+// CH EMR local Code Systems
+Alias: $ChEmrMriSafetyStatusCS = http://fhir.ch/ig/ch-emr/CodeSystem/ch-emr-mri-safety-status-cs
 
 // International Patient Summary (IPS) Profiles
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips

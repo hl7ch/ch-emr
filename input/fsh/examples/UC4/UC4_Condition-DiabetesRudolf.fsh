@@ -4,9 +4,9 @@ Usage: #example
 Title: "UC4-Condition-DiabetesRudolf"
 Description: "Type 2 diabetes mellitus"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* category = $condition-category#problem-list-item
 * severity = $sct-ch#24484000
 * code = $sct-ch#44054006
 * subject = Reference(UC4-Patient-RudolfZimmermann)

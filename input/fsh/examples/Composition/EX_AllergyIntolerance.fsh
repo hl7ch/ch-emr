@@ -4,8 +4,8 @@ Usage: #example
 Title: "EX-AllergyIntolerance (Allergy to contrast media)"
 Description: "General example of an allergy"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* clinicalStatus = $allergyintolerance-clinical#active
+* verificationStatus = $allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #high
