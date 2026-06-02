@@ -33,6 +33,7 @@ Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinit
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Alias: $IpsDevice = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
 Alias: $IpsObservationPregnancyStatus = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips
+Alias: $IpsFlagAlert = http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips
 Alias: $IpsActorCreator = http://hl7.org/fhir/uv/ips/ActorDefinition/Creator
 Alias: $IpsActorConsumer = http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer
 
