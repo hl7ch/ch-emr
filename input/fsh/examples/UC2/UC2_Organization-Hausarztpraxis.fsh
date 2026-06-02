@@ -5,7 +5,7 @@ Title: "UC2-Organization-Hausarztpraxis"
 Description: "Generic Hausarztpraxis for UC2 (Care-Team filler)."
 
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000000042"
+* identifier[GLN].value = "7601000000040"
 
 * active = true
 * name = "Hausarztpraxis UC2"

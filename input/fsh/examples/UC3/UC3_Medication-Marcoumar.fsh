@@ -2,9 +2,12 @@ Instance: UC3-Medication-Marcoumar
 InstanceOf: $ChIpsMedication
 Usage: #example
 Title: "UC3-Medication-Marcoumar"
-Description: "MARCOUMAR Tabletten 3 mg (Phenprocoumon)."
+Description: "MARCOUMAR Tabletten 3 mg (Phenprocoumon), Plastflasche à 25 Stk (Swissmedic 19395)."
 
-* code = urn:oid:2.51.1.1#7680193950011
+* code.coding[+] = urn:oid:2.51.1.1#7680193950011
+* code.coding[=].display = "MARCOUMAR Tabl 3 mg Plast Fl 25 Stk"
+* code.coding[+] = $atc#B01AA04
+* code.coding[=].display = "phenprocoumon"
 * code.text = "Marcoumar 3 mg (Phenprocoumon)"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000
 * form.text = "Tablette"

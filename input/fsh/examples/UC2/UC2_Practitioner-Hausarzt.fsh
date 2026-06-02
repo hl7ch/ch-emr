@@ -6,7 +6,7 @@ Description: "Generic Hausarzt for UC2 (Care-Team filler)."
 
 * language = #de-CH
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7601000000035"
+* identifier[GLN].value = "7601000000033"
 
 * name.use = #official
 * name.family = "Hausarzt"

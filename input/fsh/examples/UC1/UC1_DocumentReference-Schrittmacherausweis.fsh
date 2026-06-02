@@ -8,7 +8,7 @@ Description: "Schrittmacherausweis (2015, im EPD hinterlegt)."
 * subject = Reference(UC1-Patient-MusterMax)
 * date = "2015-06-15T11:00:00+02:00"
 * author = Reference(UC1-Practitioner-Hausarzt)
-* type = $loinc#56445-0
+* type = $sct-ch#422735006
 * description = "Schrittmacherausweis"
 
 * content.attachment.contentType = #application/pdf
