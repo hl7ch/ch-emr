@@ -14,7 +14,7 @@ Description: "Risk to healthcare personnel emanating from the patient — typica
 * code ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * code ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
 
 Invariant: ch-emr-flag-code-content

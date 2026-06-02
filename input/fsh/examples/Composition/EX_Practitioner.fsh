@@ -1,5 +1,5 @@
 Instance: EX-Practitioner
-InstanceOf: $CHIPSPractitioner
+InstanceOf: $ChIpsPractitioner
 Usage: #example
 Title: "EX - Practitioner Dr. Sarah Huber"
 Description: "General example of a practitioner"

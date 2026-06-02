@@ -1,5 +1,5 @@
 Instance: EX-MedicationStatement
-InstanceOf: $CHIPSMedicationStatement
+InstanceOf: $ChIpsMedicationStatement
 Usage: #example
 Title: "EX-MedicationStatement (Metformin)"
 Description: "General example of a medication statement"
@@ -18,7 +18,7 @@ Description: "General example of a medication statement"
 * dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Metformin
-InstanceOf: $CHIPSMedication
+InstanceOf: $ChIpsMedication
 Description: "Example of Metformin 500 mg tablet medication"
 Usage: #example
 * code = urn:oid:2.51.1.1#7680590990115 "METFORMIN Axapharm Filmtabl 500 mg (Blister 50 Stk)"

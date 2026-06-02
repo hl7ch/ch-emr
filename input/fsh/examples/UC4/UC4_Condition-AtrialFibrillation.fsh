@@ -1,12 +1,12 @@
 Instance: UC4-Condition-AtrialFibrillation
-InstanceOf: $CHIPSCondition
+InstanceOf: $ChIpsCondition
 Usage: #example
 Title: "UC4-Condition-AtrialFibrillation"
 Description: "Atrial fibrillation"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* category = $condition-category#problem-list-item
 * severity = $sct-ch#24484000
 * code = $sct-ch#49436004
 * subject = Reference(UC4-Patient-RudolfZimmermann)

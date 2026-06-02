@@ -4,9 +4,9 @@ Id: ch-emr-composition
 Title: "CH Emergency Record Composition"
 Description: "Swiss Emergency Record based on International Patient Summary"
 
-* subject only Reference($CHIPSPatient)
+* subject only Reference($ChIpsPatient)
 * subject ^type.aggregation = #bundled
-* author only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* author only Reference($ChIpsPractitioner or $ChIpsPractitionerRole or $ChIpsOrganization or $ChIpsPatient or ChEmrRelatedPerson)
 * author ^type.aggregation = #bundled
 
 * section contains

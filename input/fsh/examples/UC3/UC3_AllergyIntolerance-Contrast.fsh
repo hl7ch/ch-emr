@@ -1,11 +1,11 @@
 Instance: UC3-AllergyIntolerance-Contrast
-InstanceOf: $CHIPSAllergyIntolerance
+InstanceOf: $ChIpsAllergyIntolerance
 Usage: #example
 Title: "UC3-AllergyIntolerance-Contrast"
 Description: "Allergy to contrast mediums from Laura Weber"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
-* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* clinicalStatus = $allergyintolerance-clinical#active
+* verificationStatus = $allergyintolerance-verification#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #high

@@ -64,7 +64,7 @@ Description: "Composition für den eNotfallpass von Hans Meier"
 * section[sectionAllergies].code = $loinc#48765-2
 * section[sectionAllergies].text.status = #generated
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannten Allergien oder Unverträglichkeiten</p></div>"
-* section[sectionAllergies].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#nilknown "Nil Known"
+* section[sectionAllergies].emptyReason = $list-empty-reason#nilknown "Nil Known"
 
 // Risk factor section
 * section[sectionRiskFactors].title = "Risikofaktoren für Behandelnde"

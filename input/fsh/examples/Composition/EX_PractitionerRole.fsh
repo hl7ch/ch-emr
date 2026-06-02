@@ -1,5 +1,5 @@
 Instance: EX-PractitionerRole
-InstanceOf: $CHIPSPractitionerRole
+InstanceOf: $ChIpsPractitionerRole
 Usage: #example
 Title: "EX-PractitionerRole"
 Description: "General example of a practitioner role"

@@ -1,5 +1,5 @@
 Profile: ChEmrMedicationStatement
-Parent: $CHIPSMedicationStatement
+Parent: $ChIpsMedicationStatement
 Id: ch-emr-medicationstatement
 Title: "CH Emergency Record Medication Statement"
 Description: "Medication Statement for the Swiss Emergency Record. Captures a medication the patient is taking with a treatment reason, a dose quantity, and a dosing schedule expressed using the CH EMED dosage pattern."
@@ -13,7 +13,7 @@ Description: "Medication Statement for the Swiss Emergency Record. Captures a me
 * reasonCode ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * reasonCode ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * reasonReference 0..* MS
-* reasonReference only Reference($CHIPSCondition)
+* reasonReference only Reference($ChIpsCondition)
 * reasonReference ^type.aggregation = #bundled
 * reasonReference ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * reasonReference ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
@@ -22,7 +22,7 @@ Description: "Medication Statement for the Swiss Emergency Record. Captures a me
 * reasonReference ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * reasonReference ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
-* medicationReference only Reference($CHIPSMedication)
+* medicationReference only Reference($ChIpsMedication)
 * medicationReference ^type.aggregation = #bundled
 
 * dosage ^slicing.discriminator.type = #profile
