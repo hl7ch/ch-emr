@@ -4,6 +4,9 @@ Id: ch-emr-relatedperson
 Title: "CH Emergency Record RelatedPerson"
 Description: "RelatedPerson profile for emergency contacts and family members in the Emergency Record."
 
+* patient only Reference($CHIPSPatient)
+* patient ^type.aggregation = #bundled
+
 * name 1..* MS
 * name ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * name ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator

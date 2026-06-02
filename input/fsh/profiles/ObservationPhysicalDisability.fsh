@@ -13,6 +13,8 @@ Description: "Observation profile for physical disability in the Emergency Recor
 * subject 1..1 MS
 * subject only Reference($CHIPSPatient)
 * subject ^type.aggregation = #bundled
+* performer only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* performer ^type.aggregation = #bundled
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * subject ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle

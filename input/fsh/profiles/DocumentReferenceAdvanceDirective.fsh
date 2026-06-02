@@ -44,3 +44,5 @@ Description: "Reference to advance directives and emergency medical"
 
 * subject only Reference($CHIPSPatient)
 * subject ^type.aggregation = #bundled
+* author only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* author ^type.aggregation = #bundled

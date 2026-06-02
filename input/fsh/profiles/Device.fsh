@@ -6,6 +6,9 @@ Description: "Device profile for implants in the Emergency Record."
 
 * type from ch-emr-implant-type-vs (extensible)
 
+* patient only Reference($CHIPSPatient)
+* patient ^type.aggregation = #bundled
+
 * udiCarrier MS
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * udiCarrier ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator

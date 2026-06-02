@@ -13,6 +13,7 @@ Description: "Medication Statement for the Swiss Emergency Record. Captures a me
 * reasonCode ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * reasonCode ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * reasonReference 0..* MS
+* reasonReference only Reference($CHIPSCondition)
 * reasonReference ^type.aggregation = #bundled
 * reasonReference ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * reasonReference ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
@@ -21,6 +22,7 @@ Description: "Medication Statement for the Swiss Emergency Record. Captures a me
 * reasonReference ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * reasonReference ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
+* medicationReference only Reference($CHIPSMedication)
 * medicationReference ^type.aggregation = #bundled
 
 * dosage ^slicing.discriminator.type = #profile

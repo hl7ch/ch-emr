@@ -7,6 +7,8 @@ Description: "Observation profile for documenting the patient's resuscitation (c
 * subject 1..1 MS
 * subject only Reference($CHIPSPatient)
 * subject ^type.aggregation = #bundled
+* performer only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* performer ^type.aggregation = #bundled
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * subject ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * subject ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
@@ -35,4 +37,5 @@ Description: "Observation profile for documenting the patient's resuscitation (c
 * valueCodeableConcept ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 * derivedFrom only Reference(ChEmrDocumentReferenceAdvanceDirective)
+* derivedFrom ^type.aggregation = #bundled
 * derivedFrom ^short = "Reference to the underlying advance directive (Patientenverfügung) this status is derived from"

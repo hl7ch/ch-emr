@@ -5,7 +5,9 @@ Title: "CH Emergency Record Device Use Statement"
 Description: "Use of an implanted device in the Emergency Record. The `bodySite` CodeableConcept may carry the ChEmrBodyStructureReference extension to link to a `ChEmrBodyStructure` for structured anatomy + laterality."
 
 * subject only Reference($CHIPSPatient)
+* subject ^type.aggregation = #bundled
 * device only Reference(ChEmrDevice)
+* device ^type.aggregation = #bundled
 * bodySite 0..1 MS
 * bodySite from $bodySiteVS (preferred)
 * bodySite obeys ch-emr-dus-bodysite-matches-bodystructure
@@ -24,6 +26,7 @@ Description: "Use of an implanted device in the Emergency Record. The `bodySite`
 * bodySite.coding ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * bodySite.extension contains ChEmrBodyStructureReference named bodyStructure 0..1 MS
 * bodySite.extension[bodyStructure].valueReference only Reference(ChEmrBodyStructure)
+* bodySite.extension[bodyStructure].valueReference ^type.aggregation = #bundled
 * bodySite.extension[bodyStructure] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * bodySite.extension[bodyStructure] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * bodySite.extension[bodyStructure] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle

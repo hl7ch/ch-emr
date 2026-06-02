@@ -4,6 +4,11 @@ Id: ch-emr-documentreference
 Title: "CH Emergency Record DocumentReference"
 Description: "DocumentReference profile for information on documents in the Emergency Record."
 
+* subject only Reference($CHIPSPatient)
+* subject ^type.aggregation = #bundled
+* author only Reference($CHIPSPractitioner or $CHIPSPractitionerRole or $CHIPSOrganization or $CHIPSPatient or ChEmrRelatedPerson)
+* author ^type.aggregation = #bundled
+
 * type 1..1 MS
 * type from ch-emr-clinical-document-types-vs (extensible)
 * type ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
