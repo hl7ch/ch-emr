@@ -7,5 +7,6 @@ Description: "Types of advance directives and emergency medical orders."
 * ^version = "1.0.0"
 * ^date = "2025-01-15"
 
-* $sct#371538006 "Advance directive report"
-* $sct#734163000 "Care plan"
+* $loinc#75320-2 "Advance directive"
+* $loinc#42348-3 "Advance healthcare directives"
+* $loinc#93037-0 "Portable medical order form"
