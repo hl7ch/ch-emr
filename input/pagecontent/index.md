@@ -57,6 +57,7 @@ The emergency report is designed to give medical professionals quick and structu
 
 The Implementation Guide defines the following main profiles:
 
+{:class="table table-bordered"}
 | Profile | Description | Parent |
 |---------|-------------|--------|
 | [CH Emergency Record Bundle](StructureDefinition-ch-emr-bundle.html) | Bundle profile for Emergency Record. | [CH IPS Document](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-document.html) |
