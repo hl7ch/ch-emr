@@ -10,7 +10,8 @@ Description: "Patientenverfügung von Walter Schmid (2022, beim Hausarzt hinterl
 * author = Reference(UC2-Patient-WalterSchmid)
 * type = $loinc#75320-2
 * category = $sct-ch#1264561001
-* description = "Patientenverfügung beim Hausarzt hinterlegt"
+* description = "Original der Patientenverfügung liegt bei der Hausarztpraxis und kann dort angefordert werden."
+* custodian = Reference(UC2-Organization-Hausarztpraxis)
 
-* content.attachment.contentType = #application/pdf
-* content.attachment.url = "https://example.org/documents/UC2-Patientenverfuegung.pdf"
+* content.attachment.title = "Patientenverfügung — bei Hausarztpraxis hinterlegt"
+* content.attachment.language = #de-CH
