@@ -8,7 +8,7 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
 date: 2025-06-05
-version: 1.0.0-ballot# 1.2.2 published in May 2025
+version: 1.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
