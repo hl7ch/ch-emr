@@ -5,7 +5,7 @@ Description: "Value set for the types of cognitive disabilities based on SNOMED 
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
-* ^date = "2025-01-15"
+* ^date = "2026-05-26"
 
 * include codes from system $sct where concept is-a #386806002 "Impaired cognition (finding)"
 * include codes from system $sct where concept is-a #228156007 "Intellectual functioning disability (finding)"

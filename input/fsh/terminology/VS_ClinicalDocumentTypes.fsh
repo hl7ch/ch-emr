@@ -5,7 +5,7 @@ Description: "Value Set for clinical document types"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
-* ^date = "2025-01-15"
+* ^date = "2026-05-26"
 
 * $sct-ch#4191000179101
 * $sct-ch#422735006

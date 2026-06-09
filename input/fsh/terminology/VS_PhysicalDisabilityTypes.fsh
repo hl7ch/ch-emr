@@ -5,7 +5,7 @@ Description: "Value sets for the types of disabilities"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
-* ^date = "2025-01-15"
+* ^date = "2026-05-26"
 
 * $sct-ch#397540003
 * $sct-ch#15188001

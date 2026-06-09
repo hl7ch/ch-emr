@@ -5,7 +5,7 @@ Description: "Codes for implant types"
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
-* ^date = "2025-01-15"
+* ^date = "2026-05-26"
 
 * $sct-ch#14789005
 * $sct-ch#84683006
