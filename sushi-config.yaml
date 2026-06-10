@@ -26,7 +26,7 @@ dependencies:
     version: 7.1.0
   ch.fhir.ig.ch-core:
     uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
-    version: current
+    version: 7.0.0
   ch.fhir.ig.ch-term:
     uri: http://fhir.ch/ig/ch-term/ImplementationGuide/ch.fhir.ig.ch-term
     version: 3.4.x
