@@ -3,7 +3,7 @@ canonical: http://fhir.ch/ig/ch-emr
 name: CH_EMR
 title: "CH EMR (R4)"
 description: FHIR Implementation Guide for the Swiss Electronic Emergency Record
-status: draft
+status: active
 license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
