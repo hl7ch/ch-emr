@@ -1,5 +1,9 @@
 {
   "package-id": "ch.fhir.ig.ch-emr",
+  "title": "CH EMR",
+  "introduction": "FHIR Implementation Guide for the Swiss Electronic Emergency Record",
+  "category": "National Base",
+  "ci-build": "http://fhir.ch/ig/ch-emr",
   "version": "1.0.0-ballot",
   "path": "http://fhir.ch/ig/ch-emr/1.0.0-ballot",
   "mode": "milestone",
@@ -7,5 +11,8 @@
   "sequence": "STU 1",
   "desc": "CH EMR STU 1 Ballot",
   "changes": "changelog.html",
-  "first": true
+  "first": true,
+  "registry-description": "FHIR Implementation Guide for the Swiss Electronic Emergency Record",
+  "registry-country": "ch",
+  "registry-authority": "eHealth Suisse"
 }
