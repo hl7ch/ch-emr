@@ -94,14 +94,3 @@ Description: "Elektronischer Notfallpass für Anna Meier — Anwendungsfall 5."
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaft bekannt.</p></div>"
 * section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"
 
-* section[sectionCognitiveDisability].title = "Kognitive Beeinträchtigungen"
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].text.status = #generated
-* section[sectionCognitiveDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionCognitiveDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"
-
-* section[sectionPhysicalDisability].title = "Physische Beeinträchtigungen"
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].text.status = #generated
-* section[sectionPhysicalDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionPhysicalDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"

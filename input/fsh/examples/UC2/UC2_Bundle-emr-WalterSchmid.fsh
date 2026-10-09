@@ -53,8 +53,8 @@ Description: "Vollständiger eNotfallpass für Walter Schmid (Anwendungsfall 2).
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/UC2-AllergyIntolerance-Penicillin"
 * entry[=].resource = UC2-AllergyIntolerance-Penicillin
 
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/UC2-PhysicalDisability-Aphasie"
-* entry[=].resource = UC2-PhysicalDisability-Aphasie
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/UC2-Condition-Aphasie"
+* entry[=].resource = UC2-Condition-Aphasie
 
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC2-DocumentReference-Patientenverfuegung"
 * entry[=].resource = UC2-DocumentReference-Patientenverfuegung
