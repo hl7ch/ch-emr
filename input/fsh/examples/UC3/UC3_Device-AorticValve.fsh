@@ -9,8 +9,8 @@ Description: "Mechanische Aortenklappenprothese (implantiert 2010)."
 * patient = Reference(UC3-Patient-LaraKeller)
 
 * udiCarrier.deviceIdentifier = "00845678902345"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/eu-ec-udi"
+* udiCarrier.issuer = "http://fhir.ch/ig/ch-emr/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://fhir.ch/ig/ch-emr/NamingSystem/eu-ec-udi"
 * udiCarrier.carrierHRF = "(01)00845678902345(17)301231(10)AV2010A(21)LK2010AV001"
 * udiCarrier.entryType = #manual
 
