@@ -35,13 +35,6 @@ Description: "General composition for the Emergency Record"
 * section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Dr. med. SarahHuber - Gynecologist (GLN: 7601007922000)</p></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(EX-Practitioner)
 
-// Resuscitation section
-* section[sectionResuscitation].title = "Reanimation"
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>For attempted cardiopulmonary resuscitation</li></ul></div>"
-* section[sectionResuscitation].entry[observation][0] = Reference(EX-Resuscitation)
-
 // Medication section
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
@@ -81,8 +74,9 @@ Description: "General composition for the Emergency Record"
 * section[sectionAdvanceDirectives].title = "Patientenverfügung und Ärztliche Notfallanordnungen"
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].text.status = #generated
-* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung:</p><ul><li>Patientenverfügung im Schlafzimmer</li></ul></div>"
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung:</p><ul><li>Patientenverfügung im Schlafzimmer</li></ul><p>Reanimationsstatus:</p><ul><li>For attempted cardiopulmonary resuscitation</li></ul></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(EX-AdvanceDirective)
+* section[sectionAdvanceDirectives].entry[resuscitationStatus][0] = Reference(EX-Resuscitation)
 
 // Document references section
 * section[sectionOtherDocuments].title = "Andere Dokumente"

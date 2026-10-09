@@ -41,13 +41,12 @@ The emergency report is designed to give medical professionals quick and structu
 * **Patient information**: Demographic data and contact information
 * **Emergency contacts**: Family and trusted persons
 * **Care Team**: Treating Health care professional
-* **Resuscitation status**: Patient's wishes regarding resuscitation measures in emergency situations
 * **Current medication**: Information and dosage of medications 
 * **Vaccinations**: Current vaccinations
 * **Allergies and intolerances**: Known allergic reactions and intolerances
 * **Risk factors**: Risks relevant to treatment
 * **Problem list**: Diagnoses and problems
-* **Advance directive**: Information on advance directives or medical directives
+* **Advance directive**: Information on advance directives or medical directives, including the resuscitation status (patient's wishes regarding resuscitation measures in emergency situations)
 * **Other documents**: Other documents like organ donor cards
 * **Implants**: Medical devices
 * **Pregnancy**: Current pregnancy information
@@ -66,7 +65,7 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Device](StructureDefinition-ch-emr-device.html) | Device profile for implants in the Emergency Record. | [IPS Device](http://hl7.org/fhir/uv/ips/StructureDefinition-Device-uv-ips.html) |
 | [CH Emergency Record Body Structure](StructureDefinition-ch-emr-bodystructure.html) | Structured anatomical location of an implant, carrying an unlateralised body site and the laterality qualifier. | [BodyStructure (FHIR R4)](http://hl7.org/fhir/R4/bodystructure.html) |
 | [CH Emergency Record RelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | RelatedPerson profile for emergency contacts and family members in the Emergency Record. | [CH Core RelatedPerson](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-relatedperson.html) |
-| [CH Emergency Record Observation Resuscitation Status](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation (code) status. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
+| [CH Emergency Record Flag Resuscitation Status](StructureDefinition-ch-emr-flag-resuscitation-status.html) | Flag profile for documenting the patient's resuscitation (code) status, referencing the underlying advance directive(s). | [Flag (FHIR R4)](http://hl7.org/fhir/R4/flag.html) |
 | [CH Emergency Record Advance Directive DocumentReference](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical orders. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
 | [CH Emergency Record Risk to Healthcare Personnel](StructureDefinition-ch-emr-flag-risk-to-healthcare-personnel.html) | Risk to healthcare personnel emanating from the patient (e.g. communicable disease). | [IPS Flag (alert)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html) |
 | [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |

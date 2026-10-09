@@ -34,13 +34,6 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC1-Practitioner-Hausarzt)
 * section[sectionCareTeam].entry[practitionerRole][0] = Reference(UC1-PractitionerRole-Hausarzt)
 
-// Resuscitation
-* section[sectionResuscitation].title = "Reanimationsstatus"
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus folgt aus der ärztlichen Notanordnung 2024 und der Patientenverfügung 2022.</p></div>"
-* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
-
 // Medications
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
@@ -82,9 +75,10 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionAdvanceDirectives].title = "Patientenverfügungen und Ärztliche Notfallanordnung"
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
 * section[sectionAdvanceDirectives].text.status = #generated
-* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Ärztliche Notanordnung 2024 (EPD)</li><li>Patientenverfügung 2022 (Hausarzt)</li></ul></div>"
+* section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Ärztliche Notanordnung 2024 (EPD)</li><li>Patientenverfügung 2022 (Hausarzt)</li></ul><p>Reanimationsstatus: For attempted cardiopulmonary resuscitation (gemäss Notanordnung 2024 und Patientenverfügung 2022)</p></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC1-DocumentReference-Notanordnung)
 * section[sectionAdvanceDirectives].entry[advanceDirective][+] = Reference(UC1-DocumentReference-Patientenverfuegung)
+* section[sectionAdvanceDirectives].entry[resuscitationStatus][0] = Reference(UC1-Flag-Resuscitation)
 
 // Other documents
 * section[sectionOtherDocuments].title = "Andere Dokumente"

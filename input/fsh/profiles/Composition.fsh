@@ -12,7 +12,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section contains
     sectionEmergencyContacts 1..1 and
     sectionCareTeam 0..1 and
-    sectionResuscitation 0..1 and
     sectionRiskFactors 0..1 and
     sectionOtherDocuments 0..1 and
     sectionCognitiveDisability 0..1 and
@@ -49,15 +48,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCareTeam].entry[practitioner] ^type.aggregation = #bundled
 * section[sectionCareTeam].entry[practitionerRole] ^type.aggregation = #bundled
 
-//Resuscitation
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].entry ^slicing.discriminator.type = #profile
-* section[sectionResuscitation].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionResuscitation].entry ^slicing.rules = #open
-* section[sectionResuscitation].entry contains observation 0..*
-* section[sectionResuscitation].entry[observation] only Reference(ChEmrObservationResuscitationStatus)
-* section[sectionResuscitation].entry[observation] ^type.aggregation = #bundled
-
 // Risk Factors
 * section[sectionRiskFactors].code = $loinc#46467-7
 * section[sectionRiskFactors].entry ^slicing.discriminator.type = #profile
@@ -79,9 +69,14 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #profile
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionAdvanceDirectives].entry ^slicing.rules = #open
-* section[sectionAdvanceDirectives].entry contains advanceDirective 0..*
+* section[sectionAdvanceDirectives].entry contains
+    advanceDirective 0..* and
+    resuscitationStatus 0..*
 * section[sectionAdvanceDirectives].entry[advanceDirective] only Reference(ChEmrDocumentReferenceAdvanceDirective)
 * section[sectionAdvanceDirectives].entry[advanceDirective] ^type.aggregation = #bundled
+* section[sectionAdvanceDirectives].entry[resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
+* section[sectionAdvanceDirectives].entry[resuscitationStatus] ^short = "Resuscitation status (Flag) pointing to the advance directive(s) it is based on"
+* section[sectionAdvanceDirectives].entry[resuscitationStatus] ^type.aggregation = #bundled
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5
