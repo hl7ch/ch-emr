@@ -5,7 +5,7 @@ Title: "UC3-Device-AorticValve"
 Description: "Mechanische Aortenklappenprothese (implantiert 2010)."
 
 * status = #active
-* type = $sct-ch#84683006
+* type = $sct#84683006
 * patient = Reference(UC3-Patient-LaraKeller)
 
 * udiCarrier.deviceIdentifier = "00845678902345"

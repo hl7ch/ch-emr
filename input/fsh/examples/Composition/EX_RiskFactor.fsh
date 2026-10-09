@@ -6,5 +6,5 @@ Description: "Risk to healthcare personnel emanating from the patient — viral 
 
 * status = #active
 * category = $flag-category#safety "Safety"
-* code = $sct-ch#66071002
+* code = $sct#66071002
 * subject = Reference(EX-Patient)

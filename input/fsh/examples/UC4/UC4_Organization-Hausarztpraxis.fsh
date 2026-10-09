@@ -9,5 +9,5 @@ Description: "Generic Hausarztpraxis for UC4 (Care-Team filler)."
 
 * active = true
 * name = "Hausarztpraxis UC4"
-* type = $sct-ch#394802001
+* type = $sct#394802001
 * type.text = "Allgemeine Innere Medizin"

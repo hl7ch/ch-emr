@@ -15,11 +15,11 @@ Description: "General example of a practitioner role"
 * organization.display = "Gynäkologie Praxis Basel"
 
 // Rolle
-* code = $sct-ch#309343006
+* code = $sct#309343006
 * code.text = "Ärztin"
 
 // Fachrichtung
-* specialty = $sct-ch#394586005
+* specialty = $sct#394586005
 * specialty.text = "Gynäkologie und Geburtshilfe"
 
 // Kontaktdaten (der Praxis)
