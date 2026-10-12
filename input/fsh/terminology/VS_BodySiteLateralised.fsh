@@ -11,5 +11,5 @@ ECL of the excluded concepts: `(>! (<< 123037004 : 272741003 = (7771000 OR 24028
 * ^version = "1.0.0"
 * ^date = "2026-10-12"
 
-* include codes from system $sct-ch where concept is-a #123037004
-* exclude codes from system $sct-ch where constraint = "(>! (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))) MINUS (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))"
+* include codes from system $sct where concept is-a #123037004
+* exclude codes from system $sct where constraint = "(>! (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))) MINUS (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))"
