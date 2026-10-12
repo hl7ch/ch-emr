@@ -14,9 +14,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionCareTeam 0..1 and
     sectionResuscitation 0..1 and
     sectionRiskFactors 0..1 and
-    sectionOtherDocuments 0..1 and
-    sectionCognitiveDisability 0..1 and
-    sectionPhysicalDisability 0..1
+    sectionOtherDocuments 0..1
 
 // Immunization
 * section[sectionImmunizations].entry[immunization] ^type.aggregation = #bundled
@@ -91,23 +89,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionOtherDocuments].entry contains document 0..*
 * section[sectionOtherDocuments].entry[document] only Reference(ChEmrDocumentReference)
 * section[sectionOtherDocuments].entry[document] ^type.aggregation = #bundled
-
-//Disability
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].entry ^slicing.discriminator.type = #profile
-* section[sectionCognitiveDisability].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionCognitiveDisability].entry ^slicing.rules = #open
-* section[sectionCognitiveDisability].entry contains observation 0..*
-* section[sectionCognitiveDisability].entry[observation] only Reference(ChEmrObservationCognitiveDisability)
-* section[sectionCognitiveDisability].entry[observation] ^type.aggregation = #bundled
-
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].entry ^slicing.discriminator.type = #profile
-* section[sectionPhysicalDisability].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionPhysicalDisability].entry ^slicing.rules = #open
-* section[sectionPhysicalDisability].entry contains observation 0..*
-* section[sectionPhysicalDisability].entry[observation] only Reference(ChEmrObservationPhysicalDisability)
-* section[sectionPhysicalDisability].entry[observation] ^type.aggregation = #bundled
 
 // Pregnancy
 * section[sectionPregnancyHx].entry[pregnancyStatus] MS
