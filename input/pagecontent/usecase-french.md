@@ -68,7 +68,7 @@ L'[eFicheurgence pour Muster Max](Bundle-UC1-Bundle-emr-MusterMax.html) complet 
 Un [patient](Patient-UC2-Patient-WalterSchmid.html), 78 ans, vit seul et reçoit deux fois par jour la visite d’un service 
 d’aide et de soins à domicile en raison d’un hémisyndrome consécutif à un AVC. Il souffre de symptômes de refroidissement depuis trois jours et présente une fièvre depuis un jour. Le [service d'aide et de soins à domicile](RelatedPerson-UC2-RelatedPerson-Spitex.html) appelle les urgences médicales, car le médicament prescrit par le médecin ne réussit pas à faire baisser la fièvre. 
 
-Le médecin urgentiste arrive : le patient est [aphasique](Observation-UC2-PhysicalDisability-Aphasie.html), ce qui limite la communication. État général faible, pouls élevé, tension plutôt basse, fièvre à 38,9°C, toux légère, râles crépitants basaux, état de conscience variable. Un début de pneumonie est suspecté.
+Le médecin urgentiste arrive : le patient est [aphasique](Condition-UC2-Condition-Aphasie.html), ce qui limite la communication. État général faible, pouls élevé, tension plutôt basse, fièvre à 38,9°C, toux légère, râles crépitants basaux, état de conscience variable. Un début de pneumonie est suspecté.
 
 **Liste des problèmes de santé/diagnostics**
 
@@ -97,7 +97,7 @@ Le médecin urgentiste arrive : le patient est [aphasique](Observation-UC2-Physi
 
 **Handicaps physiques**
 
-[Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html)
+[Aphasie](Condition-UC2-Condition-Aphasie.html)
 
 **Documents archivés**
 

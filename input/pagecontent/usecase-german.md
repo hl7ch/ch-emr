@@ -67,7 +67,7 @@ Den vollständigen [eNotfallpass für Muster Max](Bundle-UC1-Bundle-emr-MusterMa
 
 Ein [Patient](Patient-UC2-Patient-WalterSchmid.html), 78 Jahre alt, wohnt allein, bekommt 2×/Tag Hausbesuch durch Spitex wegen Hemisyndrom nach vaskulär bedingtem Schlaganfall. Er hat Erkältungssymptome seit 3 Tagen und Fieber seit einem Tag. Die [Spitex](RelatedPerson-UC2-RelatedPerson-Spitex.html) ruft den ärztlichen Notfalldienst an, da sich das Fieber mit dem vom Hausarzt verordneten Medikament nicht senken lässt.
 
-Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html) eingeschränkt. Der Allgemeinzustand ist geschwächt, Puls ist erhöht und der Blutdruck eher tief, Fieber von 38.9 °C, leichtem Husten und basalen Rasselgeräuschen. Der Wachheitszustand ist wechselhaft. Es besteht der Verdacht auf eine beginnende Pneumonie.
+Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphasie](Condition-UC2-Condition-Aphasie.html) eingeschränkt. Der Allgemeinzustand ist geschwächt, Puls ist erhöht und der Blutdruck eher tief, Fieber von 38.9 °C, leichtem Husten und basalen Rasselgeräuschen. Der Wachheitszustand ist wechselhaft. Es besteht der Verdacht auf eine beginnende Pneumonie.
 
 **Problemliste/Diagnoseliste**
 
@@ -96,7 +96,7 @@ Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphas
 
 **Physische Beeinträchtigungen**
 
-[Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html)
+[Aphasie](Condition-UC2-Condition-Aphasie.html)
 
 **Hinterlegte Dokumente**
 

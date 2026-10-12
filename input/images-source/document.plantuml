@@ -24,8 +24,7 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
       rectangle "Other Documents     " as SecOther #yellowgreen
       rectangle "Implants                   " as SecImpl #yellowgreen
       rectangle "Pregnancy               " as SecPreg #yellowgreen
-      rectangle "Cognitive disabilities" as SecCogDis #yellowgreen
-      rectangle "Physical disabilities  " as SecPhyDis #yellowgreen
+      rectangle "Functional status   " as SecFunc #yellowgreen
     }
   }
 
@@ -43,8 +42,7 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
     rectangle "[[StructureDefinition-ch-emr-documentreference.html Entry: DocumentReference (Other)]]" as E11 #salmon
     rectangle "[[StructureDefinition-ch-emr-deviceusestatement.html Entry: DeviceUseStatement]]" as E12 #salmon
     rectangle "[[http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html Entry: Observation (PregnancyStatus)]]" as E13 #salmon
-    rectangle "[[StructureDefinition-ch-emr-observation-cognitive-disability.html Entry: Observation (Cog)]]" as E14 #salmon
-    rectangle "[[StructureDefinition-ch-emr-observation-physical-disability.html Entry: Observation (Phys)]]" as E15 #salmon
+    rectangle "[[http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-condition.html Entry: Condition (Disability)]]" as E14 #salmon
   }
 }
 
@@ -61,7 +59,6 @@ SecAD ..> E10
 SecOther ..> E11
 SecImpl ..> E12
 SecPreg ..> E13
-SecCogDis ..> E14
-SecPhyDis ..> E15
+SecFunc ..> E14
 
 @enduml
