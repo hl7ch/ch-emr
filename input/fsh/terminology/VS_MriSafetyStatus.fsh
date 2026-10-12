@@ -7,6 +7,6 @@ Description: "Permitted values for the MRI safety status property of a device, p
 * ^version = "1.0.0"
 * ^date = "2026-05-26"
 
-* $ncit#C106045 "MR Safe"
-* $ncit#C106046 "MR Conditional"
-* $ncit#C106047 "MR Unsafe"
+* $ncit#C106045 "Magnetic Resonance Safe"
+* $ncit#C106046 "Magnetic Resonance Conditional"
+* $ncit#C106047 "Magnetic Resonance Unsafe"

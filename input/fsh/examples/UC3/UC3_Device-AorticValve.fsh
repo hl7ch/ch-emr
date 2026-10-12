@@ -14,4 +14,4 @@ Description: "Mechanische Aortenklappenprothese (implantiert 2010)."
 * udiCarrier.carrierHRF = "(01)00845678902345(17)301231(10)AV2010A(21)LK2010AV001"
 * udiCarrier.entryType = #manual
 
-* safety[mriSafety] = $ncit#C106046 "MR Conditional"
+* safety[mriSafety] = $ncit#C106046 "Magnetic Resonance Conditional"

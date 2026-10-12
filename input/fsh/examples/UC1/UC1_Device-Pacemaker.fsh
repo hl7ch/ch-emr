@@ -14,4 +14,4 @@ Description: "Herzschrittmacher implantiert bei Muster Max (2015)."
 * udiCarrier.carrierHRF = "(01)00845678901234(17)301231(10)PM2015A(21)MM2015PM001"
 * udiCarrier.entryType = #manual
 
-* safety[mriSafety] = $ncit#C106046 "MR Conditional"
+* safety[mriSafety] = $ncit#C106046 "Magnetic Resonance Conditional"

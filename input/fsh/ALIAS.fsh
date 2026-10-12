@@ -11,7 +11,7 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $sct-ch = http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm = http://standardterms.edqm.eu
-Alias: $ncit = urn:oid:2.16.840.1.113883.3.26.1.1
+Alias: $ncit = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
 // Swiss specific OIDs
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
