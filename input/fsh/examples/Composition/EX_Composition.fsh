@@ -82,7 +82,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionAlerts].code = $loinc#104605-1
 * section[sectionAlerts].text.status = #generated
 * section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>For attempted cardiopulmonary resuscitation (gemäss Patientenverfügung)</li></ul></div>"
-* section[sectionAlerts].entry[alertsFlag][resuscitationStatus][0] = Reference(EX-Resuscitation)
+* section[sectionAlerts].entry[alertsFlag][0] = Reference(EX-Resuscitation)
 
 // Document references section
 * section[sectionOtherDocuments].title = "Andere Dokumente"

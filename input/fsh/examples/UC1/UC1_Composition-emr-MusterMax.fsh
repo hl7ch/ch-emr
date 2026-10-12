@@ -84,7 +84,7 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionAlerts].code = $loinc#104605-1
 * section[sectionAlerts].text.status = #generated
 * section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus: For attempted cardiopulmonary resuscitation (gemäss Notanordnung 2024 und Patientenverfügung 2022)</p></div>"
-* section[sectionAlerts].entry[alertsFlag][resuscitationStatus][0] = Reference(UC1-Flag-Resuscitation)
+* section[sectionAlerts].entry[alertsFlag][0] = Reference(UC1-Flag-Resuscitation)
 
 // Other documents
 * section[sectionOtherDocuments].title = "Andere Dokumente"

@@ -74,14 +74,9 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAdvanceDirectives].entry[advanceDirective] ^type.aggregation = #bundled
 
 // Alerts: resuscitation status (IPS allows only Consent | DocumentReference in the Advance Directives section)
+// ChEmrFlagResuscitationStatus derives from the IPS alert Flag, so it is carried in the inherited alertsFlag slice.
 * section[sectionAlerts].code = $loinc#104605-1
-* section[sectionAlerts].entry[alertsFlag] ^slicing.discriminator.type = #profile
-* section[sectionAlerts].entry[alertsFlag] ^slicing.discriminator.path = "resolve()"
-* section[sectionAlerts].entry[alertsFlag] ^slicing.rules = #open
-* section[sectionAlerts].entry[alertsFlag] contains resuscitationStatus 0..*
-* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
-* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^short = "Resuscitation status (Flag) pointing to the advance directive(s) it is based on"
-* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag] ^comment = "The resuscitation status is recorded here as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on."
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5
