@@ -10,4 +10,4 @@ Description: "General example for a device"
 * timingDateTime = "2023-01-15"
 * recordedOn = "2023-01-15"
 
-* bodySite = $sct-ch#80891009
+* bodySite = $sct#80891009

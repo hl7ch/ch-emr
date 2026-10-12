@@ -7,7 +7,7 @@ Description: "Aortenaneurysma (Beat Frei, 2024)."
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#problem-list-item
-* code = $sct-ch#67362008
+* code = $sct#67362008
 * subject = Reference(UC4-Patient-BeatFrei)
 * onsetDateTime = "2024"
 * recordedDate = "2024-01-01"
