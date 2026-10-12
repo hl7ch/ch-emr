@@ -69,14 +69,19 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.type = #profile
 * section[sectionAdvanceDirectives].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionAdvanceDirectives].entry ^slicing.rules = #open
-* section[sectionAdvanceDirectives].entry contains
-    advanceDirective 0..* and
-    resuscitationStatus 0..*
+* section[sectionAdvanceDirectives].entry contains advanceDirective 0..*
 * section[sectionAdvanceDirectives].entry[advanceDirective] only Reference(ChEmrDocumentReferenceAdvanceDirective)
 * section[sectionAdvanceDirectives].entry[advanceDirective] ^type.aggregation = #bundled
-* section[sectionAdvanceDirectives].entry[resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
-* section[sectionAdvanceDirectives].entry[resuscitationStatus] ^short = "Resuscitation status (Flag) pointing to the advance directive(s) it is based on"
-* section[sectionAdvanceDirectives].entry[resuscitationStatus] ^type.aggregation = #bundled
+
+// Alerts: resuscitation status (IPS allows only Consent | DocumentReference in the Advance Directives section)
+* section[sectionAlerts].code = $loinc#104605-1
+* section[sectionAlerts].entry[alertsFlag] ^slicing.discriminator.type = #profile
+* section[sectionAlerts].entry[alertsFlag] ^slicing.discriminator.path = "resolve()"
+* section[sectionAlerts].entry[alertsFlag] ^slicing.rules = #open
+* section[sectionAlerts].entry[alertsFlag] contains resuscitationStatus 0..*
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^short = "Resuscitation status (Flag) pointing to the advance directive(s) it is based on"
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^type.aggregation = #bundled
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5

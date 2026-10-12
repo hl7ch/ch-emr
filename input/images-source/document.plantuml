@@ -20,6 +20,7 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
       rectangle "Risk Factors             " as SecRisk #yellowgreen
       rectangle "Problem list              " as SecDiag #yellowgreen
       rectangle "Advance Directives  " as SecAD #yellowgreen
+      rectangle "Alerts                       " as SecAlert #yellowgreen
       rectangle "Other Documents     " as SecOther #yellowgreen
       rectangle "Implants                   " as SecImpl #yellowgreen
       rectangle "Pregnancy               " as SecPreg #yellowgreen
@@ -50,7 +51,8 @@ rectangle "**Bundle: eNotfallpass Document**" as Bundle #orange/yellow {
 PatRef ..> E1
 SecContact ..> E2
 SecCare ..> E3
-SecAD ..> E4
+SecAlert ..> E4
+E4 ..> E10 : advanceDirective
 SecMed ..> E5
 SecImm ..> E6
 SecAllergy ..> E7

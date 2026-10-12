@@ -1,5 +1,5 @@
 Profile: ChEmrFlagResuscitationStatus
-Parent: Flag
+Parent: $IpsFlagAlert
 Id: ch-emr-flag-resuscitation-status
 Title: "CH Emergency Record Flag Resuscitation Status"
 Description: "Flag profile for documenting the patient's resuscitation (code) status. The Flag references the advance directive DocumentReference(s) (e.g. Patientenverfügung, ärztliche Notfallanordnung) the status is based on."
