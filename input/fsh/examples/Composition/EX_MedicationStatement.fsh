@@ -1,5 +1,5 @@
 Instance: EX-MedicationStatement
-InstanceOf: $ChIpsMedicationStatement
+InstanceOf: ChEmrMedicationStatement
 Usage: #example
 Title: "EX-MedicationStatement (Metformin)"
 Description: "General example of a medication statement"
