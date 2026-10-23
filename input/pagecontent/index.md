@@ -8,7 +8,7 @@ This implementation guide is based on the concept for the exchange format of the
 ### Dependencies Overview
 The CH EMR (Emergency Record) implementation guide builds upon several Swiss FHIR specifications. The following diagram illustrates the relationships between these implementation guides:
 
-{% include dependencies.svg %}
+![Dependencies overview](dependencies.svg)
 *Fig. 1: Schematic representation of the dependency mechanism of the implementation guides*
 
 The **CH EMR** is primarily derived from the [CH IPS (International Patient Summary)](https://fhir.ch/ig/ch-ips/index.html), which provides the foundational clinical profiles for patient summaries in Switzerland. CH IPS itself is based on the international [IPS UV](https://hl7.org/fhir/uv/ips/) specification by HL7, ensuring cross-border interoperability.
