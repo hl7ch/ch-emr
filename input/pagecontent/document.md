@@ -3,7 +3,7 @@ This exchange format is defined as a document type that corresponds to a Bundle 
 ### Bundle structure
 This exchange format is defined as a document type that corresponds to a Bundle as a FHIR resource. A Bundle has a list of entries. The first entry is the Composition, in which all contained entries are then referenced.
 
-![Document structure](document.svg)
+<div>{% include document.svg %}</div>
 
 *Fig. 2: Schematic document structure of CH EMR*
 
