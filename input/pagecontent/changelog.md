@@ -1,5 +1,12 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 1 Ballot (2026-06-10)
+### STU 1 (unreleased)
 
-Initial ballot version.
+#### Changed
+
+* [#40](https://github.com/hl7ch/ch-emr/issues/40): Check dependencies – newer versions available for hl7.fhir.uv.extensions.r4 and hl7.fhir.uv.ips
+* [#46](https://github.com/hl7ch/ch-emr/issues/46): Risk to Healthcare Personnel value set: is the scope of about 4700 concepts intended, and should the stated exclusions be implemented?
+ 
+#### Fixed
+* [#39](https://github.com/hl7ch/ch-emr/issues/39): Incorrect numbering of the titles
+* [#55](https://github.com/hl7ch/ch-emr/issues/55): Document - double title
