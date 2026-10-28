@@ -1,0 +1,3 @@
+type: changed
+issue: 82
+text: "Implant body site value set excludes the unlateralised parents of left/right concepts"
