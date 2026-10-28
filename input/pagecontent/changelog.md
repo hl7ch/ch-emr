@@ -1,12 +1,22 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 1 (unreleased)
+{% assign types = "added,changed,fixed" | split: "," %}
+{%- for t in types %}
+{%- assign found = false %}
+{%- for entry in site.data.changelog %}{% if entry[1].type == t %}{% assign found = true %}{% endif %}{% endfor %}
+{%- if found %}
 
-#### Changed
+#### {{ t | capitalize }}
 
-* [#40](https://github.com/hl7ch/ch-emr/issues/40): Check dependencies – newer versions available for hl7.fhir.uv.extensions.r4 and hl7.fhir.uv.ips
-* [#48](https://github.com/hl7ch/ch-emr/issues/48): Care team section: the practitioner and practitionerRole slices can never match, because they have no target profile 
- 
-#### Fixed
-* [#39](https://github.com/hl7ch/ch-emr/issues/39): Incorrect numbering of the titles
-* [#55](https://github.com/hl7ch/ch-emr/issues/55): Document - double title
+{% for entry in site.data.changelog -%}
+{%- if entry[1].type == t -%}
+{%- if entry[1].issue -%}
+* [#{{ entry[1].issue }}](https://github.com/hl7ch/ch-emr/issues/{{ entry[1].issue }}): {{ entry[1].text }}
+{% else -%}
+* {{ entry[1].text }}
+{% endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor %}
