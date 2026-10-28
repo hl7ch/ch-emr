@@ -1,10 +1,22 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 1 (unreleased)
+{% assign types = "added,changed,fixed" | split: "," %}
+{%- for t in types %}
+{%- assign found = false %}
+{%- for entry in site.data.changelog %}{% if entry[1].type == t %}{% assign found = true %}{% endif %}{% endfor %}
+{%- if found %}
 
-#### Changed
- [#56](https://github.com/hl7ch/ch-emr/issues/56): CH EMR MRI Safety Status
+#### {{ t | capitalize }}
 
-#### Fixed
-* [#39](https://github.com/hl7ch/ch-emr/issues/39): Incorrect numbering of the titles
-* [#55](https://github.com/hl7ch/ch-emr/issues/55): Document - double title
+{% for entry in site.data.changelog -%}
+{%- if entry[1].type == t -%}
+{%- if entry[1].issue -%}
+* [#{{ entry[1].issue }}](https://github.com/hl7ch/ch-emr/issues/{{ entry[1].issue }}): {{ entry[1].text }}
+{% else -%}
+* {{ entry[1].text }}
+{% endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor %}
