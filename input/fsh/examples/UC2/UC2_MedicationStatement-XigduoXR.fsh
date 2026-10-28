@@ -15,4 +15,4 @@ Description: "Xigduo XR 1000/5 mg, 0-0-2-0 — Diabetes."
 * dosage[baseEntry].timing.repeat.when = #EVE
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000
 * dosage[baseEntry].route.text = "zum Einnehmen"
-* dosage[baseEntry].doseAndRate.doseQuantity = 2 $sct-ch#732936001 "Tabletten"
+* dosage[baseEntry].doseAndRate.doseQuantity = 2 $sct#732936001 "Tabletten"

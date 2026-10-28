@@ -9,7 +9,6 @@ Alias: $chVac = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
 // External Code Systems
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
-Alias: $sct-ch = http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm = http://standardterms.edqm.eu
 
 // Swiss specific OIDs

@@ -9,7 +9,7 @@ Description: "Patientenverfügung von Muster Max (2022, beim Hausarzt hinterlegt
 * date = "2022-06-01T10:00:00+02:00"
 * author = Reference(UC1-Patient-MusterMax)
 * type = $loinc#75320-2
-* category = $sct-ch#1264561001
+* category = $sct#1264561001
 * description = "Patientenverfügung beim Hausarzt hinterlegt"
 
 * content.attachment.contentType = #application/pdf
