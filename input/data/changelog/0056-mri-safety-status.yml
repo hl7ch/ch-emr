@@ -1,0 +1,3 @@
+type: changed
+issue: 56
+text: "MRI safety status uses NCI Thesaurus codes instead of a CH EMR code system, and the Device binding is now preferred"

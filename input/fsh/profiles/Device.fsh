@@ -72,8 +72,8 @@ Description: "Device profile for implants in the Emergency Record."
 * safety ^slicing.rules = #open
 * safety contains mriSafety 0..1 MS
 * safety[mriSafety].coding 1..*
-* safety[mriSafety].coding.system = $ChEmrMriSafetyStatusCS
-* safety[mriSafety] from ch-emr-mri-safety-status-vs (required)
+* safety[mriSafety].coding.system = $ncit
+* safety[mriSafety] from ch-emr-mri-safety-status-vs (preferred)
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
