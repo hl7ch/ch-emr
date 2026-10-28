@@ -1,0 +1,3 @@
+type: changed
+issue: 45
+text: "SNOMED CT codes no longer carry the Swiss extension version; the International edition is used throughout"
