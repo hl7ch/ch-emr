@@ -1,0 +1,3 @@
+type: changed
+issue: 40
+text: Check dependencies – newer versions available for hl7.fhir.uv.extensions.r4 and hl7.fhir.uv.ips
