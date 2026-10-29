@@ -105,16 +105,12 @@ Description: "General composition for the Emergency Record"
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Schwangerschaft:</p><ul><li>Ja</li></ul></div>"
 * section[sectionPregnancyHx].entry[pregnancyStatus][0] = Reference(EX-Pregnancy)
 
-// Disability section
-* section[sectionCognitiveDisability].title = "Kognitive Beeinträchtigungen"
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].text.status = #generated
-* section[sectionCognitiveDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Demenz</li></ul></div>"
-* section[sectionCognitiveDisability].entry[observation][0] = Reference(EX-CognitiveDisability)
 
-// Disability physical section
-* section[sectionPhysicalDisability].title = "Physische Beeinträchtigungen"
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].text.status = #generated
-* section[sectionPhysicalDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Gehbehinderung</li></ul></div>"
-* section[sectionPhysicalDisability].entry[observation][0] = Reference(EX-PhysicalDisability)
+
+// Functional status (disabilities)
+* section[sectionFunctionalStatus].title = "Funktionsstatus"
+* section[sectionFunctionalStatus].code = $loinc#47420-5
+* section[sectionFunctionalStatus].text.status = #generated
+* section[sectionFunctionalStatus].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Demenz</li><li>Gehbehinderung</li></ul></div>"
+* section[sectionFunctionalStatus].entry[disability][0] = Reference(EX-Condition-CognitiveDisability)
+* section[sectionFunctionalStatus].entry[disability][1] = Reference(EX-Condition-PhysicalDisability)
