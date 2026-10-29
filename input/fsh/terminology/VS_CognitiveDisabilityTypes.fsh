@@ -1,7 +1,7 @@
 ValueSet: ChEmrCognitiveDisabilityTypesVS
 Id: ch-emr-cognitive-disability-types-vs
 Title: "Cognitive disability types"
-Description: "Value set for the types of cognitive disabilities based on SNOMED CT."
+Description: "Value set of SNOMED CT codes for cognitive disabilities. It is not bound to any profile element. It is provided as implementer help: when a Condition in the Functional Status section of the Emergency Record has a code in this value set, the disability can be classified as cognitive and rendered accordingly for users."
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"

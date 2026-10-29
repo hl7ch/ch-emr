@@ -106,16 +106,3 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Nicht zutreffend.</p></div>"
 * section[sectionPregnancyHx].emptyReason = $list-empty-reason#notasked "Not Asked"
 
-// Cognitive disability
-* section[sectionCognitiveDisability].title = "Kognitive Beeinträchtigungen"
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].text.status = #generated
-* section[sectionCognitiveDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionCognitiveDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"
-
-// Physical disability
-* section[sectionPhysicalDisability].title = "Physische Beeinträchtigungen"
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].text.status = #generated
-* section[sectionPhysicalDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionPhysicalDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"
