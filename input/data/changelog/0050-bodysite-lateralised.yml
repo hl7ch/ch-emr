@@ -1,0 +1,3 @@
+type: changed
+issue: 50
+text: "Implant laterality is expressed by lateralised SNOMED CT body sites; the BodyStructure profile and extension are removed"
