@@ -1,0 +1,3 @@
+type: changed
+issue: 49
+text: "Document page explains the expectation on Patient.communication.language for implementers"
