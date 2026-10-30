@@ -46,7 +46,9 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCareTeam].entry contains
     practitioner 0..* and
     practitionerRole 0..*
+* section[sectionCareTeam].entry[practitioner] only Reference($ChIpsPractitioner)
 * section[sectionCareTeam].entry[practitioner] ^type.aggregation = #bundled
+* section[sectionCareTeam].entry[practitionerRole] only Reference($ChIpsPractitionerRole)
 * section[sectionCareTeam].entry[practitionerRole] ^type.aggregation = #bundled
 
 //Resuscitation
