@@ -15,4 +15,4 @@ Description: "Plavix 75 mg (Clopidogrel) zur Prophylaxe nach Schlaganfall — Do
 * dosage[baseEntry].timing.repeat.when = #MORN
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000
 * dosage[baseEntry].route.text = "zum Einnehmen"
-* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct-ch#732936001 "Tablette"
+* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablette"

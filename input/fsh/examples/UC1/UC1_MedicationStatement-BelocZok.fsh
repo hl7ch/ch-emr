@@ -15,8 +15,8 @@ Description: "Beloc Zok 50 mg (Metoprolol) für Bluthochdruck — Dosierung 1-0-
 * dosage[baseEntry].timing.repeat.when = #MORN
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000
 * dosage[baseEntry].route.text = "zum Einnehmen"
-* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct-ch#732936001 "Tablette"
+* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablette"
 
 * dosage[additionalEntry][0].sequence = 2
 * dosage[additionalEntry][0].timing.repeat.when = #EVE
-* dosage[additionalEntry][0].doseAndRate.doseQuantity = 0.5 $sct-ch#732936001 "Halbe Tablette"
+* dosage[additionalEntry][0].doseAndRate.doseQuantity = 0.5 $sct#732936001 "Halbe Tablette"

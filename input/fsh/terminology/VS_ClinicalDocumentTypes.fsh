@@ -7,7 +7,7 @@ Description: "Value Set for clinical document types"
 * ^version = "1.0.0"
 * ^date = "2026-05-26"
 
-* $sct-ch#4191000179101
-* $sct-ch#422735006
-* $sct-ch#772790007
-* $sct-ch#1264561001
+* $sct#4191000179101
+* $sct#422735006
+* $sct#772790007
+* $sct#1264561001

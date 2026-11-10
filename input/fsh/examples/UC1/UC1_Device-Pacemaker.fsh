@@ -5,7 +5,7 @@ Title: "UC1-Device-Pacemaker"
 Description: "Herzschrittmacher implantiert bei Muster Max (2015)."
 
 * status = #active
-* type = $sct-ch#14106009
+* type = $sct#14106009
 * patient = Reference(UC1-Patient-MusterMax)
 
 * udiCarrier.deviceIdentifier = "00845678901234"

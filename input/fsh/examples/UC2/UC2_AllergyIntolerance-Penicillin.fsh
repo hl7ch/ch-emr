@@ -9,9 +9,9 @@ Description: "Penicillin-Allergie mit Reaktion Atemnot (Walter Schmid)."
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct-ch#764146007
+* code = $sct#764146007
 * patient = Reference(UC2-Patient-WalterSchmid)
 
-* reaction.manifestation = $sct-ch#267036007
+* reaction.manifestation = $sct#267036007
 * reaction.manifestation.text = "Atemnot"
 * reaction.severity = #severe

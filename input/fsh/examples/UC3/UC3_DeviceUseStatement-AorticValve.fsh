@@ -10,4 +10,4 @@ Description: "Lara Keller trägt eine mechanische Aortenklappenprothese (implant
 * timingDateTime = "2010-04-15"
 * recordedOn = "2010-04-15"
 
-* bodySite = $sct-ch#34202007
+* bodySite = $sct#34202007

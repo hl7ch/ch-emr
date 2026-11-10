@@ -11,5 +11,5 @@ Description: "MARCOUMAR Tabletten 3 mg (Phenprocoumon), Plastflasche à 25 Stk (
 * code.text = "Marcoumar 3 mg (Phenprocoumon)"
 * form = urn:oid:0.4.0.127.0.16.1.1.2.1#10219000
 * form.text = "Tablette"
-* amount.numerator = 25 $sct-ch#732936001 "Tablette"
-* amount.denominator = 1 $sct-ch#1681000175101 "Packung"
+* amount.numerator = 25 $sct#732936001 "Tablette"
+* amount.denominator = 1 $sct#1681000175101 "Packung"

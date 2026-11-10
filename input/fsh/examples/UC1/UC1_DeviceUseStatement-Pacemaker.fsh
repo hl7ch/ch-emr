@@ -10,4 +10,4 @@ Description: "Muster Max trägt einen Herzschrittmacher (implantiert 2015)."
 * timingDateTime = "2015-06-15"
 * recordedOn = "2015-06-15"
 
-* bodySite = $sct-ch#80891009
+* bodySite = $sct#80891009

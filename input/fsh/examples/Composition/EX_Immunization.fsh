@@ -13,5 +13,5 @@ Description: "General example of a vaccination"
 
 * lotNumber = "SPX24XBB002"
 
-* protocolApplied.targetDisease = $sct-ch#840539006
+* protocolApplied.targetDisease = $sct#840539006
 * protocolApplied.doseNumberPositiveInt = 6
