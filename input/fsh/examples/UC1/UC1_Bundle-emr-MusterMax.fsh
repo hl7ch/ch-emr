@@ -54,6 +54,10 @@ Description: "Vollständiger eNotfallpass für Muster Max (Anwendungsfall 1)."
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/DeviceUseStatement/UC1-DeviceUseStatement-Pacemaker"
 * entry[=].resource = UC1-DeviceUseStatement-Pacemaker
 
+// Resuscitation status
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Flag/UC1-Flag-Resuscitation"
+* entry[=].resource = UC1-Flag-Resuscitation
+
 // Documents
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/DocumentReference/UC1-DocumentReference-Notanordnung"
 * entry[=].resource = UC1-DocumentReference-Notanordnung

@@ -61,7 +61,7 @@ Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat un
 
 In einem zweiten Schritt konnten über die hinterlegte Telefonnummer der Notfallkontakte die Angehörigen informiert werden sowie der Ablageort einer ärztlichen Notanordnung und einer Patientenverfügung festgestellt werden. Somit kann eine Behandlung entsprechend der medizinischen Vorgeschichte und in Übereinstimmung des Patientenwunsches trotz Bewusstlosigkeit eingeleitet werden.
 
-Den vollständigen [eNotfallpass für Muster Max](Bundle-UC1-Bundle-emr-MusterMax.html) zeigt alle relevanten medizinischen Informationen strukturiert und referenzierbar.
+Der vollständige [eNotfallpass für Muster Max](Bundle-UC1-Bundle-emr-MusterMax.html) zeigt alle relevanten medizinischen Informationen strukturiert und referenzierbar.
 
 ### Anwendungsfall 2: Patient im allgemeinen Notfalldienst (Wochenende)
 
@@ -107,7 +107,7 @@ Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphas
 
 Beim Zugriff auf das EPD erkennt der diensthabende Notfallarzt, dass der Patient eine Penicillin-Allergie hat und mit 23 Jahren einen Motorradunfall mit Milzverletzung, weswegen ihm die Milz operativ entfernt werden musste. Ein anhaltender fieberhafter Zustand bei Patienten mit eingeschränkter Kommunikationsmöglichkeit und somit schwer zu beurteilbarem Wachheitszustand sowie eingeschränkter Funktionsfähigkeit des Immunsystems (St.n. Splenektomie) ist dies ein lebensbedrohlicher Zustand. Es folgt ein Transport durch den Rettungsdienst.
 
-Den vollständigen [eNotfallpass für Walter Schmid](Bundle-UC2-Bundle-emr-WalterSchmid.html) enthält alle relevanten Informationen.
+Der vollständige [eNotfallpass für Walter Schmid](Bundle-UC2-Bundle-emr-WalterSchmid.html) enthält alle relevanten Informationen.
 
 ### Anwendungsfall 3: Patientin in Arztpraxis
 
@@ -141,7 +141,7 @@ Keine
 
 Die Dermatologin entschliesst sich den eNotfallpass zu konsultieren, sieht dort, dass die Patientin orale Antikoagulation einnehmen muss wegen eines angeborenen Herzfehlers und bei welchem im Laufe der Zeit eine Klappenprothese eingesetzt wurde. Ebenso sieht sie, dass sie wegen einer Eisenmangelanämie vor einer Woche bei der Hausärztin eine Eiseninfusion erhalten hat bei einem Hämoglobinwert von 9 g/L. Sie alarmiert den Rettungsdienst, welcher die Patientin hospitalisiert.
 
-Den vollständigen [eNotfallpass für Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) zeigt das Zusammenspiel von oraler Antikoagulation und Implantat.
+Der vollständige [eNotfallpass für Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) zeigt das Zusammenspiel von oraler Antikoagulation und Implantat.
 
 ### Anwendungsfall 4: Patient in Physiotherapie
 
@@ -167,7 +167,7 @@ Keine
 
 Er entscheidet sich den eNotfallpass aufzurufen, darin sieht er, dass der Patient ein Aortenaneurysma hat. Der Physiotherapeut empfiehlt dem Patienten, dass er sich hospitalisieren lässt und alarmiert den Rettungsdienst.
 
-Den vollständigen [eNotfallpass für Beat Frei](Bundle-UC4-Bundle-emr-BeatFrei.html) zeigt, wie auch eine sehr kurze Eintragslage entscheidungsrelevant sein kann.
+Der vollständige [eNotfallpass für Beat Frei](Bundle-UC4-Bundle-emr-BeatFrei.html) zeigt, wie auch eine sehr kurze Eintragslage entscheidungsrelevant sein kann.
 
 ### Anwendungsfall 5: Präklinik (Rettungsdienst) vor Ankunft in Spital
 
@@ -198,4 +198,4 @@ Keine
 
 Frau Meier berichtet, dass die Schmerzen in der Brust seit ca. 30 Minuten bestehen und sich zunehmend verschlimmern. Sie gibt an, dass sie in der Vergangenheit ähnliche Episoden hatte, jedoch weniger intensiv. Durch den Zugriff auf die im eNotfallpass hinterlegte Problemliste erkennt das Rettungsteam sofort die bekannte koronare Herzkrankheit und kann die aktuelle Symptomatik daraufhin beurteilen. Das Rettungsteam verabreicht Sauerstoff und bringt die Patientin unter Monitoring in das für ihre Erkrankung bestgeeignete Spital.
 
-Den vollständigen [eNotfallpass für Anna Meier](Bundle-UC5-Bundle-emr-AnnaMeier.html) zeigt, wie die im EPD/eNotfallpass dokumentierte chronische Vorerkrankung dem Rettungsteam die richtige Triage-Entscheidung erlaubt.
+Der vollständige [eNotfallpass für Anna Meier](Bundle-UC5-Bundle-emr-AnnaMeier.html) zeigt, wie die im EPD/eNotfallpass dokumentierte chronische Vorerkrankung dem Rettungsteam die richtige Triage-Entscheidung erlaubt.
