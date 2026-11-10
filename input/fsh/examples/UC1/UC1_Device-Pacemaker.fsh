@@ -9,8 +9,8 @@ Description: "Herzschrittmacher implantiert bei Muster Max (2015)."
 * patient = Reference(UC1-Patient-MusterMax)
 
 * udiCarrier.deviceIdentifier = "00845678901234"
-* udiCarrier.issuer = "http://hl7.org/fhir/NamingSystem/gs1-di"
-* udiCarrier.jurisdiction = "http://hl7.org/fhir/NamingSystem/eu-ec-udi"
+* udiCarrier.issuer = "http://fhir.ch/ig/ch-emr/NamingSystem/gs1-di"
+* udiCarrier.jurisdiction = "http://fhir.ch/ig/ch-emr/NamingSystem/eu-ec-udi"
 * udiCarrier.carrierHRF = "(01)00845678901234(17)301231(10)PM2015A(21)MM2015PM001"
 * udiCarrier.entryType = #manual
 
