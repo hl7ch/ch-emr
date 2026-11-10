@@ -47,7 +47,7 @@ The emergency report is designed to give medical professionals quick and structu
 * **Allergies and intolerances**: Known allergic reactions and intolerances
 * **Risk factors**: Risks relevant to treatment
 * **Problem list**: Diagnoses and problems
-* **Advance directive**: Information on advance directives or medical directives, including the resuscitation status (patient's wishes regarding resuscitation measures in emergency situations)
+* **Advance directive**: Information on advance directives or medical directives.
 * **Other documents**: Other documents like organ donor cards
 * **Implants**: Medical devices
 * **Pregnancy**: Current pregnancy information
