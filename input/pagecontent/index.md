@@ -51,7 +51,13 @@ The emergency report is designed to give medical professionals quick and structu
 * **Other documents**: Other documents like organ donor cards
 * **Implants**: Medical devices
 * **Pregnancy**: Current pregnancy information
-* **Disability**: Information about disabilities
+* **Functional status**: Disabilities (see [Disabilities](#disabilities))
+
+#### Disabilities
+
+The CH EMR Composition has no dedicated sections for disabilities. A disability is recorded as a Condition (CH IPS Condition) in the IPS section Functional Status (LOINC 47420-5), entry slice `disability`.
+
+The value sets [Cognitive disability types](ValueSet-ch-emr-cognitive-disability-types-vs.html) and [Physical disability types](ValueSet-ch-emr-physical-disability-types-vs.html) are not bound to any element. They are implementer help: when a system finds a Condition in the functional status section, it can check whether the Condition.code is contained in one of these value sets to classify the disability as cognitive or physical and render it accordingly for users.
 
 #### Profiles
 
@@ -70,8 +76,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Advance Directive DocumentReference](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical orders. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
 | [CH Emergency Record Risk to Healthcare Personnel](StructureDefinition-ch-emr-flag-risk-to-healthcare-personnel.html) | Risk to healthcare personnel emanating from the patient (e.g. communicable disease). | [IPS Flag (alert)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html) |
 | [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
-| [CH Emergency Record Observation Cognitive Disability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
-| [CH Emergency Record Physical Disability Observation](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
  
 ### IP Statements
