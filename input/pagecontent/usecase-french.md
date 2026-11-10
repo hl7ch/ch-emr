@@ -1,10 +1,10 @@
 Le format d'échange « eUrgence » est décrit en détail ci-dessous pour expliquer les cas d'utilisation et les avantages de sa mise en œuvre dans la pratique.
 
-> Remarque: Dans les cas d’utilisation suivants, pour simplifier la présentation, seuls les champs du eUrgence qui sont pertinents pour le cas d’utilisation sont indiqués.
+> Remarque: Dans les cas d’utilisation suivants, pour simplifier la présentation, seuls les champs de l'eFicheurgence qui sont pertinents pour le cas d’utilisation sont indiqués.
 
-### Cas d’utilisation 1:  Personne arrivée inconsciente aux urgences
+### Cas d’utilisation 1: Personne arrivée inconsciente aux urgences
 
-M. [Max Muster](Patient-UC1-Patient-MusterMax.html), né le 01.01.64,a été trouvé sans connaissance à la gare par des passants, qui préviennent le service de sauvetage.M. Muster est identifié grâce à sa carte d’identité. Le service de sauvetage accède au EP/à l’eFicheurgence. 
+M. [Max Muster](Patient-UC1-Patient-MusterMax.html), né le 01.01.64,a été trouvé sans connaissance à la gare par des passants, qui préviennent le service de sauvetage.M. Muster est identifié grâce à sa carte d’identité. Le service de sauvetage accède au DEP/à l’eFicheurgence. 
 
 Le service de sauvetage peut déjà accéder aux données suivantes :
 
@@ -38,23 +38,23 @@ Aucune
 **Documents archivés**
 
 {:class="table table-bordered"}
-| Document | Anée | Lieu d’archivage |
-|----------|------|-----------|
+| Document | Année | Lieu d’archivage |
+|----------|-------|-----------|
 | [Ärztliche Notanordnung](DocumentReference-UC1-DocumentReference-Notanordnung.html) | 2024 | EPD |
 | [Patientenverfügung](DocumentReference-UC1-DocumentReference-Patientenverfuegung.html) | 2022 | Hausarzt |
 
 **Autres documents**
 
 {:class="table table-bordered"}
-| Document | Anée | Lieu d’archivage |
-|----------|------|-----------|
+| Document | Année | Lieu d’archivage |
+|----------|-------|-----------|
 | [Carte de porteur de stimulateur cardiaque](DocumentReference-UC1-DocumentReference-Schrittmacherausweis.html) | 2015 | EPD |
 
 **Implants**
 
 {:class="table table-bordered"}
 | Implant | Année |
-|-----------|------|
+|---------|-------|
 | [Stimulateur cardiaque](DeviceUseStatement-UC1-DeviceUseStatement-Pacemaker.html) | 2015 |
 
 Ces données indiquent que le patient a déjà souffert de plusieurs événements cardiaques, porte un stimulateur cardiaque et prend un traitement composé de Plavix et de Beloc Zok. Ces informations, ainsi qu’un nouveau diagnostic, permettent d’évaluer la situation et de définir explicitement l’hôpital de destination. Le service de sauvetage emmène le patient, toujours inanimé, à cet hôpital.
@@ -73,10 +73,10 @@ Le médecin urgentiste arrive : le patient est [aphasique](Observation-UC2-Physi
 **Liste des problèmes de santé/diagnostics**
 
 {:class="table table-bordered"}
-| Anée | Diagnostic |
-|------|----------|
-| 2023 | [AVC](Condition-UC2-Condition-Schlaganfall.html) |
-| 1969 | [Statut après splénectomie](Condition-UC2-Condition-Splenektomie.html) |
+| Année | Diagnostic |
+|-------|----------|
+| 2023  | [AVC](Condition-UC2-Condition-Schlaganfall.html) |
+| 1969  | [Statut après splénectomie](Condition-UC2-Condition-Splenektomie.html) |
 
 **Médication**
 
@@ -102,11 +102,11 @@ Le médecin urgentiste arrive : le patient est [aphasique](Observation-UC2-Physi
 **Documents archivés**
 
 {:class="table table-bordered"}
-| Document | Anée | Lieu d’archivageageort |
-|----------|------|-----------|
+| Document | Année | Lieu d’archivage |
+|----------|-------|------------------|
 | [Directives anticipées](DocumentReference-UC2-DocumentReference-Patientenverfuegung.html) | 2022 | Médecin de famille |
 
-En accédant au DEP, le médecin urgentiste de service apprend que le patient est allergique à la pénicilline. À l’âge de 23 ans, il a subi une lésion de la rate lors d’un accident de moto, ce qui a nécessité une splénectomie. Il présente un état fébrile persistant. Compte tenu, d’une part, des possibilités de communication limitées avec le patient et donc de la difficulté d’évaluer son état de conscience et, d’autre part, de son système immunitaire déficient (statut après la splénectomie), il s’agit d’une situation mettant en jeu le pronostic vital. Le patient est nsuite emmené par le service de sauvetage.
+En accédant au DEP, le médecin urgentiste de service apprend que le patient est allergique à la pénicilline. À l’âge de 23 ans, il a subi une lésion de la rate lors d’un accident de moto, ce qui a nécessité une splénectomie. Il présente un état fébrile persistant. Compte tenu, d’une part, des possibilités de communication limitées avec le patient et donc de la difficulté d’évaluer son état de conscience et, d’autre part, de son système immunitaire déficient (statut après la splénectomie), il s’agit d’une situation mettant en jeu le pronostic vital. Le patient est e emmené par le service de sauvetage.
 
 L'[eFicheurgence pour Walter Schmid](Bundle-UC2-Bundle-emr-WalterSchmid.html) complet contient toutes les informations pertinentes.
 
@@ -117,10 +117,10 @@ L'[eFicheurgence pour Walter Schmid](Bundle-UC2-Bundle-emr-WalterSchmid.html) co
 **Liste des problèmes de santé/diagnostics**
 
 {:class="table table-bordered"}
-| Anée | Diagnostic |
-|------|----------|
-| 2024 | [Anémie ferriprive](Condition-UC3-Condition-Eisenmangelanaemie.html) |
-| 2008 | [Malformation cardiaque congénitale](Condition-UC3-Condition-AngeborenerHerzfehler.html) |
+| Année | Diagnostic |
+|-------|----------|
+| 2024  | [Anémie ferriprive](Condition-UC3-Condition-Eisenmangelanaemie.html) |
+| 2008  | [Malformation cardiaque congénitale](Condition-UC3-Condition-AngeborenerHerzfehler.html) |
 
 **Médication**
 
@@ -140,7 +140,7 @@ Aucune
 |-----------|------|
 | [Valvule aortique](DeviceUseStatement-UC3-DeviceUseStatement-AorticValve.html) | 2010 |
 
-La dermatologue décide de consulter l’eFicheurgence et constate que la patiente doit prendre des anticoagulants oraux en raison d’une malformation cardiaque congénitale qui, avec le temps,a nécessité l’implantation d’une prothèse valvulaire. Elle voit également qu’en raison d’une anémie ferriprive associée à un taux d’hémoglobine de 9 g/L, sa médecin de famille lui a administré une perfusion de fer il y a une semaine. Elle prévient le service de sauvetage, qui hospitalise la patiente.
+La dermatologue décide de consulter l’eFicheurgence et constate que la patiente doit prendre des anticoagulants oraux en raison d’une malformation cardiaque congénitale qui, avec le temps,a nécessité l’implantation d’une prothèse valvulaire. Elle voit également qu’en raison d’une anémie ferriprive associée à un taux d’hémoglobine de 9 g/dL, sa médecin de famille lui a administré une perfusion de fer il y a une semaine. Elle prévient le service de sauvetage, qui hospitalise la patiente.
 
 L'[eFicheurgence pour Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) complet illustre l'interaction entre l'anticoagulation orale et l'implant.
 
@@ -173,7 +173,7 @@ L'[eFicheurgence pour Beat Frei](Bundle-UC4-Bundle-emr-BeatFrei.html) montre à 
 
 ### Cas d’utilisation 5: Prise en charge préhospitalière (service de sauvetage)
 
-Mme [Meier Anna](Patient-UC5-Patient-AnnaMeier.html), née le 15 mars 1972, se plaint de fortes douleurs à la poitrine 
+Mme [Anna Meier](Patient-UC5-Patient-AnnaMeier.html), née le 15 mars 1972, se plaint de fortes douleurs à la poitrine 
 et de difficultés respiratoires alors qu’elle se promenait dans un parc public. Un passant appelle le service de sauvetage, qui arrive rapidement.
 
 La patiente est consciente mais déclare qu’elle se sent très faible et qu’elle n’est plus capable de marcher seule. Le service de sauvetage réalise un premier examen sur place et consulte l’eFicheurgence, qui indique qu’elle souffre d’une pathologie préexistante. 
@@ -185,7 +185,7 @@ La patiente est consciente mais déclare qu’elle se sent très faible et qu’
 |------|----------|
 | 2018 | [Maladie coronarienne chronique](Condition-UC5-Condition-KoronareHerzkrankheit.html) |
 
-**Medikation**
+**Medication**
 
 {:class="table table-bordered"}
 | Nom de la préparation | Principe(s) actif(s) | Dose par unité | Posologie | Indication |
@@ -202,4 +202,4 @@ Aucune
 Mme Meier explique que ses douleurs à la poitrine durent depuis environ 30 minutes et s’aggravent. Elle déclare avoir souffert d’épisodes similaires par le passé, bien que moins intenses. En accédant à l’eFicheurgence, l’équipe de sauvetage prend immédiatement connaissance de la maladie coronarienne diagnostiquée et est en mesure d’évaluer les symptômes actuels. Elle administre 
 de l’oxygène à la patiente et la monitore jusqu’à sa prise en charge à l’hôpital le mieux adapté à sa maladie.
 
-L'[eFicheurgence pour Anna Meier](Bundle-UC5-Bundle-emr-AnnaMeier.html) montre comment les informations relatives aux maladies chroniques antérieures documentées dans l'DEP/l' eFicheurgence permettent à l'équipe de secours de prendre la bonne décision de triage.
+L'[eFicheurgence pour Anna Meier](Bundle-UC5-Bundle-emr-AnnaMeier.html) montre comment les informations relatives aux maladies chroniques antérieures documentées dans le DEP/l'eFicheurgence permettent à l'équipe de secours de prendre la bonne décision de triage.
