@@ -32,12 +32,6 @@ Description: "Elektronischer Notfallpass für Lara Keller — Anwendungsfall 3."
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC3-Practitioner-Hausarzt)
 * section[sectionCareTeam].entry[practitionerRole][0] = Reference(UC3-PractitionerRole-Hausarzt)
 
-* section[sectionResuscitation].title = "Reanimationsstatus"
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Kein Reanimationsstatus erfasst.</p></div>"
-* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
-
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
 * section[sectionMedications].text.status = #generated

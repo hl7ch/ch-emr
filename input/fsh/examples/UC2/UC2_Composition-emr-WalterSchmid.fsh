@@ -34,13 +34,6 @@ Description: "Elektronischer Notfallpass für Walter Schmid — Anwendungsfall 2
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC2-Practitioner-Hausarzt)
 * section[sectionCareTeam].entry[practitionerRole][0] = Reference(UC2-PractitionerRole-Hausarzt)
 
-// Resuscitation
-* section[sectionResuscitation].title = "Reanimationsstatus"
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keinen Reanimationsstatus erfasst; siehe Patientenverfügung 2022.</p></div>"
-* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
-
 // Medications
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
