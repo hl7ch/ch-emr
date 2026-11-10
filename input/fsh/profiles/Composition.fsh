@@ -12,8 +12,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section contains
     sectionEmergencyContacts 1..1 and
     sectionCareTeam 0..1 and
-    sectionResuscitation 0..1 and
-    sectionRiskFactors 0..1 and
     sectionOtherDocuments 0..1
 
 // Immunization
@@ -44,33 +42,11 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionCareTeam].entry contains
     practitioner 0..* and
     practitionerRole 0..*
+* section[sectionCareTeam].entry[practitioner] only Reference($ChIpsPractitioner)
 * section[sectionCareTeam].entry[practitioner] ^type.aggregation = #bundled
+* section[sectionCareTeam].entry[practitionerRole] only Reference($ChIpsPractitionerRole)
 * section[sectionCareTeam].entry[practitionerRole] ^type.aggregation = #bundled
 
-//Resuscitation
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].entry ^slicing.discriminator.type = #profile
-* section[sectionResuscitation].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionResuscitation].entry ^slicing.rules = #open
-* section[sectionResuscitation].entry contains observation 0..*
-* section[sectionResuscitation].entry[observation] only Reference(ChEmrObservationResuscitationStatus)
-* section[sectionResuscitation].entry[observation] ^type.aggregation = #bundled
-
-// Risk Factors
-* section[sectionRiskFactors].code = $loinc#46467-7
-* section[sectionRiskFactors].entry ^slicing.discriminator.type = #profile
-* section[sectionRiskFactors].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionRiskFactors].entry ^slicing.rules = #open
-* section[sectionRiskFactors].entry contains riskFactor 0..*
-* section[sectionRiskFactors].entry[riskFactor] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
-* section[sectionRiskFactors].entry[riskFactor] MS
-* section[sectionRiskFactors].entry[riskFactor] ^type.aggregation = #bundled
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 // Advance directive
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
@@ -80,6 +56,21 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAdvanceDirectives].entry contains advanceDirective 0..*
 * section[sectionAdvanceDirectives].entry[advanceDirective] only Reference(ChEmrDocumentReferenceAdvanceDirective)
 * section[sectionAdvanceDirectives].entry[advanceDirective] ^type.aggregation = #bundled
+
+// Alerts (IPS Alerts section, LOINC 104605-1): risks to healthcare personnel and resuscitation status
+// (IPS allows only Consent | DocumentReference in the Advance Directives section, so the resuscitation status is carried here.)
+// Both Flags derive from the IPS alert Flag, so they are carried in the inherited alertsFlag slice.
+* section[sectionAlerts].code = $loinc#104605-1
+* section[sectionAlerts].entry[alertsFlag] only Reference(ChEmrFlagRiskToHealthcarePersonnel or ChEmrFlagResuscitationStatus)
+* section[sectionAlerts].entry[alertsFlag] MS
+* section[sectionAlerts].entry[alertsFlag] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag] ^comment = "Risks to healthcare personnel are recorded as CH Emergency Record Risk to Healthcare Personnel (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-risk-to-healthcare-personnel). The resuscitation status is recorded as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on."
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5
