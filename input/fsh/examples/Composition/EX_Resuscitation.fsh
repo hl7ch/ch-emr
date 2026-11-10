@@ -1,13 +1,13 @@
 Instance: EX-Resuscitation
-InstanceOf: ChEmrFlagResuscitationStatus
+InstanceOf: ChEmrObservationResuscitationStatus
 Usage: #example
 Title: "EX-Resuscitation"
-Description: "General example of a resuscitation status flag (for CPR), based on the advance directive EX-AdvanceDirective"
+Description: "General example of a resuscitation status observation (for CPR)"
 
-* extension[advanceDirective].valueReference = Reference(EX-AdvanceDirective)
-* status = #active
-* category = $flag-category#safety "Safety"
-* code = $sct-ch#450475007
+* status = #final
+* code = $sct#304251008
 * subject = Reference(EX-Patient)
-* period.start = "2025-10-08"
-* author = Reference(EX-Practitioner)
+* effectiveDateTime = "2025-10-08"
+* valueCodeableConcept = $sct#450475007
+* performer = Reference(EX-Practitioner)
+* derivedFrom = Reference(EX-AdvanceDirective)
