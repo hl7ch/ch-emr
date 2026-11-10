@@ -5,5 +5,18 @@
 /out
 /logs
 /template
+
+# AI tools
 /.claude
+
+# Cache
+/.fhir
+/.cache
+
+# Local build environments
+/.npm
+/.github
+/.java
+
+# MacOS 
 .DS_Store

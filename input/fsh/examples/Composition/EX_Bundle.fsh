@@ -34,8 +34,8 @@ Description: "Complete Emergency Record Bundle"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/PractitionerRole/EX-PractitionerRole"
 * entry[=].resource = EX-PractitionerRole
 
-// Resurectation
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resuscitation"
+// Resuscitation status
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Flag/EX-Resuscitation"
 * entry[=].resource = EX-Resuscitation
 
 // Medication
@@ -53,9 +53,9 @@ Description: "Complete Emergency Record Bundle"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/AllergyIntolerance/EX-AllergyIntolerance"
 * entry[=].resource = EX-AllergyIntolerance
 
-// Risk factor
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Flag/EX-RiskFactor"
-* entry[=].resource = EX-RiskFactor
+// Risk to healthcare personnel
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Flag/EX-RiskToHealthcarePersonnel"
+* entry[=].resource = EX-RiskToHealthcarePersonnel
 
 // Problem list
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Condition/EX-Condition"

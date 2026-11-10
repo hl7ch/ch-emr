@@ -11,6 +11,7 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $sct-ch = http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm = http://standardterms.edqm.eu
+Alias: $ncit = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
 // Swiss specific OIDs
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
@@ -31,9 +32,6 @@ Alias: $v3-PersonalRelationshipRoleTypeVS = http://terminology.hl7.org/ValueSet/
 Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
 Alias: $languagesVS = http://hl7.org/fhir/ValueSet/languages
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
-
-// CH EMR local Code Systems
-Alias: $ChEmrMriSafetyStatusCS = http://fhir.ch/ig/ch-emr/CodeSystem/ch-emr-mri-safety-status-cs
 
 // International Patient Summary (IPS) Profiles
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips

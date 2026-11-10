@@ -1,0 +1,3 @@
+type: changed
+issue: 51
+text: "The UDI NamingSystems use identifiers in the CH EMR namespace instead of the HL7 International one"
