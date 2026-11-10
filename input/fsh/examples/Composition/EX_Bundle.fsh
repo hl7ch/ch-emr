@@ -34,8 +34,8 @@ Description: "Complete Emergency Record Bundle"
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/PractitionerRole/EX-PractitionerRole"
 * entry[=].resource = EX-PractitionerRole
 
-// Resurectation
-* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/EX-Resuscitation"
+// Resuscitation status
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Flag/EX-Resuscitation"
 * entry[=].resource = EX-Resuscitation
 
 // Medication

@@ -34,13 +34,6 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionCareTeam].entry[practitioner][0] = Reference(UC1-Practitioner-Hausarzt)
 * section[sectionCareTeam].entry[practitionerRole][0] = Reference(UC1-PractitionerRole-Hausarzt)
 
-// Resuscitation
-* section[sectionResuscitation].title = "Reanimationsstatus"
-* section[sectionResuscitation].code = $loinc#100822-6
-* section[sectionResuscitation].text.status = #generated
-* section[sectionResuscitation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus folgt aus der ärztlichen Notanordnung 2024 und der Patientenverfügung 2022.</p></div>"
-* section[sectionResuscitation].emptyReason = $list-empty-reason#unavailable "Information not available"
-
 // Medications
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
@@ -85,6 +78,13 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Ärztliche Notanordnung 2024 (EPD)</li><li>Patientenverfügung 2022 (Hausarzt)</li></ul></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC1-DocumentReference-Notanordnung)
 * section[sectionAdvanceDirectives].entry[advanceDirective][+] = Reference(UC1-DocumentReference-Patientenverfuegung)
+
+// Alerts: resuscitation status
+* section[sectionAlerts].title = "Warnhinweise"
+* section[sectionAlerts].code = $loinc#104605-1
+* section[sectionAlerts].text.status = #generated
+* section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus: For attempted cardiopulmonary resuscitation (gemäss Notanordnung 2024 und Patientenverfügung 2022)</p></div>"
+* section[sectionAlerts].entry[alertsFlag][0] = Reference(UC1-Flag-Resuscitation)
 
 // Other documents
 * section[sectionOtherDocuments].title = "Andere Dokumente"
