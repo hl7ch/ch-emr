@@ -3,7 +3,7 @@ Id: ch-emr-risk-to-healthcare-personnel-vs
 Title: "Risk to Healthcare Personnel"
 Description:
 "SNOMED CT concepts that indicate a risk to healthcare personnel emanating from the patient.
-The value set contains the risk factors defined in the eNotfallpass concept (eHealth Suisse, Konzept eNotfallpass, section 3.4.15 'Risikofaktoren für Gesundheitsfachpersonen'), each with its descendants: Hepatitis B, Hepatitis C, HIV and multi-resistant bacteria.
+The value set contains the risks to healthcare personnel defined in the eNotfallpass concept (eHealth Suisse, Konzept eNotfallpass, section 3.4.15 'Risikofaktoren für Gesundheitsfachpersonen'), each with its descendants: Hepatitis B, Hepatitis C, HIV and multi-resistant bacteria.
 The binding to Flag.code is extensible: other codes may be used where these concepts do not fit, for example a carrier state such as 432415000 |Carrier of methicillin resistant Staphylococcus aureus|."
 * ^status = #active
 * ^experimental = false
