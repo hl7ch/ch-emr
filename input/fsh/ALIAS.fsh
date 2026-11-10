@@ -10,6 +10,7 @@ Alias: $chVac = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $edqm = http://standardterms.edqm.eu
+Alias: $ncit = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
 // Swiss specific OIDs
 Alias: $oid-ahvn13 = urn:oid:2.16.756.5.32
@@ -33,9 +34,6 @@ Alias: $bodySiteVS = http://hl7.org/fhir/ValueSet/body-site
 Alias: $bodyStructureRelativeLocationVS = http://hl7.org/fhir/ValueSet/bodystructure-relative-location
 Alias: $languagesVS = http://hl7.org/fhir/ValueSet/languages
 Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile
-
-// CH EMR local Code Systems
-Alias: $ChEmrMriSafetyStatusCS = http://fhir.ch/ig/ch-emr/CodeSystem/ch-emr-mri-safety-status-cs
 
 // International Patient Summary (IPS) Profiles
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
