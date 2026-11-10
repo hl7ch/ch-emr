@@ -56,13 +56,6 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Allergien bekannt.</p></div>"
 * section[sectionAllergies].emptyReason = $list-empty-reason#nilknown "Nil Known"
 
-// Risk factors
-* section[sectionRiskFactors].title = "Risiken für Behandelnde"
-* section[sectionRiskFactors].code = $loinc#46467-7
-* section[sectionRiskFactors].text.status = #generated
-* section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Risikofaktoren bekannt.</p></div>"
-* section[sectionRiskFactors].emptyReason = $list-empty-reason#unavailable "Information not available"
-
 // Problem list
 * section[sectionProblems].title = "Probleme und Diagnosen"
 * section[sectionProblems].code = $loinc#11450-4
@@ -79,11 +72,11 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(UC1-DocumentReference-Notanordnung)
 * section[sectionAdvanceDirectives].entry[advanceDirective][+] = Reference(UC1-DocumentReference-Patientenverfuegung)
 
-// Alerts: resuscitation status
+// Alerts: resuscitation status, no risks to healthcare personnel known
 * section[sectionAlerts].title = "Warnhinweise"
 * section[sectionAlerts].code = $loinc#104605-1
 * section[sectionAlerts].text.status = #generated
-* section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus: For attempted cardiopulmonary resuscitation (gemäss Notanordnung 2024 und Patientenverfügung 2022)</p></div>"
+* section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus: For attempted cardiopulmonary resuscitation (gemäss Notanordnung 2024 und Patientenverfügung 2022)</p><p>Keine Risiken für Behandelnde bekannt.</p></div>"
 * section[sectionAlerts].entry[alertsFlag][0] = Reference(UC1-Flag-Resuscitation)
 
 // Other documents

@@ -18,7 +18,7 @@ Both CH EMR and CH IPS depend on [CH Core](https://fhir.ch/ig/ch-core/index.html
 
 For the medication content, CH EMR additionally depends on [CH EMED](https://fhir.ch/ig/ch-emed/index.html), the Swiss eMedikation specification. CH EMR's Medication Statement reuses the CH EMED dosage profiles (`ch-emed-dosage` and `ch-emed-dosage-split`) so that dosing schedules in the Emergency Record follow the same structure as the rest of the Swiss eMedikation ecosystem.
 
-Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risk factors and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
+Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risks to healthcare personnel and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
 
 <div markdown="1" class="stu-note">
 
@@ -45,7 +45,7 @@ The emergency report is designed to give medical professionals quick and structu
 * **Current medication**: Information and dosage of medications 
 * **Vaccinations**: Current vaccinations
 * **Allergies and intolerances**: Known allergic reactions and intolerances
-* **Risk factors**: Risks relevant to treatment
+* **Alerts**: Resuscitation status and risks to healthcare personnel emanating from the patient (e.g. communicable disease), carried in the IPS Alerts section
 * **Problem list**: Diagnoses and problems
 * **Advance directive**: Information on advance directives or medical directives.
 * **Other documents**: Other documents like organ donor cards

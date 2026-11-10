@@ -56,13 +56,6 @@ Description: "General composition for the Emergency Record"
 * section[sectionAllergies].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Kontrastmittelallergie</li></ul></div>"
 * section[sectionAllergies].entry[allergyOrIntolerance][0] = Reference(EX-AllergyIntolerance)
 
-// Risk factor section
-* section[sectionRiskFactors].title = "Risikofaktoren für Behandelnde"
-* section[sectionRiskFactors].code = $loinc#46467-7
-* section[sectionRiskFactors].text.status = #generated
-* section[sectionRiskFactors].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Viral hepatitis type B</li></ul></div>"
-* section[sectionRiskFactors].entry[riskFactor][0] = Reference(EX-RiskFactor)
-
 // Problem list section
 * section[sectionProblems].title = "Problemliste"
 * section[sectionProblems].code = $loinc#11450-4
@@ -77,12 +70,13 @@ Description: "General composition for the Emergency Record"
 * section[sectionAdvanceDirectives].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Patientenverfügung:</p><ul><li>Patientenverfügung im Schlafzimmer</li></ul></div>"
 * section[sectionAdvanceDirectives].entry[advanceDirective][0] = Reference(EX-AdvanceDirective)
 
-// Alerts section: resuscitation status
+// Alerts section: resuscitation status and risk to healthcare personnel
 * section[sectionAlerts].title = "Warnhinweise"
 * section[sectionAlerts].code = $loinc#104605-1
 * section[sectionAlerts].text.status = #generated
-* section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>For attempted cardiopulmonary resuscitation (gemäss Patientenverfügung)</li></ul></div>"
+* section[sectionAlerts].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Reanimationsstatus:</p><ul><li>For attempted cardiopulmonary resuscitation (gemäss Patientenverfügung)</li></ul><p>Risiken für Behandelnde:</p><ul><li>Viral hepatitis type B</li></ul></div>"
 * section[sectionAlerts].entry[alertsFlag][0] = Reference(EX-Resuscitation)
+* section[sectionAlerts].entry[alertsFlag][+] = Reference(EX-RiskToHealthcarePersonnel)
 
 // Document references section
 * section[sectionOtherDocuments].title = "Andere Dokumente"
