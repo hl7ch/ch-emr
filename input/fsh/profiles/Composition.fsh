@@ -13,7 +13,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
     sectionEmergencyContacts 1..1 and
     sectionCareTeam 0..1 and
     sectionResuscitation 0..1 and
-    sectionRiskFactors 0..1 and
     sectionOtherDocuments 0..1 and
     sectionCognitiveDisability 0..1 and
     sectionPhysicalDisability 0..1
@@ -58,21 +57,18 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionResuscitation].entry[observation] only Reference(ChEmrObservationResuscitationStatus)
 * section[sectionResuscitation].entry[observation] ^type.aggregation = #bundled
 
-// Risk Factors
-* section[sectionRiskFactors].code = $loinc#46467-7
-* section[sectionRiskFactors].entry ^slicing.discriminator.type = #profile
-* section[sectionRiskFactors].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionRiskFactors].entry ^slicing.rules = #open
-* section[sectionRiskFactors].entry contains riskFactor 0..*
-* section[sectionRiskFactors].entry[riskFactor] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
-* section[sectionRiskFactors].entry[riskFactor] MS
-* section[sectionRiskFactors].entry[riskFactor] ^type.aggregation = #bundled
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
-* section[sectionRiskFactors].entry[riskFactor] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+// Alerts: risks to healthcare personnel (IPS Alerts section, LOINC 104605-1)
+* section[sectionAlerts].code = $loinc#104605-1
+// The risk Flag derives from the IPS alert Flag, so it is carried in the inherited alertsFlag slice
+* section[sectionAlerts].entry[alertsFlag] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
+* section[sectionAlerts].entry[alertsFlag] MS
+* section[sectionAlerts].entry[alertsFlag] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 // Advance directive
 * section[sectionAdvanceDirectives].code = $loinc#42348-3
