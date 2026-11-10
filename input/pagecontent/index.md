@@ -31,6 +31,21 @@ Please add your feedback via the ‘Propose a change’-link in the footer on th
 
 **Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
+### Must Support and Obligations
+
+CH EMR follows the [Must Support and Obligations](https://hl7.org/fhir/uv/ips/STU2/Must-Support-and-Obligations.html) approach of the [IPS IG](https://hl7.org/fhir/uv/ips/) (hl7.fhir.uv.ips 2.0.0), which is imported as a dependency. The actors and the meaning of the obligation codes are defined there and are deliberately not repeated in this implementation guide, to avoid duplication and conflicts in future versions. In contrast to CH IPS, which does not flag additional elements as must support, CH EMR marks the elements that are relevant for an emergency record as must support and adds the corresponding obligations.
+
+The following actors and obligations are used:
+
+{:class="table table-bordered"}
+| Actor | Obligation | Meaning |
+|-------|------------|---------|
+| [Creator](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Creator.html) | `SHALL:populate-if-known` | The creating system populates the element if the information is known. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHALL:handle` | The receiving system processes the element without failing and without losing the information. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHOULD:display` | The receiving system should display the element to the user. |
+
+The exact definitions are those of the IPS IG. The obligations are shown on the individual profile pages of this implementation guide.
+
 ### Objective
 
 The emergency report is designed to give medical professionals quick and structured access to a patient's most important medical information in emergency situations. However, this medical information can also be used in unforeseen patient contacts where, for example, language barriers exist or health literacy is limited.
