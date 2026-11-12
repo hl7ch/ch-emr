@@ -5,6 +5,18 @@ The emergency record combines key administrative and clinical data such as patie
 The CH EMR implementation guide describes the FHIR representation of the electronic emergency record in Switzerland. It is dependent on [CH Core](http://fhir.ch/ig/ch-core/index.html) and [CH Term](http://fhir.ch/ig/ch-term/index.html), which describe the Swiss-specific context, particularly in relation to the Swiss Electronic Patient Record (EPR).   
 This implementation guide is based on the concept for the exchange format of the electronic emergency record ([de](https://www.e-health-suisse.ch/upload/documents/Konzept_eNotfallpass_DE.pdf), [fr](https://www.e-health-suisse.ch/upload/documents/Konzept_Notfallpass_FR.pdf)).
 
+<div markdown="1" class="stu-note">
+
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
+Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+
+[Changelog](changelog.html) with significant changes, open and closed issues.
+
+</div>
+
+**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+
+
 ### Dependencies Overview
 The CH EMR (Emergency Record) implementation guide builds upon several Swiss FHIR specifications. The following diagram illustrates the relationships between these implementation guides:
 
@@ -19,17 +31,6 @@ Both CH EMR and CH IPS depend on [CH Core](https://fhir.ch/ig/ch-core/index.html
 For the medication content, CH EMR additionally depends on [CH EMED](https://fhir.ch/ig/ch-emed/index.html), the Swiss eMedikation specification. CH EMR's Medication Statement reuses the CH EMED dosage profiles (`ch-emed-dosage` and `ch-emed-dosage-split`) so that dosing schedules in the Emergency Record follow the same structure as the rest of the Swiss eMedikation ecosystem.
 
 Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risks to healthcare personnel and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
-
-<div markdown="1" class="stu-note">
-
-This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
-Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
-
-[Changelog](changelog.html) with significant changes, open and closed issues.
-
-</div>
-
-**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
 ### Must Support and Obligations
 
