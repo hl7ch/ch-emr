@@ -19,7 +19,7 @@ Description: "General composition for the Emergency Record"
 * date = "2025-09-10T08:00:00+02:00"
 
 * author = Reference(EX-PractitionerRole)
-* title = "Elektronischer Notfallpass - Maria Schmidt"
+* title = "Elektronischer Notfallpass - Anna Schmidt"
 
 // Related person section
 * section[sectionEmergencyContacts].title = "Notfallkontakte"
