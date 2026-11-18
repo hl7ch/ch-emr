@@ -7,7 +7,7 @@ Description: "Example of a physical disability recorded as a Condition in the fu
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#problem-list-item "Problem List Item"
-* code = $sct-ch#228158008
+* code = $sct#228158008
 * subject = Reference(EX-Patient)
 * onsetDateTime = "2025-10-08"
 * recorder = Reference(EX-Practitioner)

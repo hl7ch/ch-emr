@@ -7,7 +7,7 @@ Description: "Aphasie als Kommunikationsbeeinträchtigung nach Schlaganfall, erf
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#problem-list-item
-* code = $sct-ch#87486003
+* code = $sct#87486003
 * code.text = "Aphasie"
 * subject = Reference(UC2-Patient-WalterSchmid)
 * onsetDateTime = "2023-03-01"

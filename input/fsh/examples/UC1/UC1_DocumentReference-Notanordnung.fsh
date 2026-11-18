@@ -9,7 +9,7 @@ Description: "Ärztliche Notanordnung von Muster Max (2024, im EPD hinterlegt)."
 * date = "2024-01-15T09:00:00+01:00"
 * author = Reference(UC1-Practitioner-Hausarzt)
 * type = $loinc#93037-0
-* category = $sct-ch#371538006
+* category = $sct#371538006
 * description = "Ärztliche Notanordnung"
 
 * content.attachment.contentType = #application/pdf
