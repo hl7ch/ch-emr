@@ -43,7 +43,6 @@ Description: "Codes for implant types"
 * $sct#303533002
 * $sct#67270000
 * $sct#417136005
-* $sct#342706005
 * $sct#303618000
 * $sct#72506001
 * $sct#398013009
@@ -57,7 +56,6 @@ Description: "Codes for implant types"
 * $sct#19923001
 * $sct#360070009
 * $sct#414580007
-* $sct#272245008
 * $sct#63112008
 * $sct#77777004
 * $sct#271003
@@ -65,13 +63,10 @@ Description: "Codes for implant types"
 * $sct#68183006
 * $sct#77444004
 * $sct#339648008
-* $sct#341036005
 * $sct#304070008
 * $sct#429798007
-* $sct#24073000
 * $sct#257362008
 * $sct#257282009
-* $sct#360117000
 * $sct#303499003
 * $sct#90134004
 * $sct#257363003
@@ -84,14 +79,12 @@ Description: "Codes for implant types"
 * $sct#45633005
 * $sct#102319006
 * $sct#424921004
-* $sct#360063009
 * $sct#423449009
 * $sct#118378005
 * $sct#304124003
 * $sct#303726000
 * $sct#465380004
 * $sct#118374007
-* $sct#304184000
 * $sct#303947005
 * $sct#65818007
 * $sct#304120007
@@ -100,7 +93,6 @@ Description: "Codes for implant types"
 * $sct#286558002
 * $sct#303497001
 * $sct#344088002
-* $sct#344575009
 * $sct#257283004
 * $sct#258593008
 * $sct#118425005

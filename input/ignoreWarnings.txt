@@ -21,3 +21,9 @@ Pinned the version of%
 
 # Known issue in IG Publisher (path-expansion-params for SNOMED CT Swiss extension)
 The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+
+# ATC is not available on the terminology server
+A definition for CodeSystem 'http://www.whocc.no/atc' could not be found, so the code cannot be validated
+
+# NCIt is only available as a fragment on the terminology server (MRI safety status codes)
+Unknown Code 'C106046' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment

@@ -37,4 +37,4 @@ Description: "Use of an implanted device in the Emergency Record. The `bodySite`
 Invariant: ch-emr-dus-bodysite-matches-bodystructure
 Severity: #error
 Description: "If bodySite carries the body-structure-reference extension, bodySite.coding must equal the referenced BodyStructure.location.coding."
-Expression: "extension.where(url = 'http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-body-structure-reference').empty() or coding = (extension.where(url = 'http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-body-structure-reference').value as Reference).resolve().location.coding"
+Expression: "extension('http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-body-structure-reference').empty() or coding = extension('http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-body-structure-reference').value.first().resolve().location.coding"

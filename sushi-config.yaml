@@ -61,17 +61,6 @@ pages:
   changelog.md:
     title: Changelog
 
-menu:
-  Home: index.html
-  Document: document.html
-  Use Case:
-   German: usecase-german.html
-   French: usecase-french.html
-  Profiles: profiles.html
-  Extensions: extensions.html
-  Terminology: terminology.html
-  Artifacts: artifacts.html
-
 parameters:
   excludettl: true
   allow-extensible-warnings: true
