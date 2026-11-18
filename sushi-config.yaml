@@ -38,10 +38,10 @@ dependencies:
     version: 6.0.0
   hl7.fhir.uv.extensions.r4:
     uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
-    version: 5.2.0
+    version: 5.3.0
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-    version: 2.0.0
+    version: 2.0.1
 
 pages:
   index.md:
@@ -75,12 +75,11 @@ menu:
 parameters:
   excludettl: true
   allow-extensible-warnings: true
-  display-warnings: true 
-  path-expansion-params: '../../expansion-params.json'  # for using SNOMED CT Swiss Extension
+  display-warnings: true
+  path-expansion-params: '../../expansion-params.json'  # for using SNOMED CT Swiss Extension 
   pin-canonicals: pin-multiples
   path-resource:
     - input/resources  
-
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 instanceOptions:

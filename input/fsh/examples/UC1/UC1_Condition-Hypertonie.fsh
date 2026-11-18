@@ -7,7 +7,7 @@ Description: "Diagnose arterielle Hypertonie (Muster Max, 2016)."
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#problem-list-item
-* code = $sct-ch#38341003
+* code = $sct#38341003
 * subject = Reference(UC1-Patient-MusterMax)
 * onsetDateTime = "2016"
 * recordedDate = "2016-01-01"

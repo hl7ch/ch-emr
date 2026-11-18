@@ -5,6 +5,18 @@ The emergency record combines key administrative and clinical data such as patie
 The CH EMR implementation guide describes the FHIR representation of the electronic emergency record in Switzerland. It is dependent on [CH Core](http://fhir.ch/ig/ch-core/index.html) and [CH Term](http://fhir.ch/ig/ch-term/index.html), which describe the Swiss-specific context, particularly in relation to the Swiss Electronic Patient Record (EPR).   
 This implementation guide is based on the concept for the exchange format of the electronic emergency record ([de](https://www.e-health-suisse.ch/upload/documents/Konzept_eNotfallpass_DE.pdf), [fr](https://www.e-health-suisse.ch/upload/documents/Konzept_Notfallpass_FR.pdf)).
 
+<div markdown="1" class="stu-note">
+
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
+Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+
+[Changelog](changelog.html) with significant changes, open and closed issues.
+
+</div>
+
+**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+
+
 ### Dependencies Overview
 The CH EMR (Emergency Record) implementation guide builds upon several Swiss FHIR specifications. The following diagram illustrates the relationships between these implementation guides:
 
@@ -18,18 +30,22 @@ Both CH EMR and CH IPS depend on [CH Core](https://fhir.ch/ig/ch-core/index.html
 
 For the medication content, CH EMR additionally depends on [CH EMED](https://fhir.ch/ig/ch-emed/index.html), the Swiss eMedikation specification. CH EMR's Medication Statement reuses the CH EMED dosage profiles (`ch-emed-dosage` and `ch-emed-dosage-split`) so that dosing schedules in the Emergency Record follow the same structure as the rest of the Swiss eMedikation ecosystem.
 
-Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risk factors and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
+Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risks to healthcare personnel and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
 
-<div markdown="1" class="stu-note">
+### Must Support and Obligations
 
-This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
-Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+CH EMR follows the [Must Support and Obligations](https://hl7.org/fhir/uv/ips/STU2/Must-Support-and-Obligations.html) approach of the [IPS IG](https://hl7.org/fhir/uv/ips/) (hl7.fhir.uv.ips 2.0.0), which is imported as a dependency. The actors and the meaning of the obligation codes are defined there and are deliberately not repeated in this implementation guide, to avoid duplication and conflicts in future versions. In contrast to CH IPS, which does not flag additional elements as must support, CH EMR marks the elements that are relevant for an emergency record as must support and adds the corresponding obligations.
 
-[Changelog](changelog.html) with significant changes, open and closed issues.
+The following actors and obligations are used:
 
-</div>
+{:class="table table-bordered"}
+| Actor | Obligation | Meaning |
+|-------|------------|---------|
+| [Creator](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Creator.html) | `SHALL:populate-if-known` | The creating system populates the element if the information is known. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHALL:handle` | The receiving system processes the element without failing and without losing the information. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHOULD:display` | The receiving system should display the element to the user. |
 
-**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+The exact definitions are those of the IPS IG. The obligations are shown on the individual profile pages of this implementation guide.
 
 ### Objective
 
@@ -42,13 +58,12 @@ The emergency report is designed to give medical professionals quick and structu
 * **Patient information**: Demographic data and contact information
 * **Emergency contacts**: Family and trusted persons
 * **Care Team**: Treating Health care professional
-* **Resuscitation status**: Patient's wishes regarding resuscitation measures in emergency situations
 * **Current medication**: Information and dosage of medications 
 * **Vaccinations**: Current vaccinations
 * **Allergies and intolerances**: Known allergic reactions and intolerances
-* **Risk factors**: Risks relevant to treatment
+* **Alerts**: Resuscitation status and risks to healthcare personnel emanating from the patient (e.g. communicable disease), carried in the IPS Alerts section
 * **Problem list**: Diagnoses and problems
-* **Advance directive**: Information on advance directives or medical directives
+* **Advance directive**: Information on advance directives or medical directives.
 * **Other documents**: Other documents like organ donor cards
 * **Implants**: Medical devices
 * **Pregnancy**: Current pregnancy information
@@ -67,7 +82,7 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Device](StructureDefinition-ch-emr-device.html) | Device profile for implants in the Emergency Record. | [IPS Device](http://hl7.org/fhir/uv/ips/StructureDefinition-Device-uv-ips.html) |
 | [CH Emergency Record Body Structure](StructureDefinition-ch-emr-bodystructure.html) | Structured anatomical location of an implant, carrying an unlateralised body site and the laterality qualifier. | [BodyStructure (FHIR R4)](http://hl7.org/fhir/R4/bodystructure.html) |
 | [CH Emergency Record RelatedPerson](StructureDefinition-ch-emr-relatedperson.html) | RelatedPerson profile for emergency contacts and family members in the Emergency Record. | [CH Core RelatedPerson](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-relatedperson.html) |
-| [CH Emergency Record Observation Resuscitation Status](StructureDefinition-ch-emr-observation-resuscitation-status.html) | Observation profile for documenting the patient's resuscitation (code) status. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
+| [CH Emergency Record Flag Resuscitation Status](StructureDefinition-ch-emr-flag-resuscitation-status.html) | Flag profile for documenting the patient's resuscitation (code) status, referencing the underlying advance directive(s). | [IPS Flag (alert)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html) |
 | [CH Emergency Record Advance Directive DocumentReference](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical orders. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
 | [CH Emergency Record Risk to Healthcare Personnel](StructureDefinition-ch-emr-flag-risk-to-healthcare-personnel.html) | Risk to healthcare personnel emanating from the patient (e.g. communicable disease). | [IPS Flag (alert)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html) |
 | [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |

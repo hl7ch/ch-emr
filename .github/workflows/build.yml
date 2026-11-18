@@ -21,11 +21,14 @@ jobs:
           ig-publisher: "latest"
           sushi: "latest"
 
+      # Only master is published; builds of other branches still run (QA) but are not deployed.
       - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./output
 
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/master'
         id: deployment
         uses: actions/deploy-pages@v4
