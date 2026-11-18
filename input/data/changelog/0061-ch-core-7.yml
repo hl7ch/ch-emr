@@ -1,0 +1,3 @@
+type: changed
+issue: 61
+text: "CH EMR depends on CH Core 7.0.0, CH IPS 2.0.1 and CH EMED 6.0.1, so it is based on a single CH Core version"
