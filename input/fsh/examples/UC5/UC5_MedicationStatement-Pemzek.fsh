@@ -15,4 +15,4 @@ Description: "Pemzek 16 mg (Candesartan), 1-0-0-0 — Koronare Herzkrankheit."
 * dosage[baseEntry].timing.repeat.when = #MORN
 * dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000
 * dosage[baseEntry].route.text = "zum Einnehmen"
-* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct-ch#732936001 "Tablette"
+* dosage[baseEntry].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablette"

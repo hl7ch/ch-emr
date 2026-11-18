@@ -13,5 +13,5 @@ Description: "Generic Hausarzt for UC3 (Care-Team filler)."
 * name.given = "UC3"
 * name.prefix = "Dr. med."
 
-* qualification.code = $sct-ch#309343006
+* qualification.code = $sct#309343006
 * qualification.code.text = "Arzt"
