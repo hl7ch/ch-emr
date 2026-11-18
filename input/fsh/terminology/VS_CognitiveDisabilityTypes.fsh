@@ -12,6 +12,7 @@ Description: "Value set of SNOMED CT codes for cognitive disabilities. It is not
 * $sct#429998004 "Vascular dementia"
 * $sct#1363185006 "Dementia due to Lewy body disease "
 * $sct#230270009 "Frontotemporal dementia"
+* $sct#386806002 "Impaired cognition"
 * $sct#110359009 "Intellectual disability"
 * $sct#86765009 "Mild intellectual disability"
 * $sct#61152003 "Moderate intellectual disability"
@@ -20,3 +21,4 @@ Description: "Value set of SNOMED CT codes for cognitive disabilities. It is not
 * $sct#35919005 "Autism spectrum disorder"
 * $sct#58214004 "Schizophrenia"
 * $sct#197480006 "Anxiety disorder"
+* $sct#271873000 "Senility"
