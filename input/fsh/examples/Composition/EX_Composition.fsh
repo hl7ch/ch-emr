@@ -32,7 +32,7 @@ Description: "General composition for the Emergency Record"
 * section[sectionCareTeam].title = "Behandelnde Gesundheitsfachperson"
 * section[sectionCareTeam].code = $loinc#85847-2
 * section[sectionCareTeam].text.status = #generated
-* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Dr. med. SarahHuber - Gynecologist (GLN: 7601007922000)</p></div>"
+* section[sectionCareTeam].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Dr. med. Sarah Huber - Gynecologist (GLN: 7601007922000)</p></div>"
 * section[sectionCareTeam].entry[practitioner][0] = Reference(EX-Practitioner)
 
 // Medication section

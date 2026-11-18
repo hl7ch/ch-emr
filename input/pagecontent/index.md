@@ -14,7 +14,7 @@ Please add your feedback via the ‘Propose a change’-link in the footer on th
 
 </div>
 
-**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](../package.tgz).
 
 
 ### Dependencies Overview

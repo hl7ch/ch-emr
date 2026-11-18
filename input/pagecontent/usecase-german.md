@@ -57,7 +57,7 @@ Keine
 |-----------|------|
 | [Herzschrittmacher](DeviceUseStatement-UC1-DeviceUseStatement-Pacemaker.html) | 2015 |
 
-Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat und einen Schrittmacher trägt sowie eine Therapie mit Plavix und Beloc Zoc einnimmt. Basierend auf diesen Informationen und weiterer Diagnostik kann die Situation beurteilt, und das Zielspital explizit definiert werden. Der Rettungsdienst bringt den Patienten weiterhin bewusstlos ins entsprechende Spital.
+Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat und einen Schrittmacher trägt sowie eine Therapie mit Plavix und Beloc Zok einnimmt. Basierend auf diesen Informationen und weiterer Diagnostik kann die Situation beurteilt, und das Zielspital explizit definiert werden. Der Rettungsdienst bringt den Patienten weiterhin bewusstlos ins entsprechende Spital.
 
 In einem zweiten Schritt konnten über die hinterlegte Telefonnummer der Notfallkontakte die Angehörigen informiert werden sowie der Ablageort einer ärztlichen Notanordnung und einer Patientenverfügung festgestellt werden. Somit kann eine Behandlung entsprechend der medizinischen Vorgeschichte und in Übereinstimmung des Patientenwunsches trotz Bewusstlosigkeit eingeleitet werden.
 
