@@ -1,0 +1,2 @@
+type: changed
+text: "Alert Flags are distinguished by a fixed Flag.category (resuscitation status: advance-directive, risk to healthcare personnel: safety); the resuscitation status code binding is now required, and the Alerts section has separate slices for both Flag types"

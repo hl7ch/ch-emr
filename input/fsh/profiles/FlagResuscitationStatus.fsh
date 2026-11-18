@@ -15,10 +15,12 @@ Description: "Flag profile for documenting the patient's resuscitation (code) st
 * extension[advanceDirective] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
 * status MS
-* category = $flag-category#safety "Safety"
+* category 1..1 MS
+* category = $flag-category#advance-directive "Advance Directive"
+* category ^short = "Advance Directive: distinguishes the resuscitation status from other alert Flags"
 
 * code 1..1 MS
-* code from ChEmrResuscitationStatusVS (extensible)
+* code from ChEmrResuscitationStatusVS (required)
 * code ^short = "Resuscitation status (e.g. for CPR, not for CPR)"
 * code ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * code ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
