@@ -20,6 +20,17 @@ Advance directives and the resuscitation status are recorded as follows:
 * **Flag** ([CH Emergency Record Flag Resuscitation Status](StructureDefinition-ch-emr-flag-resuscitation-status.html)), in the section Alerts (LOINC 104605-1): records the resulting resuscitation decision (e.g. for attempted cardiopulmonary resuscitation) in coded form so that it can be found at a glance in an emergency. The IPS only allows Consent and DocumentReference entries in the Advance Directives section, so the Flag is an IPS alert ([Flag (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html)) in the Alerts section. It points to the advance directive DocumentReference(s) it is based on using the extension [CH EMR Advance Directive Reference](StructureDefinition-ch-emr-advance-directive-reference.html), since FHIR R4 Flag has no element for referencing supporting documents. The Flag summarizes the decision; the legally relevant source is the referenced document.
 * **Consent**: the Consent slice of the Advance Directives section inherited from the IPS is not used in CH EMR. A Creator SHOULD NOT include Consent entries; a Consumer that receives one MAY ignore it, as the content of the advance directive is carried by the DocumentReference and the resuscitation Flag.
 
+### Points of attention for implementers
+
+#### Patient.communication.language
+
+The patient's language is important in an emergency situation, as it determines how the treating team can communicate with the patient. For this reason, `Patient.communication.language` carries the following expectations in the [CH Emergency Record Bundle](StructureDefinition-ch-emr-bundle.html) (entry slice `Patient`):
+
+* Creators: SHALL populate `Patient.communication.language` if the information is known (`SHALL:populate-if-known`).
+* Consumers: SHALL handle `Patient.communication.language` (`SHALL:handle`) and SHOULD display it (`SHOULD:display`).
+
+These expectations are deliberately expressed on the Bundle entry and not in a dedicated CH EMR Patient profile. The Patient constraints belong in the CH IPS Patient profile, which CH EMR uses unchanged (`$ChIpsPatient`). An additional Patient profile would only add burden for implementers (an extra profile to declare and validate against) and its conformance cannot be checked programmatically, since resources are referenced from several places (e.g. `Composition.subject`) and not only from the Bundle. The same expectations apply to [CH EMR RelatedPerson](StructureDefinition-ch-emr-relatedperson.html), where they are defined on the profile itself.
+
 ### Example bundle
 
 A complete example of an [emergency record Bundle](Bundle-EX-Bundle.html) shows the practical implementation of the document structure.

@@ -6,7 +6,7 @@ Description: "Elektronischer Notfallpass für Muster Max — Anwendungsfall 1."
 
 * language = #de-CH
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
-* confidentiality.extension.valueCodeableConcept = $sct-ch#17621005
+* confidentiality.extension.valueCodeableConcept = $sct#17621005
 * confidentiality = #N
 
 * identifier.system = "urn:ietf:rfc:3986"

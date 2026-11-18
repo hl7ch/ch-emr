@@ -7,9 +7,9 @@ Description: "Value set of SNOMED CT codes for physical disabilities. It is not 
 * ^version = "1.0.0"
 * ^date = "2026-05-26"
 
-* $sct-ch#397540003
-* $sct-ch#15188001
-* $sct-ch#128188000
-* $sct-ch#257277002
-* $sct-ch#228158008
+* $sct#397540003
+* $sct#15188001
+* $sct#128188000
+* $sct#257277002
+* $sct#228158008
 
