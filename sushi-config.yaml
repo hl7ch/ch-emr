@@ -23,7 +23,7 @@ contact:
 dependencies:
   hl7.terminology.r4: 
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-    version: 7.1.0
+    version: 7.5.0
   ch.fhir.ig.ch-core:
     uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
     version: current
@@ -38,7 +38,7 @@ dependencies:
     version: current
   hl7.fhir.uv.extensions.r4:
     uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
-    version: 5.3.0
+    version: 5.4.0
   hl7.fhir.uv.ips:
     uri: http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
     version: 2.0.1
@@ -60,17 +60,6 @@ pages:
     title: Terminology
   changelog.md:
     title: Changelog
-
-menu:
-  Home: index.html
-  Document: document.html
-  Use Case:
-   German: usecase-german.html
-   French: usecase-french.html
-  Profiles: profiles.html
-  Extensions: extensions.html
-  Terminology: terminology.html
-  Artifacts: artifacts.html
 
 parameters:
   excludettl: true
