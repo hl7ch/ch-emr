@@ -6,7 +6,7 @@ Description: "Elektronischer Notfallpass für Lara Keller — Anwendungsfall 3."
 
 * language = #de-CH
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
-* confidentiality.extension.valueCodeableConcept = $sct-ch#17621005
+* confidentiality.extension.valueCodeableConcept = $sct#17621005
 * confidentiality = #N
 
 * identifier.system = "urn:ietf:rfc:3986"
@@ -35,8 +35,9 @@ Description: "Elektronischer Notfallpass für Lara Keller — Anwendungsfall 3."
 * section[sectionMedications].title = "Medikation"
 * section[sectionMedications].code = $loinc#10160-0
 * section[sectionMedications].text.status = #generated
-* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Marcoumar 3 mg (Phenprocoumon) — nach separater INR-gesteuerter Verordnung. Thromboembolieprophylaxe nach mechanischem Klappenersatz.</li></ul></div>"
+* section[sectionMedications].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Marcoumar 3 mg (Phenprocoumon) — nach separater INR-gesteuerter Verordnung. Thromboembolieprophylaxe nach mechanischem Klappenersatz.</li><li>Ferinject 500 mg (Eisencarboxymaltose) — einmalige Infusion am 26.05.2026 wegen Eisenmangelanämie.</li></ul></div>"
 * section[sectionMedications].entry[medicationStatementOrRequest][0] = Reference(UC3-MedicationStatement-Marcoumar)
+* section[sectionMedications].entry[medicationStatementOrRequest][+] = Reference(UC3-MedicationStatement-Ferinject)
 
 * section[sectionImmunizations].title = "Impfungen"
 * section[sectionImmunizations].code = $loinc#11369-6
@@ -75,6 +76,12 @@ Description: "Elektronischer Notfallpass für Lara Keller — Anwendungsfall 3."
 * section[sectionOtherDocuments].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine zusätzlichen Dokumente hinterlegt.</p></div>"
 * section[sectionOtherDocuments].emptyReason = $list-empty-reason#unavailable "Information not available"
 
+* section[sectionResults].title = "Resultate"
+* section[sectionResults].code = $loinc#30954-2
+* section[sectionResults].text.status = #generated
+* section[sectionResults].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>26.05.2026 Hämoglobin 90 g/L (tief; Referenzbereich 120–160 g/L)</li></ul></div>"
+* section[sectionResults].entry[results-observation-laboratory-pathology][0] = Reference(UC3-Observation-Haemoglobin)
+
 * section[sectionMedicalDevices].title = "Implantate"
 * section[sectionMedicalDevices].code = $loinc#46264-8
 * section[sectionMedicalDevices].text.status = #generated
@@ -86,14 +93,3 @@ Description: "Elektronischer Notfallpass für Lara Keller — Anwendungsfall 3."
 * section[sectionPregnancyHx].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine Schwangerschaft bekannt.</p></div>"
 * section[sectionPregnancyHx].emptyReason = $list-empty-reason#unavailable "Information not available"
 
-* section[sectionCognitiveDisability].title = "Kognitive Beeinträchtigungen"
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].text.status = #generated
-* section[sectionCognitiveDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionCognitiveDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"
-
-* section[sectionPhysicalDisability].title = "Physische Beeinträchtigungen"
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].text.status = #generated
-* section[sectionPhysicalDisability].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><p>Keine bekannt.</p></div>"
-* section[sectionPhysicalDisability].emptyReason = $list-empty-reason#nilknown "Nil Known"

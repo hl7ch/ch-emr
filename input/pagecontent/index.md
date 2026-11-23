@@ -5,6 +5,18 @@ The emergency record combines key administrative and clinical data such as patie
 The CH EMR implementation guide describes the FHIR representation of the electronic emergency record in Switzerland. It is dependent on [CH Core](http://fhir.ch/ig/ch-core/index.html) and [CH Term](http://fhir.ch/ig/ch-term/index.html), which describe the Swiss-specific context, particularly in relation to the Swiss Electronic Patient Record (EPR).   
 This implementation guide is based on the concept for the exchange format of the electronic emergency record ([de](https://www.e-health-suisse.ch/upload/documents/Konzept_eNotfallpass_DE.pdf), [fr](https://www.e-health-suisse.ch/upload/documents/Konzept_Notfallpass_FR.pdf)).
 
+<div markdown="1" class="stu-note">
+
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
+Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+
+[Changelog](changelog.html) with significant changes, open and closed issues.
+
+</div>
+
+**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](../package.tgz).
+
+
 ### Dependencies Overview
 The CH EMR (Emergency Record) implementation guide builds upon several Swiss FHIR specifications. The following diagram illustrates the relationships between these implementation guides:
 
@@ -20,16 +32,20 @@ For the medication content, CH EMR additionally depends on [CH EMED](https://fhi
 
 Where CH IPS profiles were available and applicable, CH EMR profiles inherit from them (e.g. Patient, Medication, AllergyIntolerance, Condition, Immunization). For emergency-specific content not covered by IPS, such as resuscitation status, emergency contacts, risks to healthcare personnel and disabilities, CH EMR defines its own profiles based on CH Core or FHIR base resources.
 
-<div markdown="1" class="stu-note">
+### Must Support and Obligations
 
-This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) from August 4th, 2026 until end of 2026.   
-Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+CH EMR follows the [Must Support and Obligations](https://hl7.org/fhir/uv/ips/STU2/Must-Support-and-Obligations.html) approach of the [IPS IG](https://hl7.org/fhir/uv/ips/) (hl7.fhir.uv.ips 2.0.0), which is imported as a dependency. The actors and the meaning of the obligation codes are defined there and are deliberately not repeated in this implementation guide, to avoid duplication and conflicts in future versions. In contrast to CH IPS, which does not flag additional elements as must support, CH EMR marks the elements that are relevant for an emergency record as must support and adds the corresponding obligations.
 
-[Changelog](changelog.html) with significant changes, open and closed issues.
+The following actors and obligations are used:
 
-</div>
+{:class="table table-bordered"}
+| Actor | Obligation | Meaning |
+|-------|------------|---------|
+| [Creator](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Creator.html) | `SHALL:populate-if-known` | The creating system populates the element if the information is known. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHALL:handle` | The receiving system processes the element without failing and without losing the information. |
+| [Consumer](https://hl7.org/fhir/uv/ips/STU2/ActorDefinition-Consumer.html) | `SHOULD:display` | The receiving system should display the element to the user. |
 
-**Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
+The exact definitions are those of the IPS IG. The obligations are shown on the individual profile pages of this implementation guide.
 
 ### Objective
 
@@ -51,7 +67,13 @@ The emergency report is designed to give medical professionals quick and structu
 * **Other documents**: Other documents like organ donor cards
 * **Implants**: Medical devices
 * **Pregnancy**: Current pregnancy information
-* **Disability**: Information about disabilities
+* **Functional status**: Disabilities (see [Disabilities](#disabilities))
+
+#### Disabilities
+
+The CH EMR Composition has no dedicated sections for disabilities. A disability is recorded as a Condition (CH IPS Condition) in the IPS section Functional Status (LOINC 47420-5), entry slice `disability`.
+
+The value sets [Cognitive disability types](ValueSet-ch-emr-cognitive-disability-types-vs.html) and [Physical disability types](ValueSet-ch-emr-physical-disability-types-vs.html) are not bound to any element. They are implementer help: when a system finds a Condition in the functional status section, it can check whether the Condition.code is contained in one of these value sets to classify the disability as cognitive or physical and render it accordingly for users.
 
 #### Profiles
 
@@ -69,8 +91,6 @@ The Implementation Guide defines the following main profiles:
 | [CH Emergency Record Advance Directive DocumentReference](StructureDefinition-ch-emr-documentreference-advance-directive.html) | Reference to advance directives and emergency medical orders. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
 | [CH Emergency Record Risk to Healthcare Personnel](StructureDefinition-ch-emr-flag-risk-to-healthcare-personnel.html) | Risk to healthcare personnel emanating from the patient (e.g. communicable disease). | [IPS Flag (alert)](http://hl7.org/fhir/uv/ips/StructureDefinition-Flag-alert-uv-ips.html) |
 | [CH Emergency Record DocumentReference](StructureDefinition-ch-emr-documentreference.html) | DocumentReference profile for information on documents in the Emergency Record. | [CH Core DocumentReference](http://fhir.ch/ig/ch-core/StructureDefinition-ch-core-documentreference.html) |
-| [CH Emergency Record Observation Cognitive Disability](StructureDefinition-ch-emr-observation-cognitive-disability.html) | Observation profile for cognitive disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
-| [CH Emergency Record Physical Disability Observation](StructureDefinition-ch-emr-observation-physical-disability.html) | Observation profile for physical disability in the Emergency Record. | [Observation (FHIR R4)](http://hl7.org/fhir/R4/observation.html) |
 | [CH Emergency Record MedicationStatement](StructureDefinition-ch-emr-medicationstatement.html) | MedicationStatement profile for medication in the Emergency Record. | [CH IPS MedicationStatement](http://fhir.ch/ig/ch-ips/StructureDefinition-ch-ips-medicationstatement.html) |
  
 ### IP Statements

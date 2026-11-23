@@ -7,7 +7,7 @@ Description: "Resuscitation status of Max Muster, based on the ärztliche Notano
 * extension[advanceDirective][0].valueReference = Reference(UC1-DocumentReference-Notanordnung)
 * extension[advanceDirective][+].valueReference = Reference(UC1-DocumentReference-Patientenverfuegung)
 * status = #active
-* category = $flag-category#safety "Safety"
+* category = $flag-category#advance-directive "Advance Directive"
 * code = $sct#450475007
 * subject = Reference(UC1-Patient-MusterMax)
 * period.start = "2024-01-01"

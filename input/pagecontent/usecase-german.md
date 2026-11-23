@@ -57,7 +57,7 @@ Keine
 |-----------|------|
 | [Herzschrittmacher](DeviceUseStatement-UC1-DeviceUseStatement-Pacemaker.html) | 2015 |
 
-Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat und einen Schrittmacher trägt sowie eine Therapie mit Plavix und Beloc Zoc einnimmt. Basierend auf diesen Informationen und weiterer Diagnostik kann die Situation beurteilt, und das Zielspital explizit definiert werden. Der Rettungsdienst bringt den Patienten weiterhin bewusstlos ins entsprechende Spital.
+Dabei wird sichtbar, dass der Patient bereits mehrere kardiale Ereignisse hat und einen Schrittmacher trägt sowie eine Therapie mit Plavix und Beloc Zok einnimmt. Basierend auf diesen Informationen und weiterer Diagnostik kann die Situation beurteilt, und das Zielspital explizit definiert werden. Der Rettungsdienst bringt den Patienten weiterhin bewusstlos ins entsprechende Spital.
 
 In einem zweiten Schritt konnten über die hinterlegte Telefonnummer der Notfallkontakte die Angehörigen informiert werden sowie der Ablageort einer ärztlichen Notanordnung und einer Patientenverfügung festgestellt werden. Somit kann eine Behandlung entsprechend der medizinischen Vorgeschichte und in Übereinstimmung des Patientenwunsches trotz Bewusstlosigkeit eingeleitet werden.
 
@@ -67,7 +67,7 @@ Der vollständige [eNotfallpass für Muster Max](Bundle-UC1-Bundle-emr-MusterMax
 
 Ein [Patient](Patient-UC2-Patient-WalterSchmid.html), 78 Jahre alt, wohnt allein, bekommt 2×/Tag Hausbesuch durch Spitex wegen Hemisyndrom nach vaskulär bedingtem Schlaganfall. Er hat Erkältungssymptome seit 3 Tagen und Fieber seit einem Tag. Die [Spitex](RelatedPerson-UC2-RelatedPerson-Spitex.html) ruft den ärztlichen Notfalldienst an, da sich das Fieber mit dem vom Hausarzt verordneten Medikament nicht senken lässt.
 
-Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html) eingeschränkt. Der Allgemeinzustand ist geschwächt, Puls ist erhöht und der Blutdruck eher tief, Fieber von 38.9 °C, leichtem Husten und basalen Rasselgeräuschen. Der Wachheitszustand ist wechselhaft. Es besteht der Verdacht auf eine beginnende Pneumonie.
+Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphasie](Condition-UC2-Condition-Aphasie.html) eingeschränkt. Der Allgemeinzustand ist geschwächt, Puls ist erhöht und der Blutdruck eher tief, Fieber von 38.9 °C, leichtem Husten und basalen Rasselgeräuschen. Der Wachheitszustand ist wechselhaft. Es besteht der Verdacht auf eine beginnende Pneumonie.
 
 **Problemliste/Diagnoseliste**
 
@@ -96,7 +96,7 @@ Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphas
 
 **Physische Beeinträchtigungen**
 
-[Aphasie](Observation-UC2-PhysicalDisability-Aphasie.html)
+[Aphasie](Condition-UC2-Condition-Aphasie.html)
 
 **Hinterlegte Dokumente**
 
@@ -139,7 +139,7 @@ Keine
 |-----------|------|
 | [Aortenklappe](DeviceUseStatement-UC3-DeviceUseStatement-AorticValve.html) | 2010 |
 
-Die Dermatologin entschliesst sich den eNotfallpass zu konsultieren, sieht dort, dass die Patientin orale Antikoagulation einnehmen muss wegen eines angeborenen Herzfehlers und bei welchem im Laufe der Zeit eine Klappenprothese eingesetzt wurde. Ebenso sieht sie, dass sie wegen einer Eisenmangelanämie vor einer Woche bei der Hausärztin eine Eiseninfusion erhalten hat bei einem Hämoglobinwert von 9 g/L. Sie alarmiert den Rettungsdienst, welcher die Patientin hospitalisiert.
+Die Dermatologin entschliesst sich den eNotfallpass zu konsultieren, sieht dort, dass die Patientin orale Antikoagulation einnehmen muss wegen eines angeborenen Herzfehlers und bei welchem im Laufe der Zeit eine Klappenprothese eingesetzt wurde. Ebenso sieht sie, dass sie wegen einer Eisenmangelanämie vor einer Woche bei der Hausärztin eine Eiseninfusion erhalten hat bei einem Hämoglobinwert von 90 g/L. Sie alarmiert den Rettungsdienst, welcher die Patientin hospitalisiert.
 
 Der vollständige [eNotfallpass für Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) zeigt das Zusammenspiel von oraler Antikoagulation und Implantat.
 

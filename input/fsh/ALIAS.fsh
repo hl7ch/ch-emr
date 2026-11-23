@@ -9,7 +9,6 @@ Alias: $chVac = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
 // External Code Systems
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
-Alias: $sct-ch = http://snomed.info/sct|http://snomed.info/sct/2011000195101
 Alias: $edqm = http://standardterms.edqm.eu
 Alias: $ncit = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
@@ -25,6 +24,7 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $flag-category = http://terminology.hl7.org/CodeSystem/flag-category
 Alias: $v3-PersonalRelationshipRoleTypeVS = http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType
 
@@ -37,6 +37,7 @@ Alias: $imposeProfile = http://hl7.org/fhir/StructureDefinition/structuredefinit
 Alias: $IpsDeviceUseStatement = http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
 Alias: $IpsDevice = http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
 Alias: $IpsObservationPregnancyStatus = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips
+Alias: $IpsObservationResultsLaboratoryPathology = http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips
 Alias: $IpsFlagAlert = http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips
 Alias: $IpsActorCreator = http://hl7.org/fhir/uv/ips/ActorDefinition/Creator
 Alias: $IpsActorConsumer = http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer

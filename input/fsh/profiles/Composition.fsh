@@ -12,9 +12,7 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section contains
     sectionEmergencyContacts 1..1 and
     sectionCareTeam 0..1 and
-    sectionOtherDocuments 0..1 and
-    sectionCognitiveDisability 0..1 and
-    sectionPhysicalDisability 0..1
+    sectionOtherDocuments 0..1
 
 // Immunization
 * section[sectionImmunizations].entry[immunization] ^type.aggregation = #bundled
@@ -66,13 +64,26 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAlerts].entry[alertsFlag] only Reference(ChEmrFlagRiskToHealthcarePersonnel or ChEmrFlagResuscitationStatus)
 * section[sectionAlerts].entry[alertsFlag] MS
 * section[sectionAlerts].entry[alertsFlag] ^type.aggregation = #bundled
-* section[sectionAlerts].entry[alertsFlag] ^comment = "Risks to healthcare personnel are recorded as CH Emergency Record Risk to Healthcare Personnel (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-risk-to-healthcare-personnel). The resuscitation status is recorded as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on."
+* section[sectionAlerts].entry[alertsFlag] ^comment = "Risks to healthcare personnel and the resuscitation status are carried in the re-slices riskToHealthcarePersonnel and resuscitationStatus. The two Flag profiles are distinguished by their fixed Flag.category (safety vs. advance-directive)."
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+
+// Re-slice alertsFlag by profile; Flag.category (safety | advance-directive) makes the two profiles mutually exclusive.
+* section[sectionAlerts].entry[alertsFlag] contains
+    riskToHealthcarePersonnel 0..* MS and
+    resuscitationStatus 0..* MS
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^short = "Risk to healthcare personnel (Flag.category = safety)"
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^comment = "Risks to healthcare personnel are recorded as CH Emergency Record Risk to Healthcare Personnel (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-risk-to-healthcare-personnel)."
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^short = "Resuscitation status (Flag.category = advance-directive)"
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^comment = "The resuscitation status is recorded as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on. Earlier, no longer valid statuses may be included with Flag.status = inactive."
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5
@@ -82,23 +93,6 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionOtherDocuments].entry contains document 0..*
 * section[sectionOtherDocuments].entry[document] only Reference(ChEmrDocumentReference)
 * section[sectionOtherDocuments].entry[document] ^type.aggregation = #bundled
-
-//Disability
-* section[sectionCognitiveDisability].code = $loinc#66610-7
-* section[sectionCognitiveDisability].entry ^slicing.discriminator.type = #profile
-* section[sectionCognitiveDisability].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionCognitiveDisability].entry ^slicing.rules = #open
-* section[sectionCognitiveDisability].entry contains observation 0..*
-* section[sectionCognitiveDisability].entry[observation] only Reference(ChEmrObservationCognitiveDisability)
-* section[sectionCognitiveDisability].entry[observation] ^type.aggregation = #bundled
-
-* section[sectionPhysicalDisability].code = $loinc#96386-8
-* section[sectionPhysicalDisability].entry ^slicing.discriminator.type = #profile
-* section[sectionPhysicalDisability].entry ^slicing.discriminator.path = "resolve()"
-* section[sectionPhysicalDisability].entry ^slicing.rules = #open
-* section[sectionPhysicalDisability].entry contains observation 0..*
-* section[sectionPhysicalDisability].entry[observation] only Reference(ChEmrObservationPhysicalDisability)
-* section[sectionPhysicalDisability].entry[observation] ^type.aggregation = #bundled
 
 // Pregnancy
 * section[sectionPregnancyHx].entry[pregnancyStatus] MS

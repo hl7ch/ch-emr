@@ -2,7 +2,7 @@ Profile: ChEmrDocumentReferenceAdvanceDirective
 Parent: $ChCoreDocumentReference
 Id: ch-emr-documentreference-advance-directive
 Title: "CH Emergency Record Advance Directive DocumentReference"
-Description: "Reference to advance directives and emergency medical"
+Description: "Reference to advance directives and emergency medical orders."
 
 * type 1..1 MS
 * type from ch-emr-advance-directive-type-vs (extensible)
