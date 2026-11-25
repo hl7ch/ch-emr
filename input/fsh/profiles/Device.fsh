@@ -2,7 +2,9 @@ Profile: ChEmrDevice
 Parent: $IpsDevice
 Id: ch-emr-device
 Title: "CH Emergency Record Device"
-Description: "Device profile for implants in the Emergency Record."
+Description: """Device profile for implants in the Emergency Record.
+
+Each implanted device should be represented by its own Device with its own Unique Device Identifier (UDI) in `udiCarrier`, and referenced by its own [DeviceUseStatement](StructureDefinition-ch-emr-deviceusestatement.html). This also applies to implants of the same type on both sides of the body: bilateral knee prostheses, for example, are documented as two Devices, each with its own UDI, and two DeviceUseStatements with the left and the right body site, even where SNOMED CT has a "both" concept such as `36701003 |Both knees|`."""
 
 * type from ch-emr-implant-type-vs (extensible)
 
@@ -12,6 +14,7 @@ Description: "Device profile for implants in the Emergency Record."
 * udiCarrier MS
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * udiCarrier ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* udiCarrier ^extension[$obligation][=].extension[documentation].valueMarkdown = "Each implanted device SHOULD be represented by its own Device so that the UDI of every implant is recorded. Implants of the same type on both sides of the body (e.g. bilateral hip or knee prostheses, cochlear implants in both ears) SHOULD NOT be combined into one Device; each SHOULD be referenced by its own DeviceUseStatement with the lateralised body site."
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * udiCarrier ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
