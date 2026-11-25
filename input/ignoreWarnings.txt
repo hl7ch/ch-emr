@@ -44,3 +44,7 @@ The resource ValueSet/ch-emr-mri-safety-status-vs should have an OID assigned to
 The resource ValueSet/ch-emr-physical-disability-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 The resource ValueSet/ch-emr-resuscitation-status-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 The resource ValueSet/ch-emr-risk-to-healthcare-personnel-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+# The terminology server does not support validating ECL constraint filters (POST ValueSet/$validate is unknown).
+# The exclusion filter of the lateralised body site value set is valid ECL and expands correctly on tx.fhir.org.
+The value '(>! (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))) MINUS (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
