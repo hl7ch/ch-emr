@@ -36,6 +36,7 @@ Unknown Code 'C106046' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/T
 # No OIDs for CH EMR value sets: like the other CH IGs, CH EMR does not mint OIDs for its own artifacts
 # (only CH Term carries OIDs, for pre-existing eHealth Suisse value sets). Not needed: CH EMR is FHIR only, no CDA counterpart.
 The resource ValueSet/ch-emr-advance-directive-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-body-site-lateralised-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 The resource ValueSet/ch-emr-clinical-document-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 The resource ValueSet/ch-emr-cognitive-disability-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 The resource ValueSet/ch-emr-implant-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
