@@ -9,13 +9,13 @@ Description: "General example of a medication statement"
 * subject = Reference(EX-Patient)
 * effectivePeriod.start = "2020-03-03"
 * reasonCode.text = "Diabetes"
-* dosage[0].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
-* dosage[=].timing.repeat.boundsPeriod.start = "2020-03-03"
-* dosage[=].timing.repeat.when[0] = #MORN
-* dosage[=].timing.repeat.when[+] = #EVE
-* dosage[=].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
-* dosage[=].route.text = "zum Einnehmen"
-* dosage[=].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
+* dosage[baseEntry].patientInstruction = "Unzerkaut während oder nach den Mahlzeiten mit ausreichend Flüssigkeit einnehmen"
+* dosage[baseEntry].timing.repeat.boundsPeriod.start = "2020-03-03"
+* dosage[baseEntry].timing.repeat.when[0] = #MORN
+* dosage[baseEntry].timing.repeat.when[+] = #EVE
+* dosage[baseEntry].route = urn:oid:0.4.0.127.0.16.1.1.2.1#20053000 "Oral use"
+* dosage[baseEntry].route.text = "zum Einnehmen"
+* dosage[baseEntry].doseAndRate.doseQuantity = 1 http://snomed.info/sct#732936001 "Tablet (unit of presentation)"
 
 Instance: EX-Metformin
 InstanceOf: $ChIpsMedication
