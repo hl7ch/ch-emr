@@ -37,6 +37,13 @@ Description: "Vollständiger eNotfallpass für Lara Keller (Anwendungsfall 3)."
 * entry[=].resource = UC3-Medication-Marcoumar
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC3-MedicationStatement-Marcoumar"
 * entry[=].resource = UC3-MedicationStatement-Marcoumar
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Medication/UC3-Medication-Ferinject"
+* entry[=].resource = UC3-Medication-Ferinject
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/MedicationStatement/UC3-MedicationStatement-Ferinject"
+* entry[=].resource = UC3-MedicationStatement-Ferinject
+
+* entry[+].fullUrl = "http://fhir.ch/ig/emr/Observation/UC3-Observation-Haemoglobin"
+* entry[=].resource = UC3-Observation-Haemoglobin
 
 * entry[+].fullUrl = "http://fhir.ch/ig/emr/Device/UC3-Device-AorticValve"
 * entry[=].resource = UC3-Device-AorticValve

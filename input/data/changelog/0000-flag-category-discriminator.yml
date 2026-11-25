@@ -1,0 +1,2 @@
+type: changed
+text: "Alert Flags are distinguished by a fixed Flag.category (resuscitation status: advance-directive, risk to healthcare personnel: safety), and the Alerts section has separate slices for both Flag types"

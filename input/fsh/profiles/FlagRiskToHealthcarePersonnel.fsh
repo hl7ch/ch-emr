@@ -4,6 +4,10 @@ Id: ch-emr-flag-risk-to-healthcare-personnel
 Title: "CH Emergency Record Risk to Healthcare Personnel"
 Description: "Risk to healthcare personnel emanating from the patient — typically a communicable / infectious-disease condition or another patient-side circumstance that healthcare personnel need to be aware of for their own safety when treating the patient in an emergency context."
 
+* category 1..1 MS
+* category = $flag-category#safety "Safety"
+* category ^short = "Safety: distinguishes a risk to healthcare personnel from other alert Flags"
+
 * code MS
 * code from ChEmrRiskToHealthcarePersonnelVS (extensible)
 * code obeys ch-emr-flag-code-content
