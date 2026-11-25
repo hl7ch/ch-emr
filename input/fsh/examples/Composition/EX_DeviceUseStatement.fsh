@@ -10,5 +10,4 @@ Description: "General example for a device"
 * timingDateTime = "2023-01-15"
 * recordedOn = "2023-01-15"
 
-* bodySite = $sct#251007 "Pectoral region structure"
-* bodySite.extension[bodyStructure].valueReference = Reference(EX-BodyStructure)
+* bodySite = $sct#1290343009 "Structure of left half of anterior chest wall"
