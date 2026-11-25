@@ -1,7 +1,7 @@
 ValueSet: ChEmrCognitiveDisabilityTypesVS
 Id: ch-emr-cognitive-disability-types-vs
 Title: "Cognitive disability types"
-Description: "Value set of SNOMED CT codes for cognitive disabilities, based on the eNotfallpass concept (eHealth Suisse, Konzept eNotfallpass, section 3.4.9 'Kognitive Beeinträchtigung'). It lists explicit codes, without descendants, for intellectual disability, dementia, autism spectrum disorder, schizophrenia and anxiety disorder. It is not bound to any profile element. It is provided as implementer help: when a Condition in the Functional Status section of the Emergency Record has a code in this value set, the disability can be classified as cognitive and rendered accordingly for users."
+Description: "Value set of SNOMED CT codes for cognitive disabilities, based on the eNotfallpass concept (eHealth Suisse, Konzept eNotfallpass, section 3.4.9 'Kognitive Beeinträchtigung'). It lists explicit codes, without descendants, for impaired cognition, intellectual functioning disability, intellectual disability, dementia, autism spectrum disorder, schizophrenia, anxiety disorder and senility. It is not bound to any profile element. It is provided as implementer help: when a Condition in the Functional Status section of the Emergency Record has a code in this value set, the disability can be classified as cognitive and rendered accordingly for users."
 * ^status = #active
 * ^experimental = false
 * ^version = "1.0.0"
@@ -13,6 +13,7 @@ Description: "Value set of SNOMED CT codes for cognitive disabilities, based on 
 * $sct#1363185006 "Dementia due to Lewy body disease"
 * $sct#230270009 "Frontotemporal dementia"
 * $sct#386806002 "Impaired cognition"
+* $sct#228156007 "Intellectual functioning disability"
 * $sct#110359009 "Intellectual disability"
 * $sct#86765009 "Mild intellectual disability"
 * $sct#61152003 "Moderate intellectual disability"
