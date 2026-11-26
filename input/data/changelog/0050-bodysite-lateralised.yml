@@ -1,0 +1,3 @@
+type: changed
+issue: 50
+text: "Implant laterality is expressed by lateralised SNOMED CT body sites, and each implant should be documented with its own Device and DeviceUseStatement, also for implants on both sides; the BodyStructure profile and extension are removed"

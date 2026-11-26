@@ -64,13 +64,26 @@ Description: "Swiss Emergency Record based on International Patient Summary"
 * section[sectionAlerts].entry[alertsFlag] only Reference(ChEmrFlagRiskToHealthcarePersonnel or ChEmrFlagResuscitationStatus)
 * section[sectionAlerts].entry[alertsFlag] MS
 * section[sectionAlerts].entry[alertsFlag] ^type.aggregation = #bundled
-* section[sectionAlerts].entry[alertsFlag] ^comment = "Risks to healthcare personnel are recorded as CH Emergency Record Risk to Healthcare Personnel (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-risk-to-healthcare-personnel). The resuscitation status is recorded as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on."
+* section[sectionAlerts].entry[alertsFlag] ^comment = "Risks to healthcare personnel and the resuscitation status are carried in the re-slices riskToHealthcarePersonnel and resuscitationStatus. The two Flag profiles are distinguished by their fixed Flag.category (safety vs. advance-directive)."
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionAlerts].entry[alertsFlag] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+
+// Re-slice alertsFlag by profile; Flag.category (safety | advance-directive) makes the two profiles mutually exclusive.
+* section[sectionAlerts].entry[alertsFlag] contains
+    riskToHealthcarePersonnel 0..* MS and
+    resuscitationStatus 0..* MS
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] only Reference(ChEmrFlagRiskToHealthcarePersonnel)
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^short = "Risk to healthcare personnel (Flag.category = safety)"
+* section[sectionAlerts].entry[alertsFlag][riskToHealthcarePersonnel] ^comment = "Risks to healthcare personnel are recorded as CH Emergency Record Risk to Healthcare Personnel (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-risk-to-healthcare-personnel)."
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] only Reference(ChEmrFlagResuscitationStatus)
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^type.aggregation = #bundled
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^short = "Resuscitation status (Flag.category = advance-directive)"
+* section[sectionAlerts].entry[alertsFlag][resuscitationStatus] ^comment = "The resuscitation status is recorded as a CH Emergency Record Flag Resuscitation Status (http://fhir.ch/ig/ch-emr/StructureDefinition/ch-emr-flag-resuscitation-status), which points to the advance directive(s) it is based on. Earlier, no longer valid statuses may be included with Flag.status = inactive."
 
 //OtherDocuments
 * section[sectionOtherDocuments].code = $loinc#55108-5

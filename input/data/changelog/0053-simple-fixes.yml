@@ -1,0 +1,3 @@
+type: fixed
+issue: 53
+text: "Typo in the organ donation DocumentReference example, French use case translation, duplicated paragraph on the Document page, EX-Pregnancy uses valueCodeableConcept (must support in IPS), EX-MedicationStatement conforms to the CH EMR MedicationStatement profile and the EX-Composition title matches the example patient"

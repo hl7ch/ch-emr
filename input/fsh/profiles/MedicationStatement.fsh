@@ -22,8 +22,10 @@ Description: "Medication Statement for the Swiss Emergency Record. Captures a me
 * reasonReference ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * reasonReference ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 
-* medicationReference only Reference($ChIpsMedication)
-* medicationReference ^type.aggregation = #bundled
+// Constrain the reference target on medication[x] itself (no type slice), so the inherited
+// example binding on medication[x] does not trigger a "binding has no effect on Reference" warning.
+* medication[x] only CodeableConcept or Reference($ChIpsMedication)
+* medication[x] ^type[1].aggregation = #bundled
 
 * dosage ^slicing.discriminator.type = #profile
 * dosage ^slicing.discriminator.path = "$this"

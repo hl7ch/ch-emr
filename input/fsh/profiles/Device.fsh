@@ -2,7 +2,9 @@ Profile: ChEmrDevice
 Parent: $IpsDevice
 Id: ch-emr-device
 Title: "CH Emergency Record Device"
-Description: "Device profile for implants in the Emergency Record."
+Description: """Device profile for implants in the Emergency Record.
+
+Each implanted device should be represented by its own Device with its own Unique Device Identifier (UDI) in `udiCarrier`, and referenced by its own [DeviceUseStatement](StructureDefinition-ch-emr-deviceusestatement.html). This also applies to implants of the same type on both sides of the body: bilateral knee prostheses, for example, are documented as two Devices, each with its own UDI, and two DeviceUseStatements with the left and the right body site, even where SNOMED CT has a "both" concept such as `36701003 |Both knees|`."""
 
 * type from ch-emr-implant-type-vs (extensible)
 
@@ -12,6 +14,7 @@ Description: "Device profile for implants in the Emergency Record."
 * udiCarrier MS
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * udiCarrier ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
+* udiCarrier ^extension[$obligation][=].extension[documentation].valueMarkdown = "Each implanted device SHOULD be represented by its own Device so that the UDI of every implant is recorded. Implants of the same type on both sides of the body (e.g. bilateral hip or knee prostheses, cochlear implants in both ears) SHOULD NOT be combined into one Device; each SHOULD be referenced by its own DeviceUseStatement with the lateralised body site."
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * udiCarrier ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * udiCarrier ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
@@ -74,9 +77,15 @@ Description: "Device profile for implants in the Emergency Record."
 * safety[mriSafety].coding 1..*
 * safety[mriSafety].coding.system = $ncit
 * safety[mriSafety] from ch-emr-mri-safety-status-vs (preferred)
+* safety[mriSafety] obeys ch-emr-dev-mri-safety-code
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+
+Invariant: ch-emr-dev-mri-safety-code
+Description: "The MRI safety status SHALL be one of the children of NCIt C106044 |Magnetic Resonance Imaging Safety Labeling Information|: C106045 (MR Safe), C106046 (MR Conditional), C106047 (MR Unsafe) or C223361 (Safety in MRI Not Evaluated)."
+Severity: #error
+Expression: "coding.where(system = 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl').all(code in ('C106045' | 'C106046' | 'C106047' | 'C223361'))"

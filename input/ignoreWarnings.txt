@@ -11,6 +11,11 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
+# Inherited from CH Core Patient (contact:contact.relationship pattern ech-11#contactData without version),
+# copied into the CH EMR Bundle snapshot via entry[Patient].resource; CH Core's own QA reports the same warning:
+# https://github.com/hl7ch/ch-core/issues/493
+The code system 'http://fhir.ch/ig/ch-core/CodeSystem/ech-11' says that a version must be specified when it is referenced (versionNeeded = true), but this coding has no version
+
 # Display values in different languages
 %is the default display; the code system%
 Wrong Display Name%
@@ -18,3 +23,28 @@ Wrong Display Name%
 # Information about pinned versions
 Pinned the version of%
 
+
+# Known issue in IG Publisher (path-expansion-params for SNOMED CT Swiss extension)
+The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+
+# ATC is not available on the terminology server
+A definition for CodeSystem 'http://www.whocc.no/atc' could not be found, so the code cannot be validated
+
+# NCIt is only available as a fragment on the terminology server (MRI safety status codes)
+Unknown Code 'C106046' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+
+# No OIDs for CH EMR value sets: like the other CH IGs, CH EMR does not mint OIDs for its own artifacts
+# (only CH Term carries OIDs, for pre-existing eHealth Suisse value sets). Not needed: CH EMR is FHIR only, no CDA counterpart.
+The resource ValueSet/ch-emr-advance-directive-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-body-site-lateralised-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-clinical-document-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-cognitive-disability-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-implant-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-mri-safety-status-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-physical-disability-types-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-resuscitation-status-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+The resource ValueSet/ch-emr-risk-to-healthcare-personnel-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+# The terminology server does not support validating ECL constraint filters (POST ValueSet/$validate is unknown).
+# The exclusion filter of the lateralised body site value set is valid ECL and expands correctly on tx.fhir.org.
+The value '(>! (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))) MINUS (<< 123037004 |Body structure| : 272741003 |Laterality| = (7771000 |Left| OR 24028007 |Right|))' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate

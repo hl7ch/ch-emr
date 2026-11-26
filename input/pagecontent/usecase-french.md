@@ -97,7 +97,7 @@ Le médecin urgentiste arrive : le patient est [aphasique](Condition-UC2-Conditi
 
 **Handicaps physiques**
 
-[Aphasie](Condition-UC2-Condition-Aphasie.html)
+[Handicap de la marche](Condition-UC2-Condition-Gehbehinderung.html) dû à un hémisyndrome consécutif à un AVC
 
 **Documents archivés**
 
@@ -140,7 +140,7 @@ Aucune
 |-----------|------|
 | [Valvule aortique](DeviceUseStatement-UC3-DeviceUseStatement-AorticValve.html) | 2010 |
 
-La dermatologue décide de consulter l’eFicheurgence et constate que la patiente doit prendre des anticoagulants oraux en raison d’une malformation cardiaque congénitale qui, avec le temps,a nécessité l’implantation d’une prothèse valvulaire. Elle voit également qu’en raison d’une anémie ferriprive associée à un taux d’hémoglobine de 9 g/dL, sa médecin de famille lui a administré une perfusion de fer il y a une semaine. Elle prévient le service de sauvetage, qui hospitalise la patiente.
+La dermatologue décide de consulter l’eFicheurgence et constate que la patiente doit prendre des anticoagulants oraux en raison d’une malformation cardiaque congénitale qui, avec le temps,a nécessité l’implantation d’une prothèse valvulaire. Elle voit également qu’en raison d’une anémie ferriprive associée à un taux d’hémoglobine de 90 g/L, sa médecin de famille lui a administré une perfusion de fer il y a une semaine. Elle prévient le service de sauvetage, qui hospitalise la patiente.
 
 L'[eFicheurgence pour Lara Keller](Bundle-UC3-Bundle-emr-LaraKeller.html) complet illustre l'interaction entre l'anticoagulation orale et l'implant.
 
