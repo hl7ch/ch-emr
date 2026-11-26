@@ -1,0 +1,3 @@
+type: fixed
+issue: 116
+text: "Use case 2 lists a walking disability due to the hemisyndrome after the stroke as its physical disability, which is in the physical disability value set; the aphasia remains in the record but is no longer listed as a physical disability"

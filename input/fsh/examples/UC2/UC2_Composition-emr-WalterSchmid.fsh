@@ -106,5 +106,6 @@ Description: "Elektronischer Notfallpass für Walter Schmid — Anwendungsfall 2
 * section[sectionFunctionalStatus].title = "Funktionsstatus"
 * section[sectionFunctionalStatus].code = $loinc#47420-5
 * section[sectionFunctionalStatus].text.status = #generated
-* section[sectionFunctionalStatus].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Aphasie nach Schlaganfall</li></ul></div>"
-* section[sectionFunctionalStatus].entry[disability][0] = Reference(UC2-Condition-Aphasie)
+* section[sectionFunctionalStatus].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><ul><li>Gehbehinderung bei Hemisyndrom nach Schlaganfall</li><li>Aphasie nach Schlaganfall</li></ul></div>"
+* section[sectionFunctionalStatus].entry[disability][0] = Reference(UC2-Condition-Gehbehinderung)
+* section[sectionFunctionalStatus].entry[disability][+] = Reference(UC2-Condition-Aphasie)

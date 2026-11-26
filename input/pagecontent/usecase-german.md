@@ -96,7 +96,7 @@ Der Notfallarzt trifft ein: Die Kommunikation mit dem Patienten ist durch [Aphas
 
 **Physische Beeinträchtigungen**
 
-[Aphasie](Condition-UC2-Condition-Aphasie.html)
+[Gehbehinderung](Condition-UC2-Condition-Gehbehinderung.html) bei Hemisyndrom nach Schlaganfall
 
 **Hinterlegte Dokumente**
 
