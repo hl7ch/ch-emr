@@ -77,9 +77,15 @@ Each implanted device should be represented by its own Device with its own Uniqu
 * safety[mriSafety].coding 1..*
 * safety[mriSafety].coding.system = $ncit
 * safety[mriSafety] from ch-emr-mri-safety-status-vs (preferred)
+* safety[mriSafety] obeys ch-emr-dev-mri-safety-code
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorCreator
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHALL:handle
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
 * safety[mriSafety] ^extension[$obligation][+].extension[code].valueCode = #SHOULD:display
 * safety[mriSafety] ^extension[$obligation][=].extension[actor].valueCanonical = $IpsActorConsumer
+
+Invariant: ch-emr-dev-mri-safety-code
+Description: "The MRI safety status SHALL be one of the children of NCIt C106044 |Magnetic Resonance Imaging Safety Labeling Information|: C106045 (MR Safe), C106046 (MR Conditional), C106047 (MR Unsafe) or C223361 (Safety in MRI Not Evaluated)."
+Severity: #error
+Expression: "coding.where(system = 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl').all(code in ('C106045' | 'C106046' | 'C106047' | 'C223361'))"

@@ -1,0 +1,3 @@
+type: changed
+issue: 56
+text: "The MRI safety status of a Device is restricted to the children of NCIt C106044 (MR Safe, MR Conditional, MR Unsafe and the newly added Safety in MRI Not Evaluated), enforced by the invariant ch-emr-dev-mri-safety-code"
