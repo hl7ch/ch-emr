@@ -20,3 +20,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 {%- endfor -%}
 {%- endif -%}
 {%- endfor %}
+
+#### Open Issues
+During the ballot, the following comment came in, which will be taken into account in the further development of CH EMR:
+
+* [CH Emergency Record Observation Resuscitation Status](https://github.com/hl7ch/ch-emr/issues/66)
+* [CH Emergency Record Advance Directive DocumentReference](https://github.com/hl7ch/ch-emr/issues/65)
