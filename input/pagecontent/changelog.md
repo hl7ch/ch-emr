@@ -1,6 +1,15 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 1 (unreleased)
+
+#### Open Issues
+During the ballot, the following comment came in, which will be taken into account in the further development of CH EMR:
+
+* [CH Emergency Record Observation Resuscitation Status](https://github.com/hl7ch/ch-emr/issues/66)
+* [CH Emergency Record Advance Directive DocumentReference](https://github.com/hl7ch/ch-emr/issues/65)
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-emr/issues).
+
 {% assign types = "added,changed,fixed" | split: "," %}
 {%- for t in types %}
 {%- assign found = false %}
@@ -21,8 +30,3 @@ All significant changes to this FHIR implementation guide will be documented on 
 {%- endif -%}
 {%- endfor %}
 
-#### Open Issues
-During the ballot, the following comment came in, which will be taken into account in the further development of CH EMR:
-
-* [CH Emergency Record Observation Resuscitation Status](https://github.com/hl7ch/ch-emr/issues/66)
-* [CH Emergency Record Advance Directive DocumentReference](https://github.com/hl7ch/ch-emr/issues/65)
