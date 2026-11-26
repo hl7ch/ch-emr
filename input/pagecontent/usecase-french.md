@@ -97,7 +97,7 @@ Le médecin urgentiste arrive : le patient est [aphasique](Condition-UC2-Conditi
 
 **Handicaps physiques**
 
-[Aphasie](Condition-UC2-Condition-Aphasie.html)
+[Handicap de la marche](Condition-UC2-Condition-Gehbehinderung.html) dû à un hémisyndrome consécutif à un AVC
 
 **Documents archivés**
 
